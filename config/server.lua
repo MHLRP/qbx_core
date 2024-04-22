@@ -124,7 +124,8 @@ return {
     },
 
     giveVehicleKeys = function(src, plate, vehicle)
-        return exports.qbx_vehiclekeys:GiveKeys(src, plate)
+        local netId = NetworkGetNetworkIdFromEntity(vehicle)
+        return exports.MrNewbVehicleKeys:GiveKeys(src, netId)
     end,
 
     getSocietyAccount = function(accountName)
