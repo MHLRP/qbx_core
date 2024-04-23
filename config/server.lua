@@ -70,7 +70,7 @@ return {
         playerskins = 'citizenid',
         player_contacts = 'citizenid',
         player_houses = 'citizenid',
-        player_mails = 'citizenid',
+        -- player_mails = 'citizenid',
         player_outfits = 'citizenid',
         player_vehicles = 'citizenid',
     }, -- Rows to be deleted when the character is deleted
