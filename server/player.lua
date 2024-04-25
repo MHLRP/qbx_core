@@ -535,8 +535,10 @@ function CreatePlayer(playerData, Offline)
     ---@param val any
     function self.Functions.SetMetaData(meta, val)
         if not meta or type(meta) ~= 'string' then return end
+
         if (meta == 'hunger' or meta == 'thirst' or meta == 'stress') and self.PlayerData.source then
-            Player(self.PlayerData.source).state:set(meta, lib.math.clamp(val, 0, 100), true)
+            val = lib.math.clamp(val, 0, 100)
+            Player(self.PlayerData.source).state:set(meta, val, true)
         end
 
         local oldVal = self.PlayerData.metadata[meta]
@@ -772,12 +774,6 @@ function CreatePlayer(playerData, Offline)
 
     return self
 end
-
-AddEventHandler('qbx_core:server:onSetMetaData', function(key, _, new, source)
-    if key == 'hunger' or key == 'thirst' or key == 'stress' then
-        Player(source).state:set(key, new, true)
-    end
-end)
 
 exports('CreatePlayer', CreatePlayer)
 
