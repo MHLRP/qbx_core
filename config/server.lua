@@ -126,7 +126,7 @@ return {
     giveVehicleKeys = function(src, plate, vehicle)
         local netId = NetworkGetNetworkIdFromEntity(vehicle)
         return exports.MrNewbVehicleKeys:GiveKeys(src, netId)
-    end,
+    end,    
 
     getSocietyAccount = function(accountName)
         return exports['Renewed-Banking']:getAccountMoney(accountName)
