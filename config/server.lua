@@ -5,10 +5,10 @@ return {
         ---@alias MoneyType 'cash' | 'bank' | 'crypto'
         ---@alias Money {cash: number, bank: number, crypto: number}
         ---@type Money
-        moneyTypes = { cash = 500, bank = 5000, crypto = 0 }, -- type = startamount - Add or remove money types for your server (for ex. blackmoney = 0), remember once added it will not be removed from the database!
-        dontAllowMinus = { 'cash', 'crypto' }, -- Money that is not allowed going in minus
-        paycheckTimeout = 10, -- The time in minutes that it will give the paycheck
-        paycheckSociety = false -- If true paycheck will come from the society account that the player is employed at, requires qb-management
+        moneyTypes = { cash = 500, bank = 5000, crypto = 0, cosmo = 0 }, -- type = startamount - Add or remove money types for your server (for ex. blackmoney = 0), remember once added it will not be removed from the database!
+        dontAllowMinus = { 'cash', 'crypto', 'cosmo' },                  -- Money that is not allowed going in minus
+        paycheckTimeout = 10,                                            -- The time in minutes that it will give the paycheck
+        paycheckSociety = false                                          -- If true paycheck will come from the society account that the player is employed at, requires qb-management
     },
 
     player = {
@@ -30,12 +30,14 @@ return {
             },
             AccountNumber = {
                 valueFunction = function()
-                    return 'US0' .. math.random(1, 9) .. 'QBX' .. math.random(1111, 9999) .. math.random(1111, 9999) .. math.random(11, 99)
+                    return 'US0' ..
+                    math.random(1, 9) ..
+                    'QBX' .. math.random(1111, 9999) .. math.random(1111, 9999) .. math.random(11, 99)
                 end,
             },
             PhoneNumber = {
                 valueFunction = function()
-                    return math.random(100,999) .. math.random(1000000,9999999)
+                    return math.random(100, 999) .. math.random(1000000, 9999999)
                 end,
             },
             FingerId = {
@@ -77,13 +79,13 @@ return {
 
 
     server = {
-        pvp = true, -- Enable or disable pvp on the server (Ability to shoot other players)
-        closed = false, -- Set server closed (no one can join except people with ace permission 'qbadmin.join')
-        closedReason = 'Server Closed', -- Reason message to display when people can't join the server
-        whitelist = false, -- Enable or disable whitelist on the server
-        whitelistPermission = 'admin', -- Permission that's able to enter the server when the whitelist is on
-        discord = '', -- Discord invite link
-        checkDuplicateLicense = true, -- Check for duplicate rockstar license on join
+        pvp = true,                              -- Enable or disable pvp on the server (Ability to shoot other players)
+        closed = false,                          -- Set server closed (no one can join except people with ace permission 'qbadmin.join')
+        closedReason = 'Server Closed',          -- Reason message to display when people can't join the server
+        whitelist = false,                       -- Enable or disable whitelist on the server
+        whitelistPermission = 'admin',           -- Permission that's able to enter the server when the whitelist is on
+        discord = '',                            -- Discord invite link
+        checkDuplicateLicense = true,            -- Check for duplicate rockstar license on join
         ---@deprecated use cfg ACE system instead
         permissions = { 'god', 'admin', 'mod' }, -- Add as many groups as you want here after creating them in your server.cfg
     },
@@ -99,14 +101,22 @@ return {
     ---@type { name: string, amount: integer, metadata: fun(source: number): table }[]
     starterItems = { -- Character starting items
         { name = 'phone', amount = 1 },
-        { name = 'id_card', amount = 1, metadata = function(source)
-                assert(GetResourceState('qbx_idcard') == 'started', 'qbx_idcard resource not found. Required to give an id_card as a starting item')
-                return exports.qbx_idcard:GetMetaLicense(source, {'id_card'})
+        {
+            name = 'id_card',
+            amount = 1,
+            metadata = function(source)
+                assert(GetResourceState('qbx_idcard') == 'started',
+                    'qbx_idcard resource not found. Required to give an id_card as a starting item')
+                return exports.qbx_idcard:GetMetaLicense(source, { 'id_card' })
             end
         },
-        { name = 'driver_license', amount = 1, metadata = function(source)
-                assert(GetResourceState('qbx_idcard') == 'started', 'qbx_idcard resource not found. Required to give an id_card as a starting item')
-                return exports.qbx_idcard:GetMetaLicense(source, {'driver_license'})
+        {
+            name = 'driver_license',
+            amount = 1,
+            metadata = function(source)
+                assert(GetResourceState('qbx_idcard') == 'started',
+                    'qbx_idcard resource not found. Required to give an id_card as a starting item')
+                return exports.qbx_idcard:GetMetaLicense(source, { 'driver_license' })
             end
         },
     },
@@ -114,19 +124,19 @@ return {
     -- this configuration is for core events only. putting other webhooks here will have no effect
     logging = {
         webhook = {
-            ['default'] = nil, -- default
-            ['joinleave'] = nil, -- default
-            ['ooc'] = nil, -- default
-            ['anticheat'] = nil, -- default
+            ['default'] = nil,     -- default
+            ['joinleave'] = nil,   -- default
+            ['ooc'] = nil,         -- default
+            ['anticheat'] = nil,   -- default
             ['playermoney'] = nil, -- default
         },
-        role = {} -- Role to tag for high priority logs. Roles use <@%roleid> and users/channels are <@userid/channelid>
+        role = {}                  -- Role to tag for high priority logs. Roles use <@%roleid> and users/channels are <@userid/channelid>
     },
 
     giveVehicleKeys = function(src, plate, vehicle)
         local netId = NetworkGetNetworkIdFromEntity(vehicle)
         return exports.MrNewbVehicleKeys:GiveKeys(src, netId)
-    end,    
+    end,
 
     getSocietyAccount = function(accountName)
         return exports['Renewed-Banking']:getAccountMoney(accountName)
