@@ -1732,4 +1732,7 @@ return {
 	['washcoin']                 = { ['name'] = 'washcoin', ['label'] = 'Washcoin', ['weight'] = 0, ['type'] = 'item', ['image'] = 'washcoin.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'Coin for washingmachine' },
 	['dirtycash']                = { ['name'] = 'dirtycash', ['label'] = 'Dirty Cash', ['weight'] = 1, ['type'] = 'item', ['image'] = 'dirtycash.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'Dirty cash? You should find someone to clean this for you!' },
 	['black_money']              = { ['name'] = 'black_money', ['label'] = 'Dirty Cash', ['weight'] = 1, ['type'] = 'item', ['image'] = 'black_money.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'Dirty cash? You should find someone to clean this for you!' },
+
+	--- BLACKOUT
+	['c4_bomb'] = {['name'] = 'c4_bomb', ['label'] = 'C4 Explosive', ['weight'] = 1000, ['type'] = 'item', ['ammotype'] = nil,['image'] = 'weapon_stickybomb.png', 	['unique'] = true, 		['useable'] = false, 	['description'] = 'A high-yield, timed explosive charge..'},
 }
