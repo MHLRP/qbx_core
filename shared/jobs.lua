@@ -260,4 +260,20 @@ return {
             [4] = { name = "Owner", isboss = true, payment = 150 },
         },
     },
+    taco = {
+        label = "Taco Shop",
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = {
+                name = 'Cook',
+                payment = 75
+            },
+            [1] = {
+                name = 'Manager',
+                isboss = true,
+                payment = 150,
+            },
+        },
+    },
 }

@@ -1167,9 +1167,6 @@ return {
 	},
 	-- Theft and Jewelry
 	rolex                        = { name = 'rolex', label = 'Golden Watch', weight = 1500, type = 'item', image = 'rolex.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'A golden watch seems like the jackpot to me!' },
-	diamond_ring                 = { name = 'diamond_ring', label = 'Diamond Ring', weight = 1500, type = 'item', image = 'diamond_ring.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'A diamond ring seems like the jackpot to me!' },
-	diamond                      = { name = 'diamond', label = 'Diamond', weight = 1000, type = 'item', image = 'diamond.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'A diamond seems like the jackpot to me!' },
-	goldchain                    = { name = 'goldchain', label = 'Golden Chain', weight = 1500, type = 'item', image = 'goldchain.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'A golden chain seems like the jackpot to me!' },
 	tenkgoldchain                = { name = '10kgoldchain', label = '10k Gold Chain', weight = 2000, type = 'item', image = '10kgoldchain.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = '10 carat golden chain' },
 	goldbar                      = { name = 'goldbar', label = 'Gold Bar', weight = 7000, type = 'item', image = 'goldbar.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'Looks pretty expensive to me' },
 
@@ -1735,4 +1732,25 @@ return {
 
 	--- BLACKOUT
 	['c4_bomb'] = {['name'] = 'c4_bomb', ['label'] = 'C4 Explosive', ['weight'] = 1000, ['type'] = 'item', ['ammotype'] = nil,['image'] = 'weapon_stickybomb.png', 	['unique'] = true, 		['useable'] = false, 	['description'] = 'A high-yield, timed explosive charge..'},
+
+	-- Taco Food
+	["beef-taco"] 				 	 = {["name"] = "beef-taco", 			 		["label"] = "Beef Taco", 				["weight"] = 250, 		["type"] = "item", 		["image"] = "beef-taco.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Beef Taco!"},
+	["quesadilla"] 			 		 = {["name"] = "quesadilla", 			 		["label"] = "Quesadilla", 				["weight"] = 250, 		["type"] = "item", 		["image"] = "quesadilla.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Quesadilla!"},
+	["chicken-burrito"] 			 = {["name"] = "chicken-burrito", 			 	["label"] = "Chicken Burrito", 			["weight"] = 250, 		["type"] = "item", 		["image"] = "chicken-burrito.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Chicken Burrito!"},
+	
+	-- Taco Drinks
+	["coke-soda"] 			     	 = {["name"] = "coke-soda", 					["label"] = "Coke Soda", 				["weight"] = 180, 		["type"] = "item", 		["image"] = "coke-soda.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Coke Soda!"},
+	["fanta"] 			     	 	 = {["name"] = "fanta", 						["label"] = "Fanta", 					["weight"] = 180, 		["type"] = "item", 		["image"] = "fanta.png", 				["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Fanta!"},
+	
+	--Ingredients
+	["tortillas"] 				 	 = {["name"] = "tortillas", 			 	  	["label"] = "Tortillas", 				["weight"] = 150, 		["type"] = "item", 		["image"] = "tortillas.png", 		    ["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Ingredient"},
+	["ground-beef"] 				 = {["name"] = "ground-beef", 			 	  	["label"] = "Ground Beef", 				["weight"] = 210, 		["type"] = "item", 		["image"] = "ground-beef.png", 		    ["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Ingredient"},
+	["cheddar-cheese"] 				 = {["name"] = "cheddar-cheese", 			 	["label"] = "Cheddar Cheese", 			["weight"] = 125, 		["type"] = "item", 		["image"] = "cheddar-cheese.png", 	    ["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Ingredient"},
+	["butter"] 				 		 = {["name"] = "butter", 			 			["label"] = "Butter", 					["weight"] = 125, 		["type"] = "item", 		["image"] = "butter.png", 	    		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Smooth like butter, like a criminal undercover~"},
+	["chicken"] 				 	 = {["name"] = "chicken", 			 			["label"] = "Chicken", 					["weight"] = 180, 		["type"] = "item", 		["image"] = "chicken.png", 	        	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Ingredient"},
+	["lettuce"] 				 	 = {["name"] = "lettuce", 			 			["label"] = "Lettuce", 					["weight"] = 150, 		["type"] = "item", 		["image"] = "lettuce.png", 	    		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Ingredient"},
+	["tortilla-chips"] 		 		 = {["name"] = "tortilla-chips", 				["label"] = "Tortilla Chips", 			["weight"] = 150, 		["type"] = "item", 		["image"] = "tortilla-chips.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Ingredient"},
+	["carbonated-water"] 		 	 = {["name"] = "carbonated-water", 				["label"] = "Carbonated Water", 		["weight"] = 125, 		["type"] = "item", 		["image"] = "carbonated-water.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Ingredient"},
+	["sugar-cubes"] 		 		 = {["name"] = "sugar-cubes", 					["label"] = "Sugar Cubes", 				["weight"] = 100, 		["type"] = "item", 		["image"] = "sugar-cubes.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Ingredient"},
+	["taco-tomato"] 		 	 	 = {["name"] = "taco-tomato", 					["label"] = "Tomatoes", 				["weight"] = 100, 		["type"] = "item", 		["image"] = "taco-tomato.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Ingredient"},
 }
