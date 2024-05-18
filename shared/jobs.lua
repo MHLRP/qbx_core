@@ -296,4 +296,26 @@ return {
             },
         }
     },
+    postal = {
+        label = 'GoPostal',
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = {
+                name = 'Delivery Driver',
+                payment = 0,
+                isboss = false,
+            },
+            [1] = {
+                name = 'Manager',
+                isboss = true,
+                payment = 80,
+            },
+            [2] = {
+                name = 'Boss',
+                isboss = true,
+                payment = 150,
+            },
+        }
+    },
 }
