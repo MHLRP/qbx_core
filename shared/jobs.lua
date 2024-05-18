@@ -276,4 +276,24 @@ return {
             },
         },
     },
+    beanmachine = {
+        label = "Bean Machine",
+        offDutyPay = false,
+        defaultDuty = false,
+        grades = {
+            [0] = {
+                name = 'Worker',
+                payment = 45,
+            },
+            [1] = {
+                name = 'Vice Boss',
+                payment = 80,
+            },
+            [2] = {
+                name = 'Boss',
+                isboss = true,
+                payment = 150,
+            },
+        }
+    },
 }
