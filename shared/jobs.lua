@@ -318,4 +318,20 @@ return {
             },
         }
     },
+    lux = {
+        label = 'Lux',
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = {
+                name = 'Bartender',
+                payment = 80
+            },
+            [1] = {
+                name = 'Owner',
+                isboss = true,
+                payment = 200,
+            },
+        },
+    },
 }
