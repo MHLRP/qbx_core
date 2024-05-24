@@ -334,4 +334,20 @@ return {
             },
         },
     },
+    library = {
+        label = "Librarian",
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = {
+                name = 'Librarian',
+                payment = 80
+            },
+            [1] = {
+                name = 'Owner',
+                isboss = true,
+                payment = 150,
+            },
+        },
+    },
 }
