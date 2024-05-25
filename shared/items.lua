@@ -1792,5 +1792,6 @@ return {
 	['bhotchocolatepowder']         = { ['name'] = 'bhotchocolatepowder', ['label'] = 'Hot Chocolate Powder', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'bhotchocolatepowder.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hot Chocolate Powder' },
 	['bstrawberryvanillaoatlatte']  = { ['name'] = 'bstrawberryvanillaoatlatte', ['label'] = 'Strawberry Vanilla Oat Latte', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'bstrawberryvanillaoatlatte.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Strawberry Vanilla Oat Latte' },
 	['bespressocoffeecup']          = { ['name'] = 'bespressocoffeecup', ['label'] = 'Espresso Coffee Cup', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'bespressocoffeecup.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Espresso Coffee Cup' },
-
+	---- SCRATCH CARDS
+	['fx_scratchcard']              = { ['name'] = 'fx_scratchcard', ['label'] = 'Scratch Card', ['weight'] = 0, ['type'] = 'item', ['image'] = 'fx_scratchcard.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A scratch card.' },
 }
