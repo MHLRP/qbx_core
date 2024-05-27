@@ -193,6 +193,7 @@ return {
     whitewidow = {
         label = "White Widow",
         defaultDuty = false,
+        offDutyPay = false,
         grades = {
             [0] = {
                 name = 'Worker',
@@ -235,7 +236,7 @@ return {
     },
     stripper = {
         label = "Stripper",
-        defaultDuty = false,
+        defaultDuty = true,
         offDutyPay = false,
         grades = {
             [0] = {
@@ -278,7 +279,7 @@ return {
     },
     beanmachine = {
         label = "Bean Machine",
-        offDutyPay = false,
+        offDutyPay = true,
         defaultDuty = false,
         grades = {
             [0] = {
@@ -298,7 +299,7 @@ return {
     },
     postal = {
         label = 'GoPostal',
-        defaultDuty = false,
+        defaultDuty = true,
         offDutyPay = false,
         grades = {
             [0] = {
@@ -320,7 +321,7 @@ return {
     },
     lux = {
         label = 'Lux',
-        defaultDuty = false,
+        defaultDuty = true,
         offDutyPay = false,
         grades = {
             [0] = {
