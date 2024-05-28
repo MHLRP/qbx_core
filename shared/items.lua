@@ -1304,6 +1304,9 @@ return {
 	["rope"]                     = { ["name"] = "rope", ["label"] = "Rope", ["weight"] = 1, ["type"] = "item", ["image"] = "rope.png", ["unique"] = false, ["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "" },
 	["shovel"]                   = { ["name"] = "shovel", ["label"] = "Shovel", ["weight"] = 1, ["type"] = "item", ["image"] = "shovel.png", ["unique"] = false, ["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "" },
 
+	--- camping
+	["graham_cracker"]           = { ["name"] = "graham_cracker", ["label"] = "Graham Cracker", ["weight"] = 100, ["type"] = "item", ["image"] = "graham_cracker.png", ["unique"] = false, ["useable"] = false, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "Ingredient" },
+	["marshmellow"]           = { ["name"] = "marshmellow", ["label"] = "Marshmellow", ["weight"] = 100, ["type"] = "item", ["image"] = "marshmellow.png", ["unique"] = false, ["useable"] = false, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "Ingredient" },
 	-- snacks
 	['crisps']                   = { ['name'] = 'crisps', ['label'] = 'Phat Chips', ['weight'] = 100, ['type'] = 'item', ['image'] = 'crisps.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Crispy crisps' },
 	['egochaser']                = { ['name'] = 'egochaser', ['label'] = 'Ego Chaser', ['weight'] = 100, ['type'] = 'item', ['image'] = 'egochaser.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Chocolate bar' },
