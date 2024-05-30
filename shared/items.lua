@@ -1306,7 +1306,7 @@ return {
 
 	--- camping
 	["graham_cracker"]           = { ["name"] = "graham_cracker", ["label"] = "Graham Cracker", ["weight"] = 100, ["type"] = "item", ["image"] = "graham_cracker.png", ["unique"] = false, ["useable"] = false, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "Ingredient" },
-	["marshmellow"]           = { ["name"] = "marshmellow", ["label"] = "Marshmellow", ["weight"] = 100, ["type"] = "item", ["image"] = "marshmellow.png", ["unique"] = false, ["useable"] = false, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "Ingredient" },
+	["marshmellow"]              = { ["name"] = "marshmellow", ["label"] = "Marshmellow", ["weight"] = 100, ["type"] = "item", ["image"] = "marshmellow.png", ["unique"] = false, ["useable"] = false, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "Ingredient" },
 	-- snacks
 	['crisps']                   = { ['name'] = 'crisps', ['label'] = 'Phat Chips', ['weight'] = 100, ['type'] = 'item', ['image'] = 'crisps.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Crispy crisps' },
 	['egochaser']                = { ['name'] = 'egochaser', ['label'] = 'Ego Chaser', ['weight'] = 100, ['type'] = 'item', ['image'] = 'egochaser.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Chocolate bar' },
@@ -1847,4 +1847,7 @@ return {
 	['helm6']                       = { ['name'] = 'helm6', ['label'] = 'Black Open helmet', ['weight'] = 1, ['type'] = 'item', ['image'] = 'helmet_67.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
 	['helm7']                       = { ['name'] = 'helm7', ['label'] = 'Spike Helmet', ['weight'] = 1, ['type'] = 'item', ['image'] = 'helmet_88.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
 	['helm8']                       = { ['name'] = 'helm8', ['label'] = 'Black Army helmet', ['weight'] = 1, ['type'] = 'item', ['image'] = 'helmet_89.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
+--- CRAFTING
+	craftingtable                   = { name = 'craftingtable', label = 'Crafting Table', weight = 100, type = 'item', image = 'craftingtable.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Crafting Table' },
+	blueprint                       = { name = 'blueprint', label = 'Blueprint', weight = 100, type = 'item', image = 'blueprint.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Blueprint' },
 }
