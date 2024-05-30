@@ -2,8 +2,8 @@
 return {
     unemployed = { label = 'Civilian', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Freelancer', payment = 10 } } },
     bus = { label = 'Bus', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
-    judge = { label = 'Honorary', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Judge', payment = 350 } } },
-    lawyer = { label = 'Law Firm', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Associate', payment = 250 } } },
+    judge = { label = 'Honorary', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Judge', payment = 1250 } } },
+    lawyer = { label = 'Law Firm', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Associate', payment = 900 } } },
     reporter = { label = 'Reporter', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Journalist', payment = 100 } } },
     trucker = { label = 'Trucker', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
     tow = { label = 'Towing', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
@@ -17,11 +17,11 @@ return {
         defaultDuty = true,
         offDutyPay = false,
         grades = {
-            [0] = { name = 'Recruit', payment = 100 },
-            [1] = { name = 'Officer', payment = 150 },
-            [2] = { name = 'Sergeant', payment = 175 },
-            [3] = { name = 'Lieutenant', payment = 200 },
-            [4] = { name = 'Chief', isboss = true, payment = 300 },
+            [0] = { name = 'Recruit', payment = 600 },
+            [1] = { name = 'Officer', payment = 700 },
+            [2] = { name = 'Sergeant', payment = 800 },
+            [3] = { name = 'Lieutenant', payment = 900 },
+            [4] = { name = 'Chief', isboss = true, payment = 1200 },
         },
     },
     ambulance = {
@@ -30,11 +30,11 @@ return {
         defaultDuty = true,
         offDutyPay = false,
         grades = {
-            [0] = { name = 'Recruit', payment = 100 },
-            [1] = { name = 'Paramedic', payment = 150 },
-            [2] = { name = 'Doctor', payment = 200 },
-            [3] = { name = 'Surgeon', payment = 250 },
-            [4] = { name = 'Chief', isboss = true, payment = 350 },
+            [0] = { name = 'Recruit', payment = 700 },
+            [1] = { name = 'Paramedic', payment = 800 },
+            [2] = { name = 'Doctor', payment = 900 },
+            [3] = { name = 'Surgeon', payment = 1000 },
+            [4] = { name = 'Chief', isboss = true, payment = 1350 },
         },
     },
     realestate = {
@@ -216,21 +216,21 @@ return {
         grades = {
             [0] = {
                 name = 'Recruit',
-                payment = 130
+                payment = 700
             },
             [1] = {
                 name = 'Operator',
-                payment = 150
+                payment = 800
             },
             [2] = {
                 name = 'Company Officer',
-                payment = 225
+                payment = 900
             },
             [3] = {
                 name = 'Chief',
                 isboss = true,
                 bankAuth = true,
-                payment = 300
+                payment = 1200
             },
         },
     },

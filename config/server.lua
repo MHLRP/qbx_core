@@ -7,7 +7,7 @@ return {
         ---@type Money
         moneyTypes = { cash = 500, bank = 5000, crypto = 0, cosmo = 0 }, -- type = startamount - Add or remove money types for your server (for ex. blackmoney = 0), remember once added it will not be removed from the database!
         dontAllowMinus = { 'cash', 'crypto', 'cosmo' },                  -- Money that is not allowed going in minus
-        paycheckTimeout = 10,                                            -- The time in minutes that it will give the paycheck
+        paycheckTimeout = 30,                                            -- The time in minutes that it will give the paycheck
         paycheckSociety = false                                          -- If true paycheck will come from the society account that the player is employed at, requires qb-management
     },
 
@@ -31,8 +31,8 @@ return {
             AccountNumber = {
                 valueFunction = function()
                     return 'US0' ..
-                    math.random(1, 9) ..
-                    'QBX' .. math.random(1111, 9999) .. math.random(1111, 9999) .. math.random(11, 99)
+                        math.random(1, 9) ..
+                        'QBX' .. math.random(1111, 9999) .. math.random(1111, 9999) .. math.random(11, 99)
                 end,
             },
             PhoneNumber = {
@@ -65,13 +65,13 @@ return {
         -- {'crypto_transactions', 'citizenid'},
         -- {'phone_invoices', 'citizenid'},
         -- {'phone_messages', 'citizenid'},
-        {'playerskins', 'citizenid'},
+        { 'playerskins',     'citizenid' },
         -- {'player_contacts', 'citizenid'},
-        {'player_houses', 'citizenid'},
+        { 'player_houses',   'citizenid' },
         -- {'player_mails', 'citizenid'},
-        {'player_outfits', 'citizenid'},
-        {'player_vehicles', 'citizenid'},
-        {'players', 'citizenid'},
+        { 'player_outfits',  'citizenid' },
+        { 'player_vehicles', 'citizenid' },
+        { 'players',         'citizenid' },
         -- {'npwd_calls', 'identifier'},
         -- {'npwd_darkchat_channel_members', 'user_identifier'},
         -- {'npwd_marketplace_listings', 'identifier'},
