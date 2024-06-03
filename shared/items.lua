@@ -1847,7 +1847,16 @@ return {
 	['helm6']                       = { ['name'] = 'helm6', ['label'] = 'Black Open helmet', ['weight'] = 1, ['type'] = 'item', ['image'] = 'helmet_67.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
 	['helm7']                       = { ['name'] = 'helm7', ['label'] = 'Spike Helmet', ['weight'] = 1, ['type'] = 'item', ['image'] = 'helmet_88.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
 	['helm8']                       = { ['name'] = 'helm8', ['label'] = 'Black Army helmet', ['weight'] = 1, ['type'] = 'item', ['image'] = 'helmet_89.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
---- CRAFTING
+	--- CRAFTING
 	craftingtable                   = { name = 'craftingtable', label = 'Crafting Table', weight = 100, type = 'item', image = 'craftingtable.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Crafting Table' },
 	blueprint                       = { name = 'blueprint', label = 'Blueprint', weight = 100, type = 'item', image = 'blueprint.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Blueprint' },
+	--- WATER ACTIVITIES
+	['inflatable']                  = { ['name'] = 'inflatable', ['label'] = 'Inflatable', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'inflatable.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Inflatable' },
+	['parasailing']                 = { ['name'] = 'parasailing', ['label'] = 'Parasailing', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'parasailing.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Parasailing' },
+	['ski']                         = { ['name'] = 'ski', ['label'] = 'Ski', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'ski.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Ski' },
+	['circle']                      = { ['name'] = 'circle', ['label'] = 'Circle', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'circle.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Circle' },
+	['bed1']                        = { ['name'] = 'bed1', ['label'] = 'Lounger 1', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'bed1.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Lounger' },
+	['bed2']                        = { ['name'] = 'bed2', ['label'] = 'Lounger 2', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'bed2.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Lounger' },
+	['bed3']                        = { ['name'] = 'bed3', ['label'] = 'Lounger 3', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'bed3.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Lounger' },
+	['bed4']                        = { ['name'] = 'bed4', ['label'] = 'Lounger 4', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'bed4.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Lounger' },
 }
