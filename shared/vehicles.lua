@@ -397,7 +397,7 @@ local vehicles = {
     { model = 'carbonrs',      name = 'Carbon RS',                     brand = 'Nagasaki',        price = 22000,   category = 'motorcycles',    type = 'bike',       shop = 'pdm' },
     { model = 'chimera',       name = 'Chimera',                       brand = 'Nagasaki',        price = 21000,   category = 'motorcycles',    type = 'bike',       shop = 'pdm' },
     { model = 'cliffhanger',   name = 'Cliffhanger',                   brand = 'Western',         price = 28500,   category = 'motorcycles',    type = 'bike',       shop = 'pdm' },
-    { model = 'daemon',        name = 'Daemon',                        brand = 'WMC',             price = 14000,   category = 'motorcycles',    type = 'bike',       shop = 'pdm' },
+    { model = 'daemon',        name = 'Daemon',                        brand = 'WMC',             price = 65000,   category = 'motorcycles',    type = 'bike',       shop = 'pdm' },
     { model = 'daemon2',       name = 'Daemon Custom',                 brand = 'Western',         price = 23000,   category = 'motorcycles',    type = 'bike',       shop = 'pdm' },
     { model = 'defiler',       name = 'Defiler',                       brand = 'Shitzu',          price = 30000,   category = 'motorcycles',    type = 'bike',       shop = 'pdm' },
     { model = 'deathbike',     name = 'Deathbike Apocalypse',          brand = 'Deathbike',       price = 30000,   category = 'motorcycles',    type = 'bike',       shop = 'pdm' },
