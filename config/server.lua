@@ -2,8 +2,8 @@ return {
     updateInterval = 5, -- how often to update player data in minutes
 
     money = {
-        ---@alias MoneyType 'cash' | 'bank' | 'crypto'
-        ---@alias Money {cash: number, bank: number, crypto: number}
+        ---@alias MoneyType 'cash' | 'bank' | 'crypto' | 'cosmo' 
+        ---@alias Money {cash: number, bank: number, crypto: number, cosmo: number}
         ---@type Money
         moneyTypes = { cash = 500, bank = 5000, crypto = 0, cosmo = 0 }, -- type = startamount - Add or remove money types for your server (for ex. blackmoney = 0), remember once added it will not be removed from the database!
         dontAllowMinus = { 'cash', 'crypto', 'cosmo' },                  -- Money that is not allowed going in minus
