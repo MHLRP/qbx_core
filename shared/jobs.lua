@@ -17,11 +17,14 @@ return {
         defaultDuty = true,
         offDutyPay = false,
         grades = {
-            [0] = { name = 'Recruit', payment = 600 },
+            [0] = { name = 'Cadet', payment = 600 },
             [1] = { name = 'Officer', payment = 700 },
-            [2] = { name = 'Sergeant', payment = 800 },
-            [3] = { name = 'Lieutenant', payment = 900 },
-            [4] = { name = 'Chief', isboss = true, payment = 1200 },
+            [2] = { name = 'Senior Officer', payment = 700 },
+            [3] = { name = 'Corporal', payment = 700 },
+            [4] = { name = 'Sergeant', payment = 800 },
+            [5] = { name = 'Lieutenant', payment = 900 },
+            [6] = { name = 'Captian', payment = 900 },
+            [7] = { name = 'Chief', isboss = true, payment = 1200 },
         },
     },
     ambulance = {
