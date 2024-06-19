@@ -361,6 +361,7 @@ return {
   dominator8 = { hash = "dominator8", category = "muscle", brand = "Vapid", name = "Dominator GTT", type = "automobile", price = 76296, shop = "pdm", model = "dominator8", },
   verlierer2 = { hash = "verlierer2", category = "sports", brand = "Bravado", name = "Verlierer", type = "automobile", price = 83280, shop = "luxury", model = "verlierer2", },
   toreador = { hash = "toreador", category = "sportsclassics", brand = "Pegassi", name = "Toreador", type = "automobile", price = 235089, shop = "pdm", model = "toreador", },
+  toreador2 = { hash = "toreador2", category = "sportsclassics", brand = "Pegassi", name = "Toreador V2", type = "automobile", price = 235089, shop = "pdm", model = "toreador2", },
   speedo4 = { hash = "speedo4", category = "vans", brand = "Vapid", name = "Speedo Custom (Nightclub)", type = "automobile", price = 70653, shop = "pdm", model = "speedo4", },
   manchez3 = { hash = "manchez3", category = "motorcycles", brand = "Maibatsu", name = "Manchez Scout C", type = "bike", price = 21632, shop = "pdm", model = "manchez3", },
   blazer2 = { hash = "blazer2", category = "offroad", brand = "Nagasaki", name = "Blazer Lifeguard", type = "automobile", price = 15679, shop = "pdm", model = "blazer2", },
@@ -914,4 +915,5 @@ deluxo2 = { hash = "deluxo2", category = "sportsclassics", brand = "Deluxo", nam
 deluxo3 = { hash = "deluxo3", category = "sportsclassics", brand = "Deluxo", name = "Sledgehammer", type = "automobile", price = 140000, shop = "none", model = "deluxo3", },
 barricade2 = { hash = "barricade2", category = "emergency", brand = "Barra", name = "Barricade", type = "automobile", price = 140000, shop = "none", model = "barricade2", },
 pdrafter2 = { hash = "pdrafter2", category = "emergency", brand = "Trevo", name = "Drafter V2", type = "automobile", price = 140000, shop = "none", model = "pdrafter2", },
+peanut = { hash = "peanut", category = "compacts", brand = "Weeny", name = "Peanut", type = "automobile", price = 65000, shop = "none", model = "peanut", },
 }
