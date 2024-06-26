@@ -136,8 +136,8 @@ return {
         offDutyPay = false,
         grades = {
             [0] = { name = 'Artist', payment = 150 },
-            [1] = { name = 'A&R Representative', payment = 200 },
-            [2] = { name = 'Music Producer', payment = 250 },
+            [1] = { name = 'A&R Representative', isboss = true, payment = 200 },
+            [2] = { name = 'Music Producer', isboss = true, payment = 250 },
         },
     },
     uwu = {
@@ -205,10 +205,12 @@ return {
             [1] = {
                 name = 'Vice Boss',
                 payment = 200,
+                isboss = true,
             },
             [2] = {
                 name = 'Boss',
                 payment = 250,
+                isboss = true,
             },
         }
     },
