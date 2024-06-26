@@ -14,7 +14,7 @@ return {
     police = {
         label = 'Law Enforcement',
         type = 'leo',
-        defaultDuty = true,
+        defaultDuty = false,
         offDutyPay = false,
         grades = {
             [0] = { name = 'Cadet', payment = 600 },
@@ -30,7 +30,7 @@ return {
     ambulance = {
         label = 'EMS',
         type = 'ems',
-        defaultDuty = true,
+        defaultDuty = false,
         offDutyPay = false,
         grades = {
             [0] = { name = 'Recruit', payment = 700 },
