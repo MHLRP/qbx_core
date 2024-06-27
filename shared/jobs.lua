@@ -250,6 +250,7 @@ return {
             },
             [1] = {
                 name = 'Boss',
+                isboss = true,
                 payment = 800,
             },
         }
