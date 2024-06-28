@@ -916,4 +916,5 @@ deluxo3 = { hash = "deluxo3", category = "sportsclassics", brand = "Deluxo", nam
 barricade2 = { hash = "barricade2", category = "emergency", brand = "Barra", name = "Barricade", type = "automobile", price = 140000, shop = "none", model = "barricade2", },
 pdrafter2 = { hash = "pdrafter2", category = "emergency", brand = "Trevo", name = "Drafter V2", type = "automobile", price = 140000, shop = "none", model = "pdrafter2", },
 peanut = { hash = "peanut", category = "compacts", brand = "Weeny", name = "Peanut", type = "automobile", price = 65000, shop = "none", model = "peanut", },
+nkscout2020 = { hash = "nkscout2020", category = "compacts", brand = "Vapid", name = "Scout", type = "automobile", price = 45000, shop = "none", model = "nkscout2020", },
 }
