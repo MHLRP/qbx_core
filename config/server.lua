@@ -2,7 +2,7 @@ return {
     updateInterval = 5, -- how often to update player data in minutes
 
     money = {
-        ---@alias MoneyType 'cash' | 'bank' | 'crypto' | 'cosmo' 
+        ---@alias MoneyType 'cash' | 'bank' | 'crypto' | 'cosmo'
         ---@alias Money {cash: number, bank: number, crypto: number, cosmo: number}
         ---@type Money
         moneyTypes = { cash = 500, bank = 5000, crypto = 0, cosmo = 0 }, -- type = startamount - Add or remove money types for your server (for ex. blackmoney = 0), remember once added it will not be removed from the database!
@@ -103,25 +103,27 @@ return {
 
     ---@type { name: string, amount: integer, metadata: fun(source: number): table }[]
     starterItems = { -- Character starting items
-        { name = 'phone', amount = 1 },
-        {
-            name = 'id_card',
-            amount = 1,
-            metadata = function(source)
-                assert(GetResourceState('qbx_idcard') == 'started',
-                    'qbx_idcard resource not found. Required to give an id_card as a starting item')
-                return exports.qbx_idcard:GetMetaLicense(source, { 'id_card' })
-            end
-        },
-        {
-            name = 'driver_license',
-            amount = 1,
-            metadata = function(source)
-                assert(GetResourceState('qbx_idcard') == 'started',
-                    'qbx_idcard resource not found. Required to give an id_card as a starting item')
-                return exports.qbx_idcard:GetMetaLicense(source, { 'driver_license' })
-            end
-        },
+        { name = 'money',   amount = 5000 },
+        { name = 'giftbox', amount = 1 }
+        -- { name = 'phone', amount = 1 },
+        -- {
+        --     name = 'id_card',
+        --     amount = 1,
+        --     metadata = function(source)
+        --         assert(GetResourceState('qbx_idcard') == 'started',
+        --             'qbx_idcard resource not found. Required to give an id_card as a starting item')
+        --         return exports.qbx_idcard:GetMetaLicense(source, { 'id_card' })
+        --     end
+        -- },
+        -- {
+        --     name = 'driver_license',
+        --     amount = 1,
+        --     metadata = function(source)
+        --         assert(GetResourceState('qbx_idcard') == 'started',
+        --             'qbx_idcard resource not found. Required to give an id_card as a starting item')
+        --         return exports.qbx_idcard:GetMetaLicense(source, { 'driver_license' })
+        --     end
+        -- },
     },
 
     -- this configuration is for core events only. putting other webhooks here will have no effect
