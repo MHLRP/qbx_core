@@ -1955,6 +1955,10 @@ return {
 	["menu"]                        = { ["name"] = "menu", ["label"] = "Menu", ["weight"] = 0, ["type"] = "item", ["image"] = "menu.png", ["unique"] = true, ["useable"] = true, ["created"] = nil, ["decay"] = nil, ["shouldClose"] = false, ["combinable"] = nil, ["description"] = "A Menu" },
 	["book"]                        = { ["name"] = "book", ["label"] = "Book", ["weight"] = 0, ["type"] = "item", ["image"] = "book.png", ["unique"] = true, ["useable"] = true, ["created"] = nil, ["decay"] = nil, ["shouldClose"] = false, ["combinable"] = nil, ["description"] = "A book" },
 	["newspaper"]                   = { ["name"] = "newspaper", ["label"] = "newspaper", ["weight"] = 0, ["type"] = "item", ["image"] = "newspaper.png", ["unique"] = true, ["useable"] = true, ["created"] = nil, ["decay"] = nil, ["shouldClose"] = false, ["combinable"] = nil, ["description"] = "A newspaper" },
---- clothing bag 
-	['clothing_bag'] = {["name"] = "clothing_bag", ["label"] = "Clothing Bag", ["weight"] = 500, ["type"] = "item", ["image"] = "clothing_bag.png", ["unique"] = true, ["useable"] = true, ["shouldClose"] = true, ["description"] = "A bag to change your clothes on the go."}
+	--- clothing bag
+	['clothing_bag']                = { ["name"] = "clothing_bag", ["label"] = "Clothing Bag", ["weight"] = 500, ["type"] = "item", ["image"] = "clothing_bag.png", ["unique"] = true, ["useable"] = true, ["shouldClose"] = true, ["description"] = "A bag to change your clothes on the go." },
+	--- POLICE HEIST
+	["radiousb"]                    = { ["name"] = "radiousb", ["label"] = "CCAT USB", ["weight"] = 100, ["type"] = "item", ["image"] = "RadioUSB.png", ["unique"] = false, ["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "USB loaded with Covert Channel Access Tool." },
+	["blank_usb"]                   = { ["name"] = "blank_usb", ["label"] = "Blank USB", ["weight"] = 100, ["type"] = "item", ["image"] = "usb_device.png", ["unique"] = false, ["useable"] = false, ["shouldClose"] = false, ["combinable"] = { accept = { 'gatecrack' }, reward = 'trojan_usb', anim = { dict = 'anim@amb@business@weed@weed_inspecting_high_dry@', lib = 'weed_inspecting_high_base_inspector', text = 'Loading USB with Trojan Software', timeOut = 7500, } }, ["description"] = "This blank USB stick could be turned into anything in a professional's hands..." },
+
 }
