@@ -460,7 +460,7 @@ function CheckPlayerData(source, playerData)
         playerState:set('thirst', playerData.metadata.thirst, true)
         playerState:set('stress', playerData.metadata.stress, true)
     end
-
+    playerData.metadata.communityservice = playerData.metadata.communityservice or 0  --- this is just a test
     playerData.metadata.isdead = playerData.metadata.isdead or false
     playerData.metadata.inlaststand = playerData.metadata.inlaststand or false
     playerData.metadata.armor = playerData.metadata.armor or 0
