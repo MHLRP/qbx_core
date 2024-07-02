@@ -1960,5 +1960,7 @@ return {
 	--- POLICE HEIST
 	["radiousb"]                    = { ["name"] = "radiousb", ["label"] = "CCAT USB", ["weight"] = 100, ["type"] = "item", ["image"] = "RadioUSB.png", ["unique"] = false, ["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "USB loaded with Covert Channel Access Tool." },
 	["blank_usb"]                   = { ["name"] = "blank_usb", ["label"] = "Blank USB", ["weight"] = 100, ["type"] = "item", ["image"] = "usb_device.png", ["unique"] = false, ["useable"] = false, ["shouldClose"] = false, ["combinable"] = { accept = { 'gatecrack' }, reward = 'trojan_usb', anim = { dict = 'anim@amb@business@weed@weed_inspecting_high_dry@', lib = 'weed_inspecting_high_base_inspector', text = 'Loading USB with Trojan Software', timeOut = 7500, } }, ["description"] = "This blank USB stick could be turned into anything in a professional's hands..." },
-
+	--- POLICE VISION
+	['nightvision']                 = { ['name'] = 'nightvision', ['label'] = 'Night Vision goggles', ['weight'] = 5000, ['type'] = 'item', ['image'] = 'nightvision.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Bravo Six, going dark' },
+	['thermalvision']               = { ['name'] = 'thermalvision', ['label'] = 'Thermal goggles', ['weight'] = 5000, ['type'] = 'item', ['image'] = 'nightvision.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Bravo Six, going see through' },
 }
