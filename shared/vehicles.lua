@@ -916,6 +916,12 @@ deluxo3 = { hash = "deluxo3", category = "sportsclassics", brand = "Deluxo", nam
 barricade2 = { hash = "barricade2", category = "emergency", brand = "Barra", name = "Barricade", type = "automobile", price = 140000, shop = "none", model = "barricade2", },
 pdrafter2 = { hash = "pdrafter2", category = "emergency", brand = "Trevo", name = "Drafter V2", type = "automobile", price = 140000, shop = "none", model = "pdrafter2", },
 peanut = { hash = "peanut", category = "compacts", brand = "Weeny", name = "Peanut", type = "automobile", price = 65000, shop = "none", model = "peanut", },
-nkscout2020 = { hash = "nkscout2020", category = "compacts", brand = "Vapid", name = "Scout", type = "automobile", price = 45000, shop = "none", model = "nkscout2020", },
+nkscout2020 = { hash = "nkscout2020", category = "emergency", brand = "Vapid", name = "Scout", type = "automobile", price = 45000, shop = "none", model = "nkscout2020", },
+nkbuffalos = { hash = "nkbuffalos", category = "emergency", brand = "Bravado", name = "Buffalo S", type = "automobile", price = 50000, shop = "none", model = "nkbuffalos", },
+nkcoquette = { hash = "nkcoquette", category = "emergency", brand = "Coquette", name = "Invetero", type = "automobile", price = 85000, shop = "none", model = "nkcoquette", },
+nkcruiser = { hash = "nkcruiser", category = "emergency", brand = "Stanier", name = "Cruiser", type = "automobile", price = 32000, shop = "none", model = "nkcruiser", },
+nkspeedbhell = { hash = "nkspeedbhell", category = "emergency", brand = "Kabel", name = "Gauntlet", type = "automobile", price = 62000, shop = "none", model = "nkspeedbhell", },
+nkspeeddom = { hash = "nkspeeddom", category = "emergency", brand = "Kabel", name = "Dominator GTX", type = "automobile", price = 55000, shop = "none", model = "nkspeeddom", },
+nktorrence = { hash = "nktorrence", category = "emergency", brand = "Vapid", name = "Torrance", type = "automobile", price = 42000, shop = "none", model = "nktorrence", },
 dubsta22 = { hash = "dubsta22", category = "sports", brand = "Benefactor", name = "Dubsta", type = "automobile", price = 225000, shop = "none", model = "dubsta22", },
 }

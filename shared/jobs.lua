@@ -24,7 +24,8 @@ return {
             [4] = { name = 'Sergeant', payment = 800 },
             [5] = { name = 'Lieutenant', payment = 900 },
             [6] = { name = 'Captian', payment = 900 },
-            [7] = { name = 'Chief', isboss = true, payment = 1200 },
+            [7] = { name = 'Assistant Chief', isboss = true, payment = 1000 },
+            [8] = { name = 'Chief', isboss = true, payment = 1200 },
         },
     },
     ambulance = {
