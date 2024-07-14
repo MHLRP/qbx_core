@@ -925,4 +925,6 @@ nkspeeddom = { hash = "nkspeeddom", category = "emergency", brand = "Kabel", nam
 nktorrence = { hash = "nktorrence", category = "emergency", brand = "Vapid", name = "Torrance", type = "automobile", price = 42000, shop = "none", model = "nktorrence", },
 nkstx = { hash = "nkstx", category = "emergency", brand = "Bravado", name = "Buffalo STX", type = "automobile", price = 42000, shop = "none", model = "nkstx", },
 dubsta22 = { hash = "dubsta22", category = "sports", brand = "Benefactor", name = "Dubsta", type = "automobile", price = 60000, shop = "none", model = "dubsta22", },
+explorer = { hash = "explorer", category = "boats", brand = "Explorer", name = "Explorer Yacht", type = "automobile", price = 1400000, shop = "none", model = "explorer", },
+caliburn = { hash = "caliburn", category = "sports", brand = "Cyber", name = "Caliburn", type = "automobile", price = 160000, shop = "none", model = "caliburn", },
 }
