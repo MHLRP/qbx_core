@@ -927,4 +927,6 @@ nkstx = { hash = "nkstx", category = "emergency", brand = "Bravado", name = "Buf
 dubsta22 = { hash = "dubsta22", category = "sports", brand = "Benefactor", name = "Dubsta", type = "automobile", price = 60000, shop = "none", model = "dubsta22", },
 explorer = { hash = "explorer", category = "boats", brand = "Explorer", name = "Explorer Yacht", type = "automobile", price = 1400000, shop = "none", model = "explorer", },
 caliburn = { hash = "caliburn", category = "sports", brand = "Cyber", name = "Caliburn", type = "automobile", price = 160000, shop = "none", model = "caliburn", },
+elegyrh7 = { hash = "elegyrh7", category = "sports", brand = "Elegy", name = "RH7", type = "automobile", price = 115000, shop = "none", model = "elegyrh7", },
+elegyrh72 = { hash = "elegyrh72", category = "sports", brand = "Elegy", name = "RH72 Import", type = "automobile", price = 115000, shop = "none", model = "elegyrh72", },
 }
