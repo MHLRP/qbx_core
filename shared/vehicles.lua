@@ -930,4 +930,6 @@ caliburn = { hash = "caliburn", category = "sports", brand = "Cyber", name = "Ca
 elegyrh7 = { hash = "elegyrh7", category = "sports", brand = "Elegy", name = "RH7", type = "automobile", price = 115000, shop = "none", model = "elegyrh7", },
 elegyrh72 = { hash = "elegyrh72", category = "sports", brand = "Elegy", name = "RH72 Import", type = "automobile", price = 115000, shop = "none", model = "elegyrh72", },
 fdl300 = { hash = "fdl300", category = "emergency", brand = "Benefactor", name = "L300 Fire & Rescue Water", type = "automobile", price = 66000, shop = "none", model = "fdl300", },
+nsandbrush4 = { hash = "nsandbrush4", category = "emergency", brand = "Vapid", name = "Sandstorm D205", type = "automobile", price = 74000, shop = "none", model = "nsandbrush4", },
+nsandbrush6 = { hash = "nsandbrush6", category = "emergency", brand = "Vapid", name = "Sandstorm D205x", type = "automobile", price = 86000, shop = "none", model = "nsandbrush6", },
 }
