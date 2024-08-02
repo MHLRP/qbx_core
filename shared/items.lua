@@ -804,7 +804,8 @@ return {
 
 	-- money
 	['coin']                     = { ['name'] = 'coin', ['label'] = 'Coin', ['weight'] = 1, ['type'] = 'item', ['image'] = 'coin.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Heads or Tails, find it out!' },
-	
+	dart                         = { name = 'dart', label = 'Dart', weight = 100, type = 'item', image = 'dart.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Dart' },
+
 	-- Metal Detecting
 	["1792coin"]                 = { ["name"] = "1792coin", ["label"] = "1792 Coin", ['weight'] = 100, ["type"] = "item", ["image"] = "1792coin.png", ["unique"] = false, ["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "" },
 	["1797coin"]                 = { ["name"] = "1797coin", ["label"] = "1797 Coin", ['weight'] = 100, ["type"] = "item", ["image"] = "1797coin.png", ["unique"] = false, ["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "" },
