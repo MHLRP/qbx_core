@@ -941,4 +941,5 @@ return {
     pentro = { hash = "pentro", category = "super", brand = "Maibatsu", name = "Penumbra", type = "automobile", price = 85112, shop = "none", model = "pentro", },
     vincent2 = { hash = "vincent2", category = "super", brand = "Maibatsu", name = "Vincent", type = "automobile", price = 85112, shop = "none", model = "vincent2", },
     sentinels = { hash = "sentinels", category = "super", brand = "Ubermacht", name = "Sentinel XS", type = "automobile", price = 85112, shop = "none", model = "sentinels", },
+    cara = { hash = "cara", category = "super", brand = "Vapid", name = "Cara", type = "automobile", price = 63685, shop = "none", model = "cara", },
 }
