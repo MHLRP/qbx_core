@@ -28,6 +28,23 @@ return {
             [8] = { name = 'Chief', isboss = true, payment = 1200 },
         },
     },
+    statetrooper = {
+        label = 'Law Enforcement',
+        type = 'leo',
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Cadet', payment = 600 },
+            [1] = { name = 'Officer', payment = 700 },
+            [2] = { name = 'Senior Officer', payment = 700 },
+            [3] = { name = 'Corporal', payment = 700 },
+            [4] = { name = 'Sergeant', payment = 800 },
+            [5] = { name = 'Lieutenant', payment = 900 },
+            [6] = { name = 'Captain', payment = 900 },
+            [7] = { name = 'Deputy Commisioner', isboss = true, payment = 1000 },
+            [8] = { name = 'Commisioner', isboss = true, payment = 1200 },
+        },
+    },
     ambulance = {
         label = 'EMS',
         type = 'ems',
