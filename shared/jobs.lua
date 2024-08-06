@@ -28,6 +28,7 @@ return {
             [8] = { name = 'Chief', isboss = true, payment = 1200 },
         },
     },
+
     statetrooper = {
         label = 'Law Enforcement',
         type = 'leo',
@@ -45,6 +46,7 @@ return {
             [8] = { name = 'Commisioner', isboss = true, payment = 1200 },
         },
     },
+
     ambulance = {
         label = 'EMS',
         type = 'ems',
@@ -58,6 +60,7 @@ return {
             [4] = { name = 'Chief', isboss = true, payment = 1350 },
         },
     },
+
     realestate = {
         label = 'Real Estate',
         defaultDuty = true,
@@ -70,6 +73,7 @@ return {
             [4] = { name = 'Manager', isboss = true, payment = 250 },
         },
     },
+
     cardealer = {
         label = 'Vehicle Dealer',
         defaultDuty = true,
@@ -82,6 +86,7 @@ return {
             [4] = { name = 'Manager', isboss = true, payment = 250 },
         },
     },
+
     mechanic = {
         label = 'LS Customs',
         type = 'mechanic',
