@@ -1982,4 +1982,10 @@ return {
 	--- POLICE VISION
 	['nightvision']                 = { ['name'] = 'nightvision', ['label'] = 'Night Vision goggles', ['weight'] = 5000, ['type'] = 'item', ['image'] = 'nightvision.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Bravo Six, going dark' },
 	['thermalvision']               = { ['name'] = 'thermalvision', ['label'] = 'Thermal goggles', ['weight'] = 5000, ['type'] = 'item', ['image'] = 'nightvision.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Bravo Six, going see through' },
+	--- GOLFING
+	['frisbee']                     = { ['name'] = 'frisbee', ['label'] = 'Frisbee', ['weight'] = 100, ['type'] = 'item', ['image'] = 'frisbee.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A flying disc' },
+	['frisbee_r']                   = { ['name'] = 'frisbee_r', ['label'] = 'Red Frisbee', ['weight'] = 100, ['type'] = 'item', ['image'] = 'frisbee_r.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A flying disc' },
+	['frisbee_g']                   = { ['name'] = 'frisbee_g', ['label'] = 'Green Frisbee', ['weight'] = 100, ['type'] = 'item', ['image'] = 'frisbee_g.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A flying disc' },
+	['frisbee_b']                   = { ['name'] = 'frisbee_b', ['label'] = 'Blue Frisbee', ['weight'] = 100, ['type'] = 'item', ['image'] = 'frisbee_b.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A flying disc' },
+	['frisbee_y']                   = { ['name'] = 'frisbee_y', ['label'] = 'Yellow Frisbee', ['weight'] = 100, ['type'] = 'item', ['image'] = 'frisbee_y.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A flying disc' },
 }
