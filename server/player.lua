@@ -7,12 +7,6 @@ local maxGangsPerPlayer = GetConvarInt('qbx:max_gangs_per_player', 1)
 local setJobReplaces = GetConvar('qbx:setjob_replaces', 'true') == 'true'
 local setGangReplaces = GetConvar('qbx:setgang_replaces', 'true') == 'true'
 
----@class PlayerData : PlayerEntity
----@field jobs table<string, integer>
----@field gangs table<string, integer>
----@field source? Source present if player is online
----@field optin? boolean present if player is online
-
 ---@param source Source
 ---@param citizenid? string
 ---@param newData? PlayerEntity
@@ -570,28 +564,6 @@ end
 
 exports('Logout', Logout)
 
----@class Player
----@field Functions PlayerFunctions
----@field PlayerData PlayerData
----@field Offline boolean
-
----@class PlayerFunctions
----@field UpdatePlayerData fun()
----@field SetJob fun(job: string, grade: integer): boolean
----@field SetGang fun(gang: string, grade: integer): boolean
----@field SetJobDuty fun(onDuty: boolean)
----@field SetPlayerData fun(key: string, val: any)
----@field SetMetaData fun(meta: string, val: any)
----@field GetMetaData fun(meta: string): any
----@field AddJobReputation fun(amount: number)
----@field AddMoney fun(moneytype: MoneyType, amount: number, reason?: string): boolean
----@field RemoveMoney fun(moneytype: MoneyType, amount: number, reason?: string): boolean
----@field SetMoney fun(moneytype: MoneyType, amount: number, reason?: string): boolean
----@field GetMoney fun(moneytype: MoneyType): boolean | number
----@field SetCreditCard fun(cardNumber: number)
----@field Save fun()
----@field Logout fun()
-
 ---Create a new character
 ---Don't touch any of this unless you know what you are doing
 ---Will cause major issues!
@@ -810,7 +782,7 @@ function CreatePlayer(playerData, Offline)
 
         if not self.Offline then
             self.Functions.UpdatePlayerData()
-            local dirChange = difference < 0 and 'added' or 'removed'
+            local dirChange = difference < 0 and 'removed' or 'added'
             local absDifference = math.abs(difference)
             local tags = absDifference > 50000 and config.logging.role or {}
             local resource = GetInvokingResource() or cache.resource
@@ -818,7 +790,7 @@ function CreatePlayer(playerData, Offline)
                 source = resource,
                 webhook = config.logging.webhook['playermoney'],
                 event = 'SetMoney',
-                color = difference < 0 and 'green' or 'red',
+                color = difference < 0 and 'red' or 'green',
                 tags = tags,
                 message = ('**%s (citizenid: %s | id: %s)** $%s (%s) %s, new %s balance: $%s reason: %s'):format(GetPlayerName(self.PlayerData.source), self.PlayerData.citizenid, self.PlayerData.source, absDifference, moneytype, dirChange, moneytype, self.PlayerData.money[moneytype], reason),
                 --oxLibTags = ('script:%s,playerName:%s,citizenId:%s,playerSource:%s,amount:%s,moneyType:%s,newBalance:%s,reason:%s,direction:%s'):format(resource, GetPlayerName(self.PlayerData.source), self.PlayerData.citizenid, self.PlayerData.source, absDifference, moneytype, self.PlayerData.money[moneytype], reason, dirChange)
