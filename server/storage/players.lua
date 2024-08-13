@@ -60,6 +60,7 @@ end
 ---@param request GetBanRequest
 ---@return BanEntity?
 local function fetchBan(request)
+    print(request)
     local column, value = getBanId(request)
     local result = MySQL.single.await('SELECT expire, reason FROM bans WHERE ' ..column.. ' = ?', { value })
     return result and {
