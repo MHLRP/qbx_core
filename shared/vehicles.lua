@@ -983,4 +983,6 @@ return {
     castella       = { hash = "castella", category = "compacts", brand = "Shitzu", name = "Castella", type = "automobile", price = 79495, shop = "luxury", model = "castella", },
     caracaran      = { hash = "caracaran", category = "offroad", brand = "Vapid", name = "Cara Cara", type = "automobile", price = 81077, shop = "none", model = "caracaran", },
     contenderc     = { hash = "contenderc", category = "offroad", brand = "Vapid", name = "Contender", type = "automobile", price = 81077, shop = "none", model = "contenderc", },
+    sandbulance     = { hash = "sandbulance", category = "emergency", brand = "Vapid", name = "Sandstorm", type = "automobile", price = 42000, shop = "none", model = "sandbulance", },
+    ambucara     = { hash = "ambucara", category = "emergency", brand = "Vapid", name = "CaraCara", type = "automobile", price = 42000, shop = "none", model = "ambucara", },
 }
