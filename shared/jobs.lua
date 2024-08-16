@@ -354,16 +354,38 @@ return {
         offDutyPay = false,
         grades = {
             [0] = {
-                name = 'Bartender',
-                payment = 80
+                name = 'Janitor',
+                payment = 550
             },
             [1] = {
+                name = 'Bartender',
+                payment = 600
+            },
+            [2] = {
+                name = 'Security',
+                payment = 600
+            },
+            [3] = {
+                name = 'Event Staff',
+                payment = 600
+            },
+            [4] = {
+                name = 'Senior Security',
+                payment = 750
+            },
+            [5] = {
+                name = 'Manager',
+                isboss = true,
+                payment = 800,
+            },
+            [6] = {
                 name = 'Owner',
                 isboss = true,
-                payment = 200,
+                payment = 800,
             },
         },
     },
+
     library = {
         label = "Librarian",
         defaultDuty = true,
