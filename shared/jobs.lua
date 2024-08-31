@@ -421,4 +421,29 @@ return {
             },
         },
     },
+
+    rexsdiner = {
+        label = "Rex's Diner",
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = {
+                name = 'Kitchen Porter',
+                payment = 60
+            },
+            [1] = {
+                name = 'Team Member',
+                payment = 120
+            },
+            [2] = {
+                name = 'Sales Manager',
+                payment = 160
+            },
+            [3] = {
+                name = 'Restaurant Manager',
+                isboss = true,
+                payment = 200
+            },
+        },
+    },
 }
