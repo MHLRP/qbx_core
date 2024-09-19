@@ -446,4 +446,25 @@ return {
             },
         },
     },
+
+    security = {
+        label = 'Security',
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = {
+                name = 'Recruit',
+                payment = 550
+            },
+            [1] = {
+                name = 'Patrol Officer',
+                payment = 600
+            },
+            [2] = {
+                name = 'Security Officer',
+                isboss = true,
+                payment = 800,
+            },
+        },
+    },
 }
