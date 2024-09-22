@@ -100,8 +100,9 @@ return {
             [4] = { name = 'Manager', isboss = true, payment = 250 },
         },
     },
-    mechanic2 = {
-        label = 'LS Customs',
+
+    midnightautos = {
+        label = 'Midnight Autos',
         type = 'mechanic',
         defaultDuty = true,
         offDutyPay = false,
@@ -113,8 +114,21 @@ return {
             [4] = { name = 'Manager', isboss = true, payment = 250 },
         },
     },
-    mechanic3 = {
-        label = 'LS Customs',
+    medusamechanics = {
+        label = 'Medusa Mechanics',
+        type = 'mechanic',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Recruit', payment = 120 },
+            [1] = { name = 'Novice', payment = 150 },
+            [2] = { name = 'Experienced', payment = 200 },
+            [3] = { name = 'Advanced', payment = 225 },
+            [4] = { name = 'Manager', isboss = true, payment = 250 },
+        },
+    },
+    rexsgarage = {
+        label = 'Rex\'s Garage',
         type = 'mechanic',
         defaultDuty = true,
         offDutyPay = false,
