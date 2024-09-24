@@ -402,8 +402,8 @@ return {
         },
     },
     
-    capones = {
-        label = "Capone's",
+    castones = {
+        label = "Castone's",
         defaultDuty = true,
         offDutyPay = false,
         grades = {
