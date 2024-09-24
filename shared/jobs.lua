@@ -401,6 +401,40 @@ return {
             },
         },
     },
+    
+    capones = {
+        label = "Capone's",
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = {
+                name = 'Bartender',
+                payment = 550
+            },
+            [1] = {
+                name = 'Made Man',
+                payment = 600
+            },
+            [2] = {
+                name = 'Capo',
+                payment = 600
+            },
+            [3] = {
+                name = 'Underboss',
+                payment = 750
+            },
+            [4] = {
+                name = 'Consigliere',
+                isboss = true,
+                payment = 800,
+            },
+            [5] = {
+                name = 'Godfather',
+                isboss = true,
+                payment = 800,
+            },
+        },
+    },
 
     library = {
         label = "Librarian",
