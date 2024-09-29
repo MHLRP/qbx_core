@@ -2,6 +2,9 @@ require 'server.functions'
 require 'bridge.qb.server.player'
 local functions = {}
 
+local allowMethodOverrides = GetConvar('qbx:allowmethodoverrides', 'true') == 'true'
+local disableMethodOverrideWarning = GetConvar('qbx:disableoverridewarning', 'false') == 'true'
+
 local createQbExport = require 'bridge.qb.shared.export-function'
 
 ---@deprecated use the GetEntityCoords and GetEntityHeading natives directly
@@ -34,7 +37,7 @@ function functions.SpawnVehicle(source, model, coords, warp)
     local veh = CreateVehicle(model, coords.x, coords.y, coords.z, heading, true, true)
     while not DoesEntityExist(veh) do Wait(0) end
     if warp then
-        while GetVehiclePedIsIn(ped) ~= veh do
+        while GetVehiclePedIsIn(ped, false) ~= veh do
             Wait(0)
             TaskWarpPedIntoVehicle(ped, veh, -1)
         end
@@ -139,11 +142,13 @@ local function AddItem(itemName, item)
         return false, 'invalid_item_name'
     end
 
-    if QBX.Shared.Items[itemName] then
+    if qbCoreCompat.Shared.Items[itemName] then
         return false, 'item_exists'
     end
 
-    QBX.Shared.Items[itemName] = item
+    lib.print.warn(('New item %s added but not found in ox_inventory. Printing item data'):format(itemName))
+    lib.print.warn(item)
+    qbCoreCompat.Shared.Items[itemName] = item
 
     TriggerClientEvent('QBCore:Client:OnSharedUpdate', -1, 'Items', itemName, item)
     TriggerEvent('QBCore:Server:UpdateObject')
@@ -160,10 +165,10 @@ local function UpdateItem(itemName, item)
     if type(itemName) ~= 'string' then
         return false, 'invalid_item_name'
     end
-    if not QBX.Shared.Items[itemName] then
+    if not qbCoreCompat.Shared.Items[itemName] then
         return false, 'item_not_exists'
     end
-    QBX.Shared.Items[itemName] = item
+    qbCoreCompat.Shared.Items[itemName] = item
     TriggerClientEvent('QBCore:Client:OnSharedUpdate', -1, 'Items', itemName, item)
     TriggerEvent('QBCore:Server:UpdateObject')
     return true, 'success'
@@ -188,14 +193,16 @@ local function AddItems(items)
             break
         end
 
-        if QBX.Shared.Items[key] then
+        if qbCoreCompat.Shared.Items[key] then
             message = 'item_exists'
             shouldContinue = false
             errorItem = items[key]
             break
         end
+        lib.print.warn(('New item %s added but not found in ox_inventory. Printing item data'):format(key))
+        lib.print.warn(value)
 
-        QBX.Shared.Items[key] = value
+        qbCoreCompat.Shared.Items[key] = value
     end
 
     if not shouldContinue then return false, message, errorItem end
@@ -215,11 +222,11 @@ local function RemoveItem(itemName)
         return false, 'invalid_item_name'
     end
 
-    if not QBX.Shared.Items[itemName] then
+    if not qbCoreCompat.Shared.Items[itemName] then
         return false, 'item_not_exists'
     end
 
-    QBX.Shared.Items[itemName] = nil
+    qbCoreCompat.Shared.Items[itemName] = nil
 
     TriggerClientEvent('QBCore:Client:OnSharedUpdate', -1, 'Items', itemName, nil)
     TriggerEvent('QBCore:Server:UpdateObject')
@@ -387,6 +394,18 @@ functions.RemoveGang = function(gangName)
 end
 createQbExport('RemoveGang', RemoveGang)
 
+local function checkExistingMethod(method, methodName)
+    local methodType = type(method)
+    if methodType == 'function' then
+        local warnMessage = allowMethodOverrides and 'A resource is overriding method %s in player class. This can cause unexpected behavior. Disable this warning by setting convar qbx:disableoverridewarning to true' or 'A resource attempted to override method %s in player object and was blocked. Disable this warning by setting convar qbx:disableoverridewarning to true'
+        if not disableMethodOverrideWarning then
+            lib.print.warn(warnMessage:format(methodName))
+        end
+        return allowMethodOverrides
+    end
+    return true
+end
+
 ---Add a new function to the Functions table of the player class
 ---Use-case:
 -- [[
@@ -405,15 +424,19 @@ function functions.AddPlayerMethod(ids, methodName, handler)
     if idType == 'number' then
         if ids == -1 then
             for _, v in pairs(QBX.Players) do
-                v.Functions[methodName] = handler
+                if checkExistingMethod(v.Functions[methodName], methodName) then
+                    v.Functions[methodName] = handler
+                end
             end
         else
             if not QBX.Players[ids] then return end
-
-            QBX.Players[ids].Functions[methodName] = handler
+            if checkExistingMethod(QBX.Players[ids].Functions[methodName], methodName) then
+                QBX.Players[ids].Functions[methodName] = handler
+            end
         end
     elseif idType == 'table' and table.type(ids) == 'array' then
         for i = 1, #ids do
+            ---@diagnostic disable-next-line: deprecated
             functions.AddPlayerMethod(ids[i], methodName, handler)
         end
     end
@@ -435,15 +458,18 @@ function functions.AddPlayerField(ids, fieldName, data)
     if idType == 'number' then
         if ids == -1 then
             for _, v in pairs(QBX.Players) do
+                ---@diagnostic disable-next-line: undefined-field
                 v.Functions.AddField(fieldName, data)
             end
         else
             if not QBX.Players[ids] then return end
 
+            ---@diagnostic disable-next-line: undefined-field
             QBX.Players[ids].Functions.AddField(fieldName, data)
         end
     elseif idType == 'table' and table.type(ids) == 'array' then
         for i = 1, #ids do
+            ---@diagnostic disable-next-line: deprecated
             functions.AddPlayerField(ids[i], fieldName, data)
         end
     end
@@ -498,7 +524,7 @@ function functions.GetSource(identifier)
 end
 
 ---@param source Source|string source or identifier of the player
----@return Player
+---@return Player?
 function functions.GetPlayer(source)
     return AddDeprecatedFunctions(exports.qbx_core:GetPlayer(source))
 end

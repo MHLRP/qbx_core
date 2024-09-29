@@ -1,4 +1,6 @@
 QBX = {}
+
+ ---@diagnostic disable-next-line: missing-fields
 QBX.PlayerData = {}
 QBX.Shared = require 'shared.main'
 QBX.IsLoggedIn = false
@@ -31,11 +33,13 @@ end
 
 exports('GetWeapons', GetWeapons)
 
+---@deprecated
 ---@return table<string, vector4>
 function GetLocations()
     return QBX.Shared.Locations
 end
 
+---@diagnostic disable-next-line: deprecated
 exports('GetLocations', GetLocations)
 
 AddStateBagChangeHandler('isLoggedIn', ('player:%s'):format(cache.serverId), function(_, _, value)
@@ -61,4 +65,15 @@ CreateThread(function()
             end
         end
 	end
+end)
+
+lib.callback.register('qbx_core:client:getVehicleClasses', function()
+    local models = GetAllVehicleModels()
+    local classes = {}
+    for i = 1, #models do
+        local model = models[i]
+        local class = GetVehicleClassFromName(model)
+        classes[joaat(model)] = class
+    end
+    return classes
 end)

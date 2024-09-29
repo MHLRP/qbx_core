@@ -6,6 +6,12 @@ local maxJobsPerPlayer = GetConvarInt('qbx:max_jobs_per_player', 3)
 local maxGangsPerPlayer = GetConvarInt('qbx:max_gangs_per_player', 1)
 local setJobReplaces = GetConvar('qbx:setjob_replaces', 'true') == 'true'
 local setGangReplaces = GetConvar('qbx:setgang_replaces', 'true') == 'true'
+local accounts = json.decode(GetConvar('inventory:accounts', '["money"]'))
+local accountsAsItems = table.create(0, #accounts)
+
+for i = 1, #accounts do
+    accountsAsItems[accounts[i]] = 0
+end
 
 ---@param source Source
 ---@param citizenid? string
@@ -414,6 +420,7 @@ exports('RemovePlayerFromGang', removePlayerFromGang)
 ---@return Player player
 function CheckPlayerData(source, playerData)
     playerData = playerData or {}
+    ---@diagnostic disable-next-line: param-type-mismatch
     local playerState = Player(source)?.state
     local Offline = true
     if source then
@@ -589,7 +596,7 @@ function CreatePlayer(playerData, Offline)
     ---@return ErrorResult? errorResult
     function self.Functions.SetJob(jobName, grade)
         jobName = jobName:lower()
-        grade = grade or 0
+        grade = tonumber(grade) or 0
         local job = GetJob(jobName)
         if not job then
             lib.print.error(('cannot set job. Job %s does not exist'):format(jobName))
@@ -619,7 +626,7 @@ function CreatePlayer(playerData, Offline)
     ---@return ErrorResult? errorResult
     function self.Functions.SetGang(gangName, grade)
         gangName = gangName:lower()
-        grade = grade or 0
+        grade = tonumber(grade) or 0
         local gang = GetGang(gangName)
         if not gang then
             lib.print.error(('cannot set gang. Gang %s does not exist'):format(gangName))
@@ -645,9 +652,11 @@ function CreatePlayer(playerData, Offline)
     ---@param onDuty boolean
     function self.Functions.SetJobDuty(onDuty)
         self.PlayerData.job.onduty = not not onDuty -- Make sure the value is a boolean if nil is sent
-        TriggerEvent('QBCore:Server:SetDuty', self.PlayerData.source, self.PlayerData.job.onduty)
-        TriggerClientEvent('QBCore:Client:SetDuty', self.PlayerData.source, self.PlayerData.job.onduty)
-        self.Functions.UpdatePlayerData()
+        if not self.Offline then
+            TriggerEvent('QBCore:Server:SetDuty', self.PlayerData.source, self.PlayerData.job.onduty)
+            TriggerClientEvent('QBCore:Client:SetDuty', self.PlayerData.source, self.PlayerData.job.onduty)
+            self.Functions.UpdatePlayerData()
+        end
     end
 
     ---@param key string
@@ -663,19 +672,30 @@ function CreatePlayer(playerData, Offline)
     function self.Functions.SetMetaData(meta, val)
         if not meta or type(meta) ~= 'string' then return end
 
-        if (meta == 'hunger' or meta == 'thirst' or meta == 'stress') and self.PlayerData.source then
-            val = lib.math.clamp(val, 0, 100)
-            Player(self.PlayerData.source).state:set(meta, val, true)
-        end
-
         local oldVal = self.PlayerData.metadata[meta]
         self.PlayerData.metadata[meta] = val
         self.Functions.UpdatePlayerData()
+
+        if not self.Offline then
+            local playerState = Player(self.PlayerData.source).state
+            TriggerClientEvent('qbx_core:client:onSetMetaData', self.PlayerData.source, meta, oldVal, val)
+            TriggerEvent('qbx_core:server:onSetMetaData', meta,  oldVal, val, self.PlayerData.source)
+
+            if (meta == 'hunger' or meta == 'thirst' or meta == 'stress') then
+                val = lib.math.clamp(val, 0, 100)
+                if playerState[meta] ~= val then
+                    playerState:set(meta, val, true)
+                end
+            end
+
+            if (meta == 'dead' or meta == 'inlaststand') then
+                playerState:set('canUseWeapons', not val, true)
+            end
+        end
+
         if meta == 'inlaststand' or meta == 'isdead' then
             self.Functions.Save()
         end
-        TriggerClientEvent('qbx_core:client:onSetMetaData', self.PlayerData.source, meta, oldVal, val)
-        TriggerEvent('qbx_core:server:onSetMetaData', meta, oldVal, val, self.PlayerData.source)
     end
 
     ---@param meta string
@@ -692,6 +712,24 @@ function CreatePlayer(playerData, Offline)
         self.PlayerData.metadata.jobrep[self.PlayerData.job.name] = self.PlayerData.metadata.jobrep
         [self.PlayerData.job.name] + amount
         self.Functions.UpdatePlayerData()
+    end
+
+    ---@param moneytype MoneyType
+    ---@param amount number
+    ---@param actionType 'add'|'remove'|'set'
+    ---@param direction boolean
+    ---@param reason? string
+    local function emitMoneyEvents(moneytype, amount, actionType, direction, reason)
+        TriggerClientEvent('hud:client:OnMoneyChange', self.PlayerData.source, moneytype, amount, direction)
+        TriggerClientEvent('QBCore:Client:OnMoneyChange', self.PlayerData.source, moneytype, amount, actionType, reason)
+        TriggerEvent('QBCore:Server:OnMoneyChange', self.PlayerData.source, moneytype, amount, actionType, reason)
+        if moneytype == 'bank' and actionType == 'remove' then
+            TriggerClientEvent('qb-phone:client:RemoveBankMoney', self.PlayerData.source, amount)
+        end
+        local oxmoneytype = moneytype == 'cash' and 'money' or moneytype
+        if accountsAsItems[oxmoneytype] then
+            exports.ox_inventory:SetItem(self.PlayerData.source, oxmoneytype, self.PlayerData.money[moneytype])
+        end
     end
 
     ---@param moneytype MoneyType
@@ -718,9 +756,7 @@ function CreatePlayer(playerData, Offline)
                 message = ('**%s (citizenid: %s | id: %s)** $%s (%s) added, new %s balance: $%s reason: %s'):format(GetPlayerName(self.PlayerData.source), self.PlayerData.citizenid, self.PlayerData.source, amount, moneytype, moneytype, self.PlayerData.money[moneytype], reason),
                 --oxLibTags = ('script:%s,playerName:%s,citizenId:%s,playerSource:%s,amount:%s,moneyType:%s,newBalance:%s,reason:%s'):format(resource, GetPlayerName(self.PlayerData.source), self.PlayerData.citizenid, self.PlayerData.source, amount, moneytype, self.PlayerData.money[moneytype], reason)
             })
-            TriggerClientEvent('hud:client:OnMoneyChange', self.PlayerData.source, moneytype, amount, false)
-            TriggerClientEvent('QBCore:Client:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'add', reason)
-            TriggerEvent('QBCore:Server:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'add', reason)
+            emitMoneyEvents(moneytype, amount, 'add', false, reason)
         end
 
         return true
@@ -757,12 +793,7 @@ function CreatePlayer(playerData, Offline)
                 message = ('** %s (citizenid: %s | id: %s)** $%s (%s) removed, new %s balance: $%s reason: %s'):format(GetPlayerName(self.PlayerData.source), self.PlayerData.citizenid, self.PlayerData.source, amount, moneytype, moneytype, self.PlayerData.money[moneytype], reason),
                 --oxLibTags = ('script:%s,playerName:%s,citizenId:%s,playerSource:%s,amount:%s,moneyType:%s,newBalance:%s,reason:%s'):format(resource, GetPlayerName(self.PlayerData.source), self.PlayerData.citizenid, self.PlayerData.source, amount, moneytype, self.PlayerData.money[moneytype], reason)
             })
-            TriggerClientEvent('hud:client:OnMoneyChange', self.PlayerData.source, moneytype, amount, true)
-            if moneytype == 'bank' then
-                TriggerClientEvent('qb-phone:client:RemoveBankMoney', self.PlayerData.source, amount)
-            end
-            TriggerClientEvent('QBCore:Client:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'remove', reason)
-            TriggerEvent('QBCore:Server:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'remove', reason)
+            emitMoneyEvents(moneytype, amount, 'remove', true, reason)
         end
 
         return true
@@ -795,9 +826,7 @@ function CreatePlayer(playerData, Offline)
                 message = ('**%s (citizenid: %s | id: %s)** $%s (%s) %s, new %s balance: $%s reason: %s'):format(GetPlayerName(self.PlayerData.source), self.PlayerData.citizenid, self.PlayerData.source, absDifference, moneytype, dirChange, moneytype, self.PlayerData.money[moneytype], reason),
                 --oxLibTags = ('script:%s,playerName:%s,citizenId:%s,playerSource:%s,amount:%s,moneyType:%s,newBalance:%s,reason:%s,direction:%s'):format(resource, GetPlayerName(self.PlayerData.source), self.PlayerData.citizenid, self.PlayerData.source, absDifference, moneytype, self.PlayerData.money[moneytype], reason, dirChange)
             })
-            TriggerClientEvent('hud:client:OnMoneyChange', self.PlayerData.source, moneytype, absDifference, difference < 0)
-            TriggerClientEvent('QBCore:Client:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'set', reason)
-            TriggerEvent('QBCore:Server:OnMoneyChange', self.PlayerData.source, moneytype, amount, 'set', reason)
+            emitMoneyEvents(moneytype, absDifference, 'set', difference < 0, reason)
         end
 
         return true
@@ -808,6 +837,77 @@ function CreatePlayer(playerData, Offline)
     function self.Functions.GetMoney(moneytype)
         if not moneytype then return false end
         return self.PlayerData.money[moneytype]
+    end
+
+    local function qbItemCompat(item)
+        if not item then return end
+
+        item.info = item.metadata
+        item.amount = item.count
+
+        return item
+    end
+
+    ---@param item string
+    ---@return string
+    local function oxItemCompat(item)
+        return item == 'cash' and 'money' or item
+    end
+
+    ---@deprecated use ox_inventory exports directly
+    ---@param item string
+    ---@param amount number
+    ---@param metadata? table
+    ---@param slot? number
+    ---@return boolean success
+    function self.Functions.AddItem(item, amount, slot, metadata)
+        assert(not self.Offline, 'unsupported for offline players')
+        return exports.ox_inventory:AddItem(self.PlayerData.source, oxItemCompat(item), amount, metadata, slot)
+    end
+
+    ---@deprecated use ox_inventory exports directly
+    ---@param item string
+    ---@param amount number
+    ---@param slot? number
+    ---@return boolean success
+    function self.Functions.RemoveItem(item, amount, slot)
+        assert(not self.Offline, 'unsupported for offline players')
+        return exports.ox_inventory:RemoveItem(self.PlayerData.source, oxItemCompat(item), amount, nil, slot)
+    end
+
+    ---@deprecated use ox_inventory exports directly
+    ---@param slot number
+    ---@return any table
+    function self.Functions.GetItemBySlot(slot)
+        assert(not self.Offline, 'unsupported for offline players')
+        return qbItemCompat(exports.ox_inventory:GetSlot(self.PlayerData.source, slot))
+    end
+
+    ---@deprecated use ox_inventory exports directly
+    ---@param itemName string
+    ---@return any table
+    function self.Functions.GetItemByName(itemName)
+        assert(not self.Offline, 'unsupported for offline players')
+        return qbItemCompat(exports.ox_inventory:GetSlotWithItem(self.PlayerData.source, oxItemCompat(itemName)))
+    end
+
+    ---@deprecated use ox_inventory exports directly
+    ---@param itemName string
+    ---@return any table
+    function self.Functions.GetItemsByName(itemName)
+        assert(not self.Offline, 'unsupported for offline players')
+        return qbItemCompat(exports.ox_inventory:GetSlotsWithItem(self.PlayerData.source, oxItemCompat(itemName)))
+    end
+
+    ---@deprecated use ox_inventory exports directly
+    function self.Functions.ClearInventory()
+        assert(not self.Offline, 'unsupported for offline players')
+        return exports.ox_inventory:ClearInventory(self.PlayerData.source)
+    end
+
+    ---@deprecated use ox_inventory exports directly
+    function self.Functions.SetInventory()
+        error('Player.Functions.SetInventory is unsupported for ox_inventory. Try ClearInventory, then add the desired items.')
     end
 
     ---@param cardNumber number
@@ -826,7 +926,7 @@ function CreatePlayer(playerData, Offline)
 
     ---@deprecated call exports.qbx_core:Logout(source)
     function self.Functions.Logout()
-        if self.Offline then return end -- Unsupported for Offline Players
+        assert(not self.Offline, 'unsupported for offline players')
         Logout(self.PlayerData.source)
     end
 
@@ -899,6 +999,7 @@ function CreatePlayer(playerData, Offline)
         -- At this point we are safe to emit new instance to third party resource for load handling
         GlobalState.PlayerCount += 1
         self.Functions.UpdatePlayerData()
+        Player(self.PlayerData.source).state:set('loadInventory', true, true)
         TriggerEvent('QBCore:Server:PlayerLoaded', self)
     end
 
