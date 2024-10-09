@@ -82,5 +82,15 @@ return {
             [2] = { name = 'Shot Caller' },
             [3] = { name = 'Boss', isboss = true },
         },
+    },
+    lafamilia = {
+        label = 'The Castone Crime Family',
+        grades = {
+            [0] = { name = 'Made Man' },
+            [1] = { name = 'Capo' },
+            [2] = { name = 'Underboss', isboss = true },
+            [3] = { name = 'Consigliere', isboss = true },
+            [4] = { name = 'Godfather', isboss = true },
+        },
     }
 }
