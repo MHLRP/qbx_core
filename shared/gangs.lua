@@ -92,5 +92,17 @@ return {
             [3] = { name = 'Consigliere', isboss = true },
             [4] = { name = 'Godfather', isboss = true },
         },
+    },
+    greekmafiafamily = {
+        label = 'The Greek Mafia Family',
+        grades = {
+            [0] = { name = 'Recruit' },
+            [1] = { name = 'Walker' },
+            [2] = { name = 'Dealer', },
+            [3] = { name = 'Pit Boss', },
+            [4] = { name = 'Operational Manager', isboss = true },
+            [5] = { name = 'Under Boss', isboss = true },
+            [6] = { name = 'Boss', isboss = true },
+        },
     }
 }
