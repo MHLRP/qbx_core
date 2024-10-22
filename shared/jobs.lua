@@ -64,6 +64,20 @@ return {
         },
     },
 
+    cyberdoc = {
+        label = 'Cyberdoc',
+        type = 'ems',
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Trainee Technician', payment = 700 },
+            [1] = { name = 'Augmentation Specialist', payment = 800 },
+            [2] = { name = 'Cybernetic Doctor', payment = 900 },
+            [3] = { name = 'Implant Surgeon', payment = 1000 },
+            [4] = { name = 'Cyber Chief', isboss = true, payment = 1350 },
+        },
+    },
+    
     realestate = {
         label = 'Real Estate',
         defaultDuty = true,
