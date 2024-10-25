@@ -987,4 +987,5 @@ return {
     ambucara     = { hash = "ambucara", category = "emergency", brand = "Vapid", name = "CaraCara", type = "automobile", price = 42000, shop = "none", model = "ambucara", },
     whitewidowvan = { hash = "whitewidowvan", category = "vans", brand = "Vapid", name = "Release", type = "automobile", price = 122000, shop = "none", model = "whitewidowvan", },
     iak_wheelchair = { hash = "iak_wheelchair", category = "cycles", brand = "BMX", name = "Wheelchair", type = "bike", price = 1200000, shop = "none", model = "iak_wheelchair", },
+    savanna   = { hash = "savanna", category = "sports", brand = "Vapid", name = "Savanna", type = "automobile", price = 6220000, shop = "none", model = "savanna", },
 }
