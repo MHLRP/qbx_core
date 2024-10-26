@@ -988,6 +988,7 @@ return {
     whitewidowvan  = { hash = "whitewidowvan", category = "vans", brand = "Vapid", name = "Release", type = "automobile", price = 122000, shop = "none", model = "whitewidowvan", },
     iak_wheelchair = { hash = "iak_wheelchair", category = "cycles", brand = "BMX", name = "Wheelchair", type = "bike", price = 1200000, shop = "none", model = "iak_wheelchair", },
     savanna        = { hash = "savanna", category = "sports", brand = "Vapid", name = "Savanna", type = "automobile", price = 6220000, shop = "none", model = "savanna", },
-    jtdcyber2        = { hash = "jtdcyber2", category = "sports", brand = "Vapid", name = "Savanna JTD", type = "automobile", price = 420000, shop = "none", model = "jtdcyber2", },
-    hellancpd        = { hash = "hellancpd", category = "emergency", brand = "Vapid", name = "Hellan", type = "automobile", price = 322000, shop = "none", model = "hellancpd", },
+    jtdcyber2      = { hash = "jtdcyber2", category = "sports", brand = "Vapid", name = "Savanna JTD", type = "automobile", price = 420000, shop = "none", model = "jtdcyber2", },
+    hellancpd      = { hash = "hellancpd", category = "emergency", brand = "Vapid", name = "Hellan", type = "automobile", price = 322000, shop = "none", model = "hellancpd", },
+    surfboard      = { hash = "surfboard", category = "boats", brand = "DVM", name = "Surfboard", type = "boat", price = 22000, shop = "none", model = "surfboard", },
 }
