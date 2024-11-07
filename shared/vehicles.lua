@@ -991,4 +991,6 @@ return {
     jtdcyber2      = { hash = "jtdcyber2", category = "sports", brand = "Vapid", name = "Savanna JTD", type = "automobile", price = 420000, shop = "none", model = "jtdcyber2", },
     hellancpd      = { hash = "hellancpd", category = "emergency", brand = "Vapid", name = "Hellan", type = "automobile", price = 322000, shop = "none", model = "hellancpd", },
     surfboard      = { hash = "surfboard", category = "boats", brand = "DVM", name = "Surfboard", type = "boat", price = 22000, shop = "none", model = "surfboard", },
+    fascalamo2     = { hash = "fascalamo2", category = "vans", brand = "Vapid", name = "Alamo II", type = "automobile", price = 85000, shop = "none", model = "fascalamo2", },
+    newsvan        = { hash = "newsvan", category = "vans", brand = "Bravado", name = "Rumpo SX", type = "automobile", price = 105000, shop = "none", model = "newsvan", },
 }

@@ -5,7 +5,6 @@ return {
     bus = { label = 'Bus', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
     judge = { label = 'Honorary', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Judge', payment = 1250 } } },
     lawyer = { label = 'Law Firm', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Associate', payment = 900 } } },
-    reporter = { label = 'Reporter', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Journalist', payment = 100 } } },
     trucker = { label = 'Trucker', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
     tow = { label = 'Towing', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
     garbage = { label = 'Garbage', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Collector', payment = 50 } } },
@@ -24,11 +23,22 @@ return {
             [1] = { name = 'Officer', payment = 1700 },
             [2] = { name = 'Senior Officer', payment = 1700 },
             [3] = { name = 'Corporal', payment = 1700 },
-            [4] = { name = 'Sergeant', payment = 2800 }, 
+            [4] = { name = 'Sergeant', payment = 2800 },
             [5] = { name = 'Lieutenant', payment = 2900 },
             [6] = { name = 'Captain', payment = 2900 },
             [7] = { name = 'Assistant Chief', isboss = true, payment = 3000 },
             [8] = { name = 'Chief', isboss = true, payment = 3200 },
+        },
+    },
+
+    reporter = {
+        label = 'Reporter',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Journalist', payment = 250 },
+            [1] = { name = 'News Reporter', payment = 500 },
+            [2] = { name = 'Storm Chaser', payment = 650 }
         },
     },
 
@@ -82,7 +92,7 @@ return {
             [4] = { name = 'Cyber Chief', isboss = true, payment = 1350 },
         },
     },
-    
+
     realestate = {
         label = 'Real Estate',
         defaultDuty = true,
@@ -421,7 +431,7 @@ return {
             },
         },
     },
-    
+
     castones = {
         label = "Castone's",
         defaultDuty = true,
