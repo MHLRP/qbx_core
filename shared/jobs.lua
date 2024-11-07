@@ -38,7 +38,8 @@ return {
         grades = {
             [0] = { name = 'Journalist', payment = 250 },
             [1] = { name = 'News Reporter', payment = 500 },
-            [2] = { name = 'Storm Chaser', payment = 650 }
+            [2] = { name = 'Storm Chaser', payment = 650 },
+            [3] = { name = 'Owner', isboss = true, payment = 800 }
         },
     },
 
