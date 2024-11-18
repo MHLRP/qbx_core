@@ -144,7 +144,8 @@ return {
             [1] = { name = 'Novice', payment = 150 },
             [2] = { name = 'Experienced', payment = 200 },
             [3] = { name = 'Advanced', payment = 225 },
-            [4] = { name = 'Manager', isboss = true, payment = 250 },
+            [4] = { name = 'Manager', payment = 250 },
+            [5] = { name = 'Owner', isboss = true, payment = 300 },
         },
     },
     medusamechanics = {
