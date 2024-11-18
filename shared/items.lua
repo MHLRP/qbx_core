@@ -1951,6 +1951,16 @@ return {
 	-- Drugs
 	['magic_mushroom']               = { ['name'] = 'magic_mushroom', ['label'] = 'Magic Mushroom', ['weight'] = 20, ['type'] = 'item', ['image'] = 'magic_mushroom.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A handful of magic mushrooms!' },
 	['peyote_button']                = { ['name'] = 'peyote_button', ['label'] = 'Peyote Button', ['weight'] = 20, ['type'] = 'item', ['image'] = 'peyote_button.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A handful of peyote buttons!' },
+
+	fentanyltable                    = { name = 'fentanyltable', label = 'Fentanyl Table', weight = 1000, type = 'item', image = 'tablet.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = "Fentanyl Table" },
+
+	btheroine                        = { name = 'btheroine', label = 'Black Tar Heroin', weight = 1000, type = 'item', image = 'btheroine.png', unique = false, useable = true, shouldClose = false, combinable = nil, description = "Black Tar Heroin" },
+
+	piperidine                       = { name = 'piperidine', label = 'Piperidine', weight = 1000, type = 'item', image = 'piperidine.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = "Piperidine" },
+
+	pseudoephedrine                  = { name = 'pseudoephedrine', label = 'Pseudoephedrine', weight = 1000, type = 'item', image = 'pseudoephedrine.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = "pseudoephedrine" },
+
+	fentanyl                         = { name = 'fentanyl', label = 'fentanyl', weight = 1000, type = 'item', image = 'pseudoephedrine.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = "fentanyl" },
 	--<!>-- END OF BOII FARMING --<!>--
 	-- ex train robbery thing
 	['grinder']                      = { ['name'] = 'grinder', ['label'] = 'grinder', ['weight'] = 1, ['type'] = 'item', ['image'] = 'grinder.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'grinder' },
