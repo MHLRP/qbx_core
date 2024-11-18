@@ -8,7 +8,6 @@ CreateThread(function()
 
         if QBX.IsLoggedIn then
             if ((playerState.hunger or 0) <= 0 or (playerState.thirst or 0) <= 0) and not playerState.isDead then
-                print("DECREASING HEALTH")
                 local currentHealth = GetEntityHealth(cache.ped)
                 local decreaseThreshold = math.random(5, 10)
                 lib.print.warn('HEALTH REDUCED FROM STATUS', playerState.hunger, playerState.thirst)
