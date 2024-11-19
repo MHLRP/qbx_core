@@ -998,4 +998,5 @@ return {
     guardianrv     = { hash = "guardianrv", category = "vans", brand = "Vapid", name = "Guardian RV", type = "automobile", price = 122000, shop = "none", model = "guardianrv", },
     sandkingrv     = { hash = "sandkingrv", category = "vans", brand = "Vapid", name = "Sandking RV", type = "automobile", price = 142000, shop = "none", model = "sandkingrv", },
     sandroamer     = { hash = "sandroamer", category = "vans", brand = "Vapid", name = "Sandroamer", type = "automobile", price = 132000, shop = "none", model = "sandroamer", },
+    zlay_gtz35        = { hash = "zlay_gtz35", category = "sports", brand = "Trust", name = "R35 GTZ", type = "automobile", price = 6220000, shop = "none", model = "zlay_gtz35", },
 }
