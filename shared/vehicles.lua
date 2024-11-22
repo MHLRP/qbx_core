@@ -993,7 +993,6 @@ return {
     surfboard      = { hash = "surfboard", category = "boats", brand = "DVM", name = "Surfboard", type = "boat", price = 22000, shop = "none", model = "surfboard", },
     fascalamo2     = { hash = "fascalamo2", category = "vans", brand = "Vapid", name = "Alamo II", type = "automobile", price = 85000, shop = "none", model = "fascalamo2", },
     newsvan        = { hash = "newsvan", category = "vans", brand = "Bravado", name = "Rumpo SX", type = "automobile", price = 105000, shop = "none", model = "newsvan", },
-    smallcamper    = { hash = "smallcamper", category = "utility", brand = "", name = "Small Camper", price = 62000, model = "smallcamper", },
     cararv         = { hash = "cararv",     category = "vans", brand = "Vapid", name = "Cara RV", type = "automobile", price = 82000, shop = "none", model = "cararv", },
     guardianrv     = { hash = "guardianrv", category = "vans", brand = "Vapid", name = "Guardian RV", type = "automobile", price = 122000, shop = "none", model = "guardianrv", },
     sandkingrv     = { hash = "sandkingrv", category = "vans", brand = "Vapid", name = "Sandking RV", type = "automobile", price = 142000, shop = "none", model = "sandkingrv", },
