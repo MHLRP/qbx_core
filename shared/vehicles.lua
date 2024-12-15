@@ -993,10 +993,10 @@ return {
     surfboard      = { hash = "surfboard", category = "boats", brand = "DVM", name = "Surfboard", type = "boat", price = 22000, shop = "none", model = "surfboard", },
     fascalamo2     = { hash = "fascalamo2", category = "vans", brand = "Vapid", name = "Alamo II", type = "automobile", price = 85000, shop = "none", model = "fascalamo2", },
     newsvan        = { hash = "newsvan", category = "vans", brand = "Bravado", name = "Rumpo SX", type = "automobile", price = 105000, shop = "none", model = "newsvan", },
-    cararv         = { hash = "cararv",     category = "vans", brand = "Vapid", name = "Cara RV", type = "automobile", price = 82000, shop = "none", model = "cararv", },
+    cararv         = { hash = "cararv", category = "vans", brand = "Vapid", name = "Cara RV", type = "automobile", price = 82000, shop = "none", model = "cararv", },
     guardianrv     = { hash = "guardianrv", category = "vans", brand = "Vapid", name = "Guardian RV", type = "automobile", price = 122000, shop = "none", model = "guardianrv", },
     sandkingrv     = { hash = "sandkingrv", category = "vans", brand = "Vapid", name = "Sandking RV", type = "automobile", price = 142000, shop = "none", model = "sandkingrv", },
     sandroamer     = { hash = "sandroamer", category = "vans", brand = "Vapid", name = "Sandroamer", type = "automobile", price = 132000, shop = "none", model = "sandroamer", },
-    zlay_gtz35        = { hash = "zlay_gtz35", category = "sports", brand = "Trust", name = "R35 GTZ", type = "automobile", price = 6220000, shop = "none", model = "zlay_gtz35", },
-    atlus      = { hash = "atlus", category = "emergency", brand = "Deluxo", name = "TM Atlus", type = "automobile", price = 142000, shop = "none", model = "atlus", },
+    zlay_gtz35     = { hash = "zlay_gtz35", category = "sports", brand = "Trust", name = "R35 GTZ", type = "automobile", price = 6220000, shop = "none", model = "zlay_gtz35", },
+    atlus          = { hash = "atlus", category = "emergency", brand = "Deluxo", name = "TM Atlus", type = "automobile", price = 142000, shop = "none", model = "atlus", },
 }
