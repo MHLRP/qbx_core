@@ -259,6 +259,7 @@ return {
     docktug        = { hash = "docktug", category = "utility", brand = "HVY", name = "Docktug", type = "automobile", price = 41473, shop = "truck", model = "docktug", },
     ardent         = { hash = "ardent", category = "sportsclassics", brand = "Ocelot", name = "Ardent", type = "automobile", price = 79425, shop = "pdm", model = "ardent", },
     taxi           = { hash = "taxi", category = "service", brand = "Vapid", name = "Taxi", type = "automobile", price = 71053, shop = "none", model = "taxi", },
+    excalibur      = { hash = "excalibur", category = "service", brand = "Delamain", name = "Excalibur Taxi", type = "automobile", price = 122000, shop = "none", model = "excalibur", },
     youga3         = { hash = "youga3", category = "vans", brand = "Bravado", name = "Youga Classic 4x4", type = "automobile", price = 63150, shop = "pdm", model = "youga3", },
     kosatka        = { hash = "kosatka", category = "boats", brand = "RUNE", name = "Kosatka", type = "automobile", price = 624016, shop = "none", model = "kosatka", },
     yosemite3      = { hash = "yosemite3", category = "offroad", brand = "Declasse", name = "Yosemite Rancher", type = "automobile", price = 66896, shop = "pdm", model = "yosemite3", },
@@ -999,4 +1000,5 @@ return {
     sandroamer     = { hash = "sandroamer", category = "vans", brand = "Vapid", name = "Sandroamer", type = "automobile", price = 132000, shop = "none", model = "sandroamer", },
     zlay_gtz35     = { hash = "zlay_gtz35", category = "sports", brand = "Trust", name = "R35 GTZ", type = "automobile", price = 6220000, shop = "none", model = "zlay_gtz35", },
     atlus          = { hash = "atlus", category = "emergency", brand = "Deluxo", name = "TM Atlus", type = "automobile", price = 142000, shop = "none", model = "atlus", },
+    excalibur2     = { hash = "excalibur2", category = "sportsclassics", brand = "Delamain", name = "Excalibur", type = "automobile", price = 220000, shop = "none", model = "excalibur2", },
 }
