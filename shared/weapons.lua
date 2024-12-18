@@ -121,6 +121,8 @@ return {
 	[`weapon_stickybomb`]            = { name = 'weapon_stickybomb', label = 'C4', weapontype = 'Throwable', ammotype = nil, damagereason = 'Bombed / Exploded / Detonated / Blew up' },
 	[`weapon_proxmine`]              = { name = 'weapon_proxmine', label = 'Proxmine Grenade', weapontype = 'Throwable', ammotype = nil, damagereason = 'Bombed / Exploded / Detonated / Blew up' },
 	[`weapon_snowball`]              = { name = 'weapon_snowball', label = 'Snowball', weapontype = 'Throwable', ammotype = nil, damagereason = 'Died' },
+	[`weapon_brick`]                 = { name = 'weapon_brick', label = 'Brick', weapontype = 'Throwable', ammotype = nil, damagereason = 'Died' },
+	[`weapon_brick2`]                = { name = 'weapon_brick2', label = 'Brick', weapontype = 'Throwable', ammotype = nil, damagereason = 'Died' },
 	[`weapon_pipebomb`]              = { name = 'weapon_pipebomb', label = 'Pipe Bomb', weapontype = 'Throwable', ammotype = nil, damagereason = 'Bombed / Exploded / Detonated / Blew up' },
 	[`weapon_ball`]                  = { name = 'weapon_ball', label = 'Ball', weapontype = 'Throwable', ammotype = 'AMMO_BALL', damagereason = 'Died' },
 	[`weapon_smokegrenade`]          = { name = 'weapon_smokegrenade', label = 'Smoke Grenade', weapontype = 'Throwable', ammotype = nil, damagereason = 'Died' },
