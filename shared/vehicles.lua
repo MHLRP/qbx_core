@@ -426,7 +426,7 @@ return {
     baller2        = { hash = "baller2", category = "suvs", brand = "Gallivanter", name = "Baller", type = "automobile", price = 74432, shop = "pdm", model = "baller2", },
     everon2        = { hash = "everon2", category = "sports", brand = "Karin", name = "Hotring Everon", type = "automobile", price = 79842, shop = "pdm", model = "everon2", },
     bmx            = { hash = "bmx", category = "cycles", brand = "", name = "BMX", type = "bike", price = 2735, shop = "pdm", model = "bmx", },
-    bmxst            = { hash = "bmxst", category = "cycles", brand = "", name = "BMX ST", type = "bike", price = 6234, shop = "pdm", model = "bmxst", },
+    bmxst          = { hash = "bmxst", category = "cycles", brand = "", name = "BMX ST", type = "bike", price = 6234, shop = "pdm", model = "bmxst", },
     sultan2        = { hash = "sultan2", category = "sports", brand = "Karin", name = "Sultan Custom", type = "automobile", price = 77184, shop = "luxury", model = "sultan2", },
     biff           = { hash = "biff", category = "commercial", brand = "HVY", name = "Biff", type = "automobile", price = 56668, shop = "truck", model = "biff", },
     vestra         = { hash = "vestra", category = "planes", brand = "Buckingham", name = "Vestra", type = "plane", price = 820000, shop = "air", model = "vestra", },
