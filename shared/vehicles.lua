@@ -463,6 +463,7 @@ return {
     tornado3       = { hash = "tornado3", category = "sportsclassics", brand = "Declasse", name = "Tornado (Beater)", price = 60635, model = "tornado3", },
     mixer          = { hash = "mixer", category = "industrial", brand = "HVY", name = "Mixer", type = "automobile", price = 53283, shop = "truck", model = "mixer", },
     torero         = { hash = "torero", category = "sportsclassics", brand = "Pegassi", name = "Torero", type = "automobile", price = 78457, shop = "pdm", model = "torero", },
+    toreroxoc      = { hash = "toreroxoc", category = "sportsclassics", brand = "Pegassi", name = "Torero XOC", type = "automobile", price = 132744, shop = "pdm", model = "toreroxoc", },
     shamal         = { hash = "shamal", category = "planes", brand = "Buckingham", name = "Shamal", type = "plane", price = 1200000, shop = "air", model = "shamal", },
     tiptruck       = { hash = "tiptruck", category = "industrial", brand = "Brute", name = "Tipper", type = "automobile", price = 47273, shop = "truck", model = "tiptruck", },
     xa21           = { hash = "xa21", category = "super", brand = "Ocelot", name = "XA-21", type = "automobile", price = 82892, shop = "luxury", model = "xa21", },
