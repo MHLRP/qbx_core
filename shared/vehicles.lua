@@ -355,7 +355,7 @@ return {
     verlierer2     = { hash = "verlierer2", category = "sports", brand = "Bravado", name = "Verlierer", type = "automobile", price = 83280, shop = "luxury", model = "verlierer2", },
     toreador       = { hash = "toreador", category = "sportsclassics", brand = "Pegassi", name = "Toreador", type = "automobile", price = 235089, shop = "pdm", model = "toreador", },
     toreador2      = { hash = "toreador2", category = "sportsclassics", brand = "Pegassi", name = "Toreador V2", type = "automobile", price = 235089, shop = "pdm", model = "toreador2", },
-    foxsub1       = { hash = "foxsub1", category = "sportsclassics", brand = "Regina", name = "Dundrear", type = "automobile", price = 88089, shop = "pdm", model = "foxsub1", },
+    foxsub1        = { hash = "foxsub1", category = "sportsclassics", brand = "Regina", name = "Dundrear", type = "automobile", price = 88089, shop = "pdm", model = "foxsub1", },
     speedo4        = { hash = "speedo4", category = "vans", brand = "Vapid", name = "Speedo Custom (Nightclub)", type = "automobile", price = 70653, shop = "pdm", model = "speedo4", },
     manchez3       = { hash = "manchez3", category = "motorcycles", brand = "Maibatsu", name = "Manchez Scout C", type = "bike", price = 21632, shop = "pdm", model = "manchez3", },
     blazer2        = { hash = "blazer2", category = "offroad", brand = "Nagasaki", name = "Blazer Lifeguard", type = "automobile", price = 15679, shop = "pdm", model = "blazer2", },
@@ -1004,4 +1004,5 @@ return {
     zlay_gtz35     = { hash = "zlay_gtz35", category = "sports", brand = "Trust", name = "R35 GTZ", type = "automobile", price = 6220000, shop = "none", model = "zlay_gtz35", },
     atlus          = { hash = "atlus", category = "emergency", brand = "Deluxo", name = "TM Atlus", type = "automobile", price = 142000, shop = "none", model = "atlus", },
     excalibur2     = { hash = "excalibur2", category = "sportsclassics", brand = "Delamain", name = "Excalibur", type = "automobile", price = 220000, shop = "none", model = "excalibur2", },
+    ellie6str      = { hash = "ellie6str", category = "muscle", brand = "Vapid", name = "Ellie", type = "automobile", price = 82427, shop = "luxury", model = "ellie6str", },
 }
