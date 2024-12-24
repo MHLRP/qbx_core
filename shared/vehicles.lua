@@ -1005,4 +1005,5 @@ return {
     atlus          = { hash = "atlus", category = "emergency", brand = "Deluxo", name = "TM Atlus", type = "automobile", price = 142000, shop = "none", model = "atlus", },
     excalibur2     = { hash = "excalibur2", category = "sportsclassics", brand = "Delamain", name = "Excalibur", type = "automobile", price = 220000, shop = "none", model = "excalibur2", },
     ellie6str      = { hash = "ellie6str", category = "muscle", brand = "Vapid", name = "Ellie", type = "automobile", price = 82427, shop = "luxury", model = "ellie6str", },
+    deluxowb2      = { hash = "deluxowb2", category = "super", brand = "Deluxo", name = "Cyber Deluxo V2", type = "automobile", price = 420000, shop = "none", model = "deluxowb2", },
 }
