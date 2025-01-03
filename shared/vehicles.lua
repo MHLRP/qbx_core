@@ -1009,4 +1009,5 @@ return {
     deluxowb2      = { hash = "deluxowb2", category = "super", brand = "Deluxo", name = "Cyber Deluxo V2", type = "automobile", price = 420000, shop = "none", model = "deluxowb2", },
     mizushion      = { hash = "mizushion", category = "sports", brand = "Mizutani", name = "Shion MZ2", type = "automobile", price = 445000, shop = "none", model = "mizushion", },
     emsscoutmk      = { hash = "emsscoutmk", category = "emergency", brand = "Vapid", name = "Scout", type = "automobile", price = 86002, shop = "none", model = "emsscoutmk", },
+    apocalyptic        = { hash = "apocalyptic", category = "muscle", brand = "Apoc", name = "Apoc XL", type = "automobile", price = 221077, shop = "none", model = "apocalyptic", },
 }
