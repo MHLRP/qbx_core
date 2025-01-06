@@ -120,11 +120,13 @@ return {
     end,
 
     getSocietyAccount = function(accountName)
-        return exports['Renewed-Banking']:getAccountMoney(accountName)
+        -- return exports['Renewed-Banking']:getAccountMoney(accountName)
+        return exports['qb-banking']:GetAccountBalance(accountName)
     end,
 
     removeSocietyMoney = function(accountName, payment)
-        return exports['Renewed-Banking']:removeAccountMoney(accountName, payment)
+        -- return exports['Renewed-Banking']:removeAccountMoney(accountName, payment)
+        return exports['qb-banking']:RemoveMoney(accountName, payment)
     end,
 
     ---Paycheck function
