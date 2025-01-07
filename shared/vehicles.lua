@@ -1023,4 +1023,7 @@ return {
     lpbagger       = { hash = "lpbagger", category = "motorcycles", brand = "Western", name = "Western Bagger", type = "automobile", price = 221077, shop = "none", model = "lpbagger", },
     lpchopper      = { hash = "lpchopper", category = "motorcycles", brand = "Western", name = "Western Chopper", type = "automobile", price = 221077, shop = "none", model = "lpchopper", },
     lpchopper2     = { hash = "lpchopper2", category = "motorcycles", brand = "Western", name = "Western Long", type = "automobile", price = 221077, shop = "none", model = "lpchopper2", },
+    devil       = { hash = "devil", category = "motorcycles", brand = "Western", name = "Devil", type = "automobile", price = 221077, shop = "none", model = "devil", },
+    devill      = { hash = "devill", category = "motorcycles", brand = "Western", name = "Devil X", type = "automobile", price = 221077, shop = "none", model = "devill", },
+    devilt     = { hash = "devilt", category = "motorcycles", brand = "Western", name = "Devil XL", type = "automobile", price = 221077, shop = "none", model = "devilt", },
 }
