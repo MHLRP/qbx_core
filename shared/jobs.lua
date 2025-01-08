@@ -299,15 +299,23 @@ return {
                 payment = 700
             },
             [1] = {
-                name = 'Operator',
+                name = 'Fireman',
                 payment = 800
             },
             [2] = {
-                name = 'Company Officer',
+                name = 'Lieutenant',
                 payment = 900
             },
             [3] = {
+                name = 'Captain',
+                payment = 1000
+            },
+            [4] = {
                 name = 'Chief',
+                payment = 1100
+            },
+            [5] = {
+                name = 'Commissioner',
                 isboss = true,
                 bankAuth = true,
                 payment = 1200
@@ -551,6 +559,27 @@ return {
                 isboss = true,
                 payment = 800,
             },
+        },
+    },
+
+    spa = {
+        label = 'Harem Saloon',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = {
+                name = 'Learner',
+                payment = 100
+            },
+            [1] = {
+                name = 'Beautician',
+                payment = 250
+            },
+            [2] = {
+                name = 'Manager',
+                isboss = true,
+                payment = 400
+            }
         },
     },
 }

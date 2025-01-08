@@ -1023,7 +1023,10 @@ return {
     lpbagger       = { hash = "lpbagger", category = "motorcycles", brand = "Western", name = "Western Bagger", type = "automobile", price = 221077, shop = "none", model = "lpbagger", },
     lpchopper      = { hash = "lpchopper", category = "motorcycles", brand = "Western", name = "Western Chopper", type = "automobile", price = 221077, shop = "none", model = "lpchopper", },
     lpchopper2     = { hash = "lpchopper2", category = "motorcycles", brand = "Western", name = "Western Long", type = "automobile", price = 221077, shop = "none", model = "lpchopper2", },
-    devil       = { hash = "devil", category = "motorcycles", brand = "Western", name = "Devil", type = "automobile", price = 221077, shop = "none", model = "devil", },
-    devill      = { hash = "devill", category = "motorcycles", brand = "Western", name = "Devil X", type = "automobile", price = 221077, shop = "none", model = "devill", },
-    devilt     = { hash = "devilt", category = "motorcycles", brand = "Western", name = "Devil XL", type = "automobile", price = 221077, shop = "none", model = "devilt", },
+    devil          = { hash = "devil", category = "motorcycles", brand = "Western", name = "Devil", type = "automobile", price = 221077, shop = "none", model = "devil", },
+    devill         = { hash = "devill", category = "motorcycles", brand = "Western", name = "Devil X", type = "automobile", price = 221077, shop = "none", model = "devill", },
+    devilt         = { hash = "devilt", category = "motorcycles", brand = "Western", name = "Devil XL", type = "automobile", price = 221077, shop = "none", model = "devilt", },
+    rescue909      = { hash = "rescue909", category = "emergency", brand = "MTL", name = "Response", type = "automobile", price = 64793, shop = "none", model = "rescue909", },
+    tillertrailer  = { hash = "tillertrailer", category = "utility", brand = "MTL", name = "Tiller Trailer", type = "automobile", price = 50131, shop = "truck", model = "tillertrailer", },
+    tiller         = { hash = "tiller", category = "emergency", brand = "MTL", name = "Tiller", type = "automobile", price = 50131, shop = "truck", model = "tiller", },
 }
