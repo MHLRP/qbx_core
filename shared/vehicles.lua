@@ -1029,4 +1029,5 @@ return {
     rescue909      = { hash = "rescue909", category = "emergency", brand = "MTL", name = "Response", type = "automobile", price = 64793, shop = "none", model = "rescue909", },
     tillertrailer  = { hash = "tillertrailer", category = "utility", brand = "MTL", name = "Tiller Trailer", type = "automobile", price = 50131, shop = "truck", model = "tillertrailer", },
     tiller         = { hash = "tiller", category = "emergency", brand = "MTL", name = "Tiller", type = "automobile", price = 50131, shop = "truck", model = "tiller", },
+    chevillonthrax      = { hash = "chevillonthrax", category = "sports", brand = "Chevillon", name = "Thrax", type = "automobile", price = 445000, shop = "none", model = "chevillonthrax", },
 }
