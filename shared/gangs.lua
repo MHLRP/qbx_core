@@ -74,6 +74,15 @@ return {
             [3] = { name = 'Boss', isboss = true },
         },
     },
+    syndicate = {
+        label = 'Syndicate',
+        grades = {
+            [0] = { name = 'Recruit' },
+            [1] = { name = 'Enforcer' },
+            [2] = { name = 'Shot Caller' },
+            [3] = { name = 'Boss', isboss = true },
+        },
+    },
     midnightreapers = {
         label = 'Midnight Reapers',
         grades = {
