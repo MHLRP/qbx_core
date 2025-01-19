@@ -325,7 +325,7 @@ return {
 
     unipunk = {
         label = "Vanilla Unipunk",
-        defaultDuty = true,
+        defaultDuty = false,
         offDutyPay = false,
         grades = {
             [0] = { name = "Trainee", payment = 50 },
