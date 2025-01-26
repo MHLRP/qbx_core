@@ -1044,4 +1044,5 @@ return {
     brisket        = { hash = "brisket", category = "sportsclassics", brand = "Weeny", name = "Brisket", type = "automobile", price = 180000, shop = "none", model = "brisket", },
     brisket2       = { hash = "brisket2", category = "sportsclassics", brand = "Weeny", name = "Brisket X", type = "automobile", price = 200000, shop = "none", model = "brisket2", },
     brisket3       = { hash = "brisket3", category = "sportsclassics", brand = "Weeny", name = "Brisket XM", type = "automobile", price = 200000, shop = "none", model = "brisket3", },
+    paradox       = { hash = "paradox", category = "muscle", brand = "Willard", name = "Willard Muscle", type = "automobile", price = 231500, shop = "none", model = "paradox", },
 }
