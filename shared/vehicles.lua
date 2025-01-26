@@ -1041,4 +1041,7 @@ return {
     requiemzr3     = { hash = "requiemzr1", category = "sports", brand = "Annis", name = "Requiem ZR3", type = "automobile", price = 243632, shop = "none", model = "requiemzr3", },
     infernuswb     = { hash = "infernuswb", category = "super", brand = "Pegassi", name = "Infernus WB", type = "automobile", price = 181077, shop = "none", model = "infernuswb", },
     eva            = { hash = "eva", category = "sedans", brand = "Hijak", name = "EVA", type = "automobile", price = 140605, shop = "none", model = "eva", },
+    brisket        = { hash = "brisket", category = "sportsclassics", brand = "Weeny", name = "Brisket", type = "automobile", price = 180000, shop = "none", model = "brisket", },
+    brisket2       = { hash = "brisket2", category = "sportsclassics", brand = "Weeny", name = "Brisket X", type = "automobile", price = 200000, shop = "none", model = "brisket2", },
+    brisket3       = { hash = "brisket3", category = "sportsclassics", brand = "Weeny", name = "Brisket XM", type = "automobile", price = 200000, shop = "none", model = "brisket3", },
 }
