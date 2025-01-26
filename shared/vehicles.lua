@@ -1029,5 +1029,15 @@ return {
     rescue909      = { hash = "rescue909", category = "emergency", brand = "MTL", name = "Response", type = "automobile", price = 64793, shop = "none", model = "rescue909", },
     tillertrailer  = { hash = "tillertrailer", category = "utility", brand = "MTL", name = "Tiller Trailer", type = "automobile", price = 50131, shop = "truck", model = "tillertrailer", },
     tiller         = { hash = "tiller", category = "emergency", brand = "MTL", name = "Tiller", type = "automobile", price = 50131, shop = "truck", model = "tiller", },
-    chevillonthrax      = { hash = "chevillonthrax", category = "sports", brand = "Chevillon", name = "Thrax", type = "automobile", price = 445000, shop = "none", model = "chevillonthrax", },
+    chevillonthrax = { hash = "chevillonthrax", category = "sports", brand = "Chevillon", name = "Thrax", type = "automobile", price = 445000, shop = "none", model = "chevillonthrax", },
+    zodiac         = { hash = "zodiac", category = "sportsclassics", brand = "Vulcar", name = "Zodiac", type = "automobile", price = 122877, shop = "none", model = "zodiac", },
+    zodiacr        = { hash = "zodiacr", category = "sportsclassics", brand = "Vulcar", name = "Zodiac R", type = "automobile", price = 122877, shop = "none", model = "zodiacr", },
+    zionv10        = { hash = "zionv10", category = "coupes", brand = "Übermacht", name = "Zion V10", type = "automobile", price = 177752, shop = "none", model = "zionv10", },
+    tfremus        = { hash = "tfremus", category = "sports", brand = "Annis", name = "Remus", type = "automobile", price = 123632, shop = "none", model = "tfremus", },
+    nsandstormmk   = { hash = "nsandstormmk", category = "offroad", brand = "Vapid", name = "Sandstorm MK", type = "automobile", price = 142000, shop = "none", model = "nsandstormmk", },
+    ratloaderc      = { hash = "ratloaderc", category = "muscle", brand = "Vapid", name = "Rattruck", type = "automobile", price = 180296, shop = "none", model = "ratloaderc", },
+    rt3000wb        = { hash = "rt3000wb", category = "sports", brand = "Dinka", name = "RT3000", type = "automobile", price = 163632, shop = "none", model = "rt3000wb", },
+    requiemzr1        = { hash = "requiemzr1", category = "sports", brand = "Annis", name = "Requiem ZR", type = "automobile", price = 223632, shop = "none", model = "requiemzr1", },
+    requiemzr3        = { hash = "requiemzr1", category = "sports", brand = "Annis", name = "Requiem ZR3", type = "automobile", price = 243632, shop = "none", model = "requiemzr3", },
+
 }
