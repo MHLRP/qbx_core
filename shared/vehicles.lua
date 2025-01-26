@@ -1035,9 +1035,10 @@ return {
     zionv10        = { hash = "zionv10", category = "coupes", brand = "Übermacht", name = "Zion V10", type = "automobile", price = 177752, shop = "none", model = "zionv10", },
     tfremus        = { hash = "tfremus", category = "sports", brand = "Annis", name = "Remus", type = "automobile", price = 123632, shop = "none", model = "tfremus", },
     nsandstormmk   = { hash = "nsandstormmk", category = "offroad", brand = "Vapid", name = "Sandstorm MK", type = "automobile", price = 142000, shop = "none", model = "nsandstormmk", },
-    ratloaderc      = { hash = "ratloaderc", category = "muscle", brand = "Vapid", name = "Rattruck", type = "automobile", price = 180296, shop = "none", model = "ratloaderc", },
-    rt3000wb        = { hash = "rt3000wb", category = "sports", brand = "Dinka", name = "RT3000", type = "automobile", price = 163632, shop = "none", model = "rt3000wb", },
-    requiemzr1        = { hash = "requiemzr1", category = "sports", brand = "Annis", name = "Requiem ZR", type = "automobile", price = 223632, shop = "none", model = "requiemzr1", },
-    requiemzr3        = { hash = "requiemzr1", category = "sports", brand = "Annis", name = "Requiem ZR3", type = "automobile", price = 243632, shop = "none", model = "requiemzr3", },
-
+    ratloaderc     = { hash = "ratloaderc", category = "muscle", brand = "Vapid", name = "Rattruck", type = "automobile", price = 180296, shop = "none", model = "ratloaderc", },
+    rt3000wb       = { hash = "rt3000wb", category = "sports", brand = "Dinka", name = "RT3000", type = "automobile", price = 163632, shop = "none", model = "rt3000wb", },
+    requiemzr1     = { hash = "requiemzr1", category = "sports", brand = "Annis", name = "Requiem ZR", type = "automobile", price = 223632, shop = "none", model = "requiemzr1", },
+    requiemzr3     = { hash = "requiemzr1", category = "sports", brand = "Annis", name = "Requiem ZR3", type = "automobile", price = 243632, shop = "none", model = "requiemzr3", },
+    infernuswb     = { hash = "infernuswb", category = "super", brand = "Pegassi", name = "Infernus WB", type = "automobile", price = 181077, shop = "none", model = "infernuswb", },
+    eva            = { hash = "eva", category = "sedans", brand = "Hijak", name = "EVA", type = "automobile", price = 140605, shop = "none", model = "eva", },
 }
