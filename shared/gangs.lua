@@ -86,10 +86,10 @@ return {
     viperidae = {
         label = 'Viperidae',
         grades = {
-            [0] = { name = 'Recruit' },
-            [1] = { name = 'Enforcer' },
-            [2] = { name = 'Shot Caller' },
-            [3] = { name = 'Boss', isboss = true },
+            [0] = { name = 'Pre Molts' },
+            [1] = { name = 'Vipers' },
+            [2] = { name = 'Guardians' },
+            [3] = { name = 'Heads', isboss = true },
         },
     },
     midnightreapers = {
