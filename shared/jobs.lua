@@ -98,6 +98,18 @@ return {
         },
     },
 
+    cosmic = {
+        label = 'Cosmic Needle',
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Trainee', payment = 200 },
+            [1] = { name = 'Tattoo Artist', payment = 300 },
+            [2] = { name = 'Manager', payment = 400 },
+            [3] = { name = 'Boss', payment = 500 },
+        },
+    },
+
     realestate = {
         label = 'Real Estate',
         defaultDuty = true,
