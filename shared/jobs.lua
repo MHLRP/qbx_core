@@ -21,10 +21,10 @@ return {
         defaultDuty = false,
         offDutyPay = false,
         grades = {
-            [0] = { name = 'Cadet', payment = 1600 },
+            [0] = { name = 'Cadet', payment = 1500 },
             [1] = { name = 'Officer', payment = 1700 },
-            [2] = { name = 'Corporal', payment = 1700 },
-            [3] = { name = 'Sergeant', payment = 1700 },
+            [2] = { name = 'Corporal', payment = 1900 },
+            [3] = { name = 'Sergeant', payment = 2100 },
             [4] = { name = 'Junior Detective', payment = 2400 },
             [5] = { name = 'Detective', payment = 2800 },
             [6] = { name = 'Lead Detective', payment = 3000 },

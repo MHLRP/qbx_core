@@ -1056,5 +1056,6 @@ return {
     lssherbuzz2    = { hash = "lssherbuzz2", category = "helicopters", brand = "Nagasaki", name = "Buzzard V2", type = "heli", price = 2462758, shop = "none", model = "lssherbuzz2", },
     polbuzz2       = { hash = "polbuzz2", category = "helicopters", brand = "Nagasaki", name = "Buzzard X2", type = "heli", price = 1462758, shop = "none", model = "polbuzz2", },
     sherbuzz2      = { hash = "sherbuzz2", category = "helicopters", brand = "Nagasaki", name = "Buzzard S2", type = "heli", price = 2462758, shop = "none", model = "sherbuzz2", },
-    akumac          = { hash = "akumac", category = "motorcycles", brand = "Dinka", name = "Akumac Classic", type = "bike", price = 225356, shop = "none", model = "akumac", },
+    akumac         = { hash = "akumac", category = "motorcycles", brand = "Dinka", name = "Akumac Classic", type = "bike", price = 225356, shop = "none", model = "akumac", },
+    ardentaq        = { hash = "ardentaq", category = "boats", brand = "Ocelot", name = "Ardent Aqua", type = "boat", price = 804616, shop = "none", model = "ardentaq", },
 }
