@@ -1005,6 +1005,7 @@ return {
     zlay_gtz35     = { hash = "zlay_gtz35", category = "sports", brand = "Trust", name = "R35 GTZ", type = "automobile", price = 6220000, shop = "none", model = "zlay_gtz35", },
     atlus          = { hash = "atlus", category = "emergency", brand = "Deluxo", name = "TM Atlus", type = "automobile", price = 142000, shop = "none", model = "atlus", },
     excalibur2     = { hash = "excalibur2", category = "sportsclassics", brand = "Delamain", name = "Excalibur", type = "automobile", price = 220000, shop = "none", model = "excalibur2", },
+    excalibur3     = { hash = "excalibur3", category = "sportsclassics", brand = "Delamain", name = "Excalibur (Real Estate)", type = "automobile", price = 340000, shop = "none", model = "excalibur3", },
     ellie6str      = { hash = "ellie6str", category = "muscle", brand = "Vapid", name = "Ellie", type = "automobile", price = 82427, shop = "luxury", model = "ellie6str", },
     deluxowb2      = { hash = "deluxowb2", category = "super", brand = "Deluxo", name = "Cyber Deluxo V2", type = "automobile", price = 420000, shop = "none", model = "deluxowb2", },
     mizushion      = { hash = "mizushion", category = "sports", brand = "Mizutani", name = "Shion MZ2", type = "automobile", price = 445000, shop = "none", model = "mizushion", },
