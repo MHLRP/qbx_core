@@ -2056,4 +2056,12 @@ return {
 	fishnchipssprunk     = { name = 'fishnchipssprunk', label = 'Sprunk', weight = 200, type = 'item', image = 'fishnchipssprunk.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
 	fishnchipscoffee     = { name = 'fishnchipscoffee', label = 'Coffee', weight = 200, type = 'item', image = 'fishnchipscoffee.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
 	fishnchipstea        = { name = 'fishnchipstea', label = 'Tea', weight = 200, type = 'item', image = 'fishnchipstea.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = '' },
+
+	--- HOT TUB (RTX PARTNER)
+	['hottub1']          = { ['name'] = 'hottub1', ['label'] = 'HotTub 1', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hottub1.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hottub' },
+	['hottub2']          = { ['name'] = 'hottub2', ['label'] = 'HotTub 2', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hottub2.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hottub' },
+	['hottub3']          = { ['name'] = 'hottub3', ['label'] = 'HotTub 3', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hottub3.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hottub' },
+	['hottub1stairs']    = { ['name'] = 'hottub1stairs', ['label'] = 'HotTub Stairs 1', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hottub1stairs.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hottub' },
+	['hottub2stairs']    = { ['name'] = 'hottub2stairs', ['label'] = 'HotTub Stairs 2', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hottub2stairs.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hottub' },
+	['hottub3stairs']    = { ['name'] = 'hottub3stairs', ['label'] = 'HotTub Stairs 3', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hottub3stairs.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hottub' },
 }
