@@ -104,7 +104,7 @@ return {
         offDutyPay = false,
         grades = {
             [0] = { name = 'Trainee', payment = 200 },
-            [1] = { name = 'Tattoo Artist', payment = 300 },
+            [1] = { name = 'Artist', payment = 300 },
             [2] = { name = 'Manager', payment = 400 },
             [3] = { name = 'Boss', payment = 500 },
         },
