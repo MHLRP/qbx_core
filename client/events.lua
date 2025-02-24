@@ -7,12 +7,23 @@ RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
         SetCanAttackFriendly(cache.ped, true, false)
         NetworkSetFriendlyFireOption(true)
     end
+
+    NetworkEndTutorialSession()
+
+    while NetworkIsInTutorialSession() do
+        Wait(0)
+    end
+
+    local motd = GetConvar('qbx:motd', '')
+    if motd ~= '' then
+        exports.chat:addMessage({ template = motd })
+    end
 end)
 
 ---@param val PlayerData
 RegisterNetEvent('QBCore:Player:SetPlayerData', function(val)
     local invokingResource = GetInvokingResource()
-    if invokingResource and invokingResource ~= GetCurrentResourceName() then return end
+    if invokingResource and invokingResource ~= cache.resource then return end
     QBX.PlayerData = val
 end)
 
@@ -33,6 +44,8 @@ end)
 
 ---@param coords vector3
 RegisterNetEvent('QBCore:Command:TeleportToPlayer', function(coords)
+    if GetInvokingResource() then return end
+
     SetPedCoordsKeepVehicle(cache.ped, coords.x, coords.y, coords.z)
 end)
 
@@ -41,6 +54,8 @@ end)
 ---@param z number
 ---@param h number
 RegisterNetEvent('QBCore:Command:TeleportToCoords', function(x, y, z, h)
+    if GetInvokingResource() then return end
+    
     SetPedCoordsKeepVehicle(cache.ped, x, y, z)
     SetEntityHeading(cache.ped, h or GetEntityHeading(cache.ped))
 end)
@@ -197,29 +212,24 @@ RegisterNetEvent('QBCore:Client:OnSharedUpdateMultiple', function(tableName, val
 end)
 
 -- Set vehicle props
----@param vehicle number
+---@param netId number
 ---@param props table<any, any>
-qbx.entityStateHandler('setVehicleProperties', function(vehicle, _, props)
+RegisterNetEvent('qbx_core:client:setVehicleProperties', function(netId, props)
     if not props then return end
-
-    SetTimeout(0, function()
-        local state = Entity(vehicle).state
-
-        local timeOut = GetGameTimer() + 10000
-
-        while state.setVehicleProperties do
-            if NetworkGetEntityOwner(vehicle) == cache.playerId then
-                if lib.setVehicleProperties(vehicle, props) then
-                    state:set('setVehicleProperties', nil, true)
-                end
+    local timeOut = GetGameTimer() + 1000
+    local vehicle = NetworkGetEntityFromNetworkId(netId)
+    while true do
+        if NetworkGetEntityOwner(vehicle) == cache.playerId then
+            if lib.setVehicleProperties(vehicle, props) then
+                return
             end
-            if GetGameTimer() > timeOut then
-                break
-            end
-
-            Wait(50)
         end
-    end)
+        if GetGameTimer() > timeOut then
+            return
+        end
+
+        Wait(50)
+    end
 end)
 
 -- Clear vehicle peds
