@@ -196,11 +196,11 @@ return {
         defaultDuty = true,
         offDutyPay = false,
         grades = {
-            [0] = { name = 'Recruit', payment = 120 },
-            [1] = { name = 'Novice', payment = 150 },
-            [2] = { name = 'Experienced', payment = 200 },
-            [3] = { name = 'Advanced', payment = 225 },
-            [4] = { name = 'Manager', isboss = true, payment = 250 },
+            [0] = { name = 'Mechanic', payment = 120 },
+            [1] = { name = 'Lead Mechanic', payment = 150 },
+            [2] = { name = 'Service Advisor', payment = 200 },
+            [3] = { name = 'Manager', payment = 225 },
+            [4] = { name = 'Shop Owner', isboss = true, payment = 250 },
         },
     },
     beeker = {
