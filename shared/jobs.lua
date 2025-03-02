@@ -321,29 +321,42 @@ return {
         grades = {
             [0] = {
                 name = 'Recruit',
-                payment = 700
+                payment = 1200
             },
             [1] = {
                 name = 'Fireman',
-                payment = 800
+                payment = 1400
             },
             [2] = {
-                name = 'Lieutenant',
-                payment = 900
+                name = 'Senior Fireman',
+                payment = 1600
             },
             [3] = {
-                name = 'Captain',
-                payment = 1000
+                name = 'Lieutenant',
+                payment = 1800
             },
             [4] = {
-                name = 'Chief',
-                payment = 1100
+                name = 'Captain',
+                payment = 2200
             },
             [5] = {
+                name = 'Battalion Chief',
+                payment = 2400
+            },
+            [6] = {
+                name = 'Assistant Chief',
+                payment = 2600
+            },
+            [7] = {
+                name = 'Chief',
+                isboss = true,
+                payment = 2600,
+            },
+            [8] = {
                 name = 'Commissioner',
                 isboss = true,
                 bankAuth = true,
-                payment = 1200
+                payment = 3000
             },
         },
     },
