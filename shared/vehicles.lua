@@ -1060,5 +1060,7 @@ return {
     akumac         = { hash = "akumac", category = "motorcycles", brand = "Dinka", name = "Akumac Classic", type = "bike", price = 225356, shop = "none", model = "akumac", },
     ardentaq       = { hash = "ardentaq", category = "boats", brand = "Ocelot", name = "Ardent Aqua", type = "boat", price = 804616, shop = "none", model = "ardentaq", },
     aw109          = { hash = "aw109", category = "helicopters", brand = "Western", name = "Maverick (EMS)", type = "heli", price = 6031333, shop = "air", model = "aw109", },
-    lamdeluxo       = { hash = "lamdeluxo", category = "muscle", brand = "Bravado", name = "Zenna", type = "automobile", price = 857000, shop = "none", model = "lamdeluxo", },
+    lamdeluxo      = { hash = "lamdeluxo", category = "muscle", brand = "Bravado", name = "Zenna", type = "automobile", price = 857000, shop = "none", model = "lamdeluxo", },
+    leokart        = { hash = "leokart", category = "emergency", brand = "Vapid", name = "PDKart", type = "automobile", price = 80470, shop = "none", model = "leokart", },
+    polaleutian    = { hash = "polaleutian", category = "emergency", brand = "Vapid", name = "Police Aleutian", type = "automobile", price = 80470, shop = "none", model = "polaleutian", },
 }
