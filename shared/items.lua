@@ -2064,4 +2064,17 @@ return {
 	['hottub1stairs']    = { ['name'] = 'hottub1stairs', ['label'] = 'HotTub Stairs 1', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hottub1stairs.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hottub' },
 	['hottub2stairs']    = { ['name'] = 'hottub2stairs', ['label'] = 'HotTub Stairs 2', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hottub2stairs.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hottub' },
 	['hottub3stairs']    = { ['name'] = 'hottub3stairs', ['label'] = 'HotTub Stairs 3', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hottub3stairs.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Hottub' },
+
+	--- PLUSHIE (RTX)
+	
+	['rtxplush1'] = {['name'] = 'rtxplush1', ['label'] = 'Plushie 1', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'rtxplush1.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Plushie 1'},
+	['rtxplush2'] = {['name'] = 'rtxplush2', ['label'] = 'Plushie 2', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'rtxplush2.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Plushie 2'},
+	['rtxplush3'] = {['name'] = 'rtxplush3', ['label'] = 'Plushie 3', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'rtxplush3.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Plushie 3'},
+	['rtxplush4'] = {['name'] = 'rtxplush4', ['label'] = 'Plushie 4', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'rtxplush4.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Plushie 4'},
+	['rtxplush5'] = {['name'] = 'rtxplush5', ['label'] = 'Plushie 5', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'rtxplush5.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Plushie 5'},
+	['rtxplush6'] = {['name'] = 'rtxplush6', ['label'] = 'Plushie 6', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'rtxplush6.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Plushie 6'},
+	['rtxplush7'] = {['name'] = 'rtxplush7', ['label'] = 'Plushie 7', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'rtxplush7.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Plushie 7'},
+	['rtxplush8'] = {['name'] = 'rtxplush8', ['label'] = 'Plushie 8', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'rtxplush8.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Plushie 8'},
+	['rtxplush9'] = {['name'] = 'rtxplush9', ['label'] = 'Plushie 9', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'rtxplush9.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Plushie 9'},
+	['rtxplush10'] = {['name'] = 'rtxplush10', ['label'] = 'Plushie 10', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'rtxplush10.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Plushie 10'}
 }
