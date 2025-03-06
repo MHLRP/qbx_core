@@ -1063,4 +1063,5 @@ return {
     lamdeluxo      = { hash = "lamdeluxo", category = "muscle", brand = "Bravado", name = "Zenna", type = "automobile", price = 857000, shop = "none", model = "lamdeluxo", },
     leokart        = { hash = "leokart", category = "emergency", brand = "Vapid", name = "PDKart", type = "automobile", price = 80470, shop = "none", model = "leokart", },
     polaleutian    = { hash = "polaleutian", category = "emergency", brand = "Vapid", name = "Police Aleutian", type = "automobile", price = 80470, shop = "none", model = "polaleutian", },
+    majsandstorm   = { hash = "majsandstorm", category = "emergency", brand = "Vapid", name = "Vapid Sandstorm", type = "automobile", price = 80470, shop = "none", model = "majsandstorm", },
 }
