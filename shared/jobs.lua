@@ -10,6 +10,7 @@ return {
     lifegaurd = { label = 'Lifegaurd', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Lifegaurd', payment = 200 } } },
     tow = { label = 'Towing', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
     garbage = { label = 'Garbage', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Collector', payment = 50 } } },
+    electrician = { label = 'Electrician', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Worker', payment = 100 } } },
     forklift = { label = 'Forklift', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Operator', payment = 50 } } },
     vineyard = { label = 'Vineyard', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Picker', payment = 50 } } },
     hotdog = { label = 'Hotdog', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Sales', payment = 50 } } },
