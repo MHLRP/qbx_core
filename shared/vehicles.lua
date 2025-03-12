@@ -1064,5 +1064,6 @@ return {
     leokart        = { hash = "leokart", category = "emergency", brand = "Vapid", name = "PDKart", type = "automobile", price = 80470, shop = "none", model = "leokart", },
     polaleutian    = { hash = "polaleutian", category = "emergency", brand = "Vapid", name = "Police Aleutian", type = "automobile", price = 80470, shop = "none", model = "polaleutian", },
     majsandstorm   = { hash = "majsandstorm", category = "emergency", brand = "Vapid", name = "Vapid Sandstorm", type = "automobile", price = 80470, shop = "none", model = "majsandstorm", },
-    utillitruck4        = { hash = "utillitruck4", category = "emergency", brand = "Vapid", name = "Utility Truck", type = "automobile", price = 80470, shop = "none", model = "utillitruck4", },
+    utillitruck4   = { hash = "utillitruck4", category = "emergency", brand = "Vapid", name = "Utility Truck", type = "automobile", price = 80470, shop = "none", model = "utillitruck4", },
+    expolregent    = { hash = "expolregent", category = "emergency", brand = "Brute", name = "Police Regent", type = "automobile", price = 80470, shop = "none", model = "expolregent", },
 }
