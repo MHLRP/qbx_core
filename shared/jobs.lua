@@ -72,8 +72,8 @@ return {
         defaultDuty = false,
         offDutyPay = false,
         grades = {
-            [0] = { name = 'Trainee', payment = 1400 },
-            [1] = { name = 'Emergency Medical Technician', payment = 1600 },
+            [0] = { name = 'Trainee', payment = 1500 },
+            [1] = { name = 'Emergency Medical Technician', payment = 1750 },
             [2] = { name = 'Paramedic', payment = 2000 },
             [3] = { name = 'Senior Paramedic', payment = 2300 },
             [4] = { name = 'Nurse Practitioner', payment = 2500 },
