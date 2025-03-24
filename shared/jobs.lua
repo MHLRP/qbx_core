@@ -608,4 +608,16 @@ return {
             }
         },
     },
+
+    hookah = {
+        label = 'Star Hookah',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Trainee', payment = 250 },
+            [1] = { name = 'Bartender', payment = 500 },
+            [2] = { name = 'Hookah Master', payment = 650 },
+            [3] = { name = 'Owner', isboss = true, payment = 800 }
+        },
+    },
 }
