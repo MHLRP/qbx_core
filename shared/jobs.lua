@@ -15,6 +15,7 @@ return {
     vineyard = { label = 'Vineyard', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Picker', payment = 50 } } },
     hotdog = { label = 'Hotdog', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Sales', payment = 50 } } },
     diver = { label = 'Scuba Diver', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Diver', payment = 50 } } },
+    lumberjack = { label = 'Lumber Jack', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Lumberjack', payment = 50 } } },
 
     police = {
         label = 'Law Enforcement',
@@ -85,17 +86,16 @@ return {
         },
     },
 
-    cyberdoc = {
-        label = 'Cyberdoc',
+    ripperdoc = {
+        label = 'Ripperdoc',
         type = 'ems',
         defaultDuty = false,
         offDutyPay = false,
         grades = {
-            [0] = { name = 'Trainee Technician', payment = 700 },
-            [1] = { name = 'Augmentation Specialist', payment = 800 },
-            [2] = { name = 'Cybernetic Doctor', payment = 900 },
-            [3] = { name = 'Implant Surgeon', payment = 1000 },
-            [4] = { name = 'Cyber Chief', isboss = true, payment = 1350 },
+            [0] = { name = 'Chrome Shaman', payment = 700 },
+            [1] = { name = 'MedTechs', payment = 800 },
+            [2] = { name = 'CyberMechs', payment = 900 },
+            [3] = { name = 'Ripperdoc', isboss = true, payment = 1350 },
         },
     },
 
