@@ -1067,4 +1067,5 @@ return {
     utillitruck4   = { hash = "utillitruck4", category = "emergency", brand = "Vapid", name = "Utility Truck", type = "automobile", price = 80470, shop = "none", model = "utillitruck4", },
     expolregent    = { hash = "expolregent", category = "emergency", brand = "Brute", name = "Police Regent", type = "automobile", price = 80470, shop = "none", model = "expolregent", },
     fireboat       = { hash = "fireboat", category = "boats", brand = "Vapid", name = "Fireboat", type = "boat", price = 390680, shop = "boats", model = "fireboat", },
+    pdverusrb      = { hash = "pdverusrb", category = "offroad", brand = "Dinka", name = "Versus", price = 64617, model = "pdverusrb", },
 }
