@@ -1067,6 +1067,8 @@ return {
     utillitruck4   = { hash = "utillitruck4", category = "emergency", brand = "Vapid", name = "Utility Truck", type = "automobile", price = 80470, shop = "none", model = "utillitruck4", },
     expolregent    = { hash = "expolregent", category = "emergency", brand = "Brute", name = "Police Regent", type = "automobile", price = 80470, shop = "none", model = "expolregent", },
     fireboat       = { hash = "fireboat", category = "boats", brand = "Vapid", name = "Fireboat", type = "boat", price = 390680, shop = "boats", model = "fireboat", },
-    pdverusrb      = { hash = "pdverusrb", category = "emergency", brand = "Dinka", name = "Versus", price = 64617, model = "pdverusrb", },
-    ct224v         = { hash = "ct224v", category = "emergency", brand = "Benefactor", name = "CT 224", price = 64617, model = "ct224v", }
+    pdverusrb      = { hash = "pdverusrb", category = "emergency", brand = "Dinka", name = "Versus", type = "automobile", price = 64617, shop = "none", model = "pdverusrb", },
+    ct224v         = { hash = "ct224v", category = "emergency", brand = "Benefactor", name = "CT 224", type = "automobile", price = 64617, shop = "none", model = "ct224v", },
+    esgsxrst3alth  = { hash = "esgsxrst3alth", category = "motorcycles", brand = "Suki", name = "Elite Shifters v1", type = "bike", price = 24649, shop = "none", model = "esgsxrst3alth", },
+    esgsxrs        = { hash = "esgsxrs", category = "motorcycles", brand = "Suki", name = "Elite Shifters v2", type = "bike", price = 24649, shop = "none", model = "esgsxrs", },
 }
