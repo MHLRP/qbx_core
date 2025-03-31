@@ -16,6 +16,7 @@ return {
     hotdog = { label = 'Hotdog', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Sales', payment = 50 } } },
     diver = { label = 'Scuba Diver', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Diver', payment = 50 } } },
     lumberjack = { label = 'Lumber Jack', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Lumberjack', payment = 50 } } },
+    oilrig = { label = 'Oil Worker', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Oil Worker', payment = 50 } } },
 
     police = {
         label = 'Law Enforcement',
