@@ -621,4 +621,16 @@ return {
             [3] = { name = 'Owner', isboss = true, payment = 800 }
         },
     },
+
+    icecream = {
+        label = 'Ice Cream',
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Kitchen Porter', payment = 200 },
+            [1] = { name = 'Team Member', payment = 250 },
+            [2] = { name = 'Sales Manager', payment = 300 },
+            [3] = { name = 'Shop Manager', isboss = true, payment = 400 },
+        },
+    },
 }

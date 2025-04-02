@@ -1071,4 +1071,5 @@ return {
     ct224v         = { hash = "ct224v", category = "emergency", brand = "Benefactor", name = "CT 224", type = "automobile", price = 64617, shop = "none", model = "ct224v", },
     esgsxrst3alth  = { hash = "esgsxrst3alth", category = "motorcycles", brand = "Suki", name = "Elite Shifters v1", type = "bike", price = 24649, shop = "none", model = "esgsxrst3alth", },
     esgsxrs        = { hash = "esgsxrs", category = "motorcycles", brand = "Suki", name = "Elite Shifters v2", type = "bike", price = 24649, shop = "none", model = "esgsxrs", },
+    sheepicecreamtruck = { hash = "sheepicecreamtruck", category = "vans", brand = "Brute", name = "Ice Cream", type = "automobile", price = 47273, shop = "truck", model = "sheepicecreamtruck", },
 }
