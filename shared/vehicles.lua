@@ -1074,4 +1074,6 @@ return {
     sheepicecreamtruck = { hash = "sheepicecreamtruck", category = "vans", brand = "Brute", name = "Ice Cream", type = "automobile", price = 47273, shop = "truck", model = "sheepicecreamtruck", },
     fdtruck            = { hash = "fdtruck", category = "sports", brand = "Voodoo", name = "Exclusive Foodtruck", type = "automobile", price = 122000, shop = "none", model = "fdtruck", },
     jubven             = { hash = "jubven", category = "sports", brand = "ENUS", name = "Jubilee Venuum", type = "automobile", price = 173202, shop = "luxury", model = "jubven", },
+    rhinea19x          = { hash = "rhinea19x", category = "sports", brand = "Ubermacht", name = "Rhinehart", type = "automobile", price = 173202, shop = "luxury", model = "rhinea19x", },
+    ragnar             = { hash = "ragnar", category = "sports", brand = "Emperor ", name = "Ragnar 620", type = "automobile", price = 173202, shop = "luxury", model = "ragnar", },
 }
