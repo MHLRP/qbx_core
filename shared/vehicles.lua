@@ -1076,4 +1076,5 @@ return {
     jubven             = { hash = "jubven", category = "sports", brand = "ENUS", name = "Jubilee Venuum", type = "automobile", price = 173202, shop = "luxury", model = "jubven", },
     rhinea19x          = { hash = "rhinea19x", category = "sports", brand = "Ubermacht", name = "Rhinehart", type = "automobile", price = 173202, shop = "luxury", model = "rhinea19x", },
     ragnar             = { hash = "ragnar", category = "sports", brand = "Emperor ", name = "Ragnar 620", type = "automobile", price = 173202, shop = "luxury", model = "ragnar", },
+    rebelc3             = { hash = "rebelc3", category = "sports", brand = "Karin ", name = "Rebel C3", type = "automobile", price = 173202, shop = "none", model = "rebelc3", },
 }
