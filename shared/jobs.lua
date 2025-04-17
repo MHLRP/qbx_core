@@ -283,22 +283,22 @@ return {
         },
     },
     whitewidow = {
-        label = "White Widow",
+        label = "High Notes",
         defaultDuty = false,
         offDutyPay = false,
         grades = {
             [0] = {
                 name = 'Worker',
-                payment = 150,
+                payment = 400,
             },
             [1] = {
                 name = 'Vice Boss',
-                payment = 200,
+                payment = 650,
                 isboss = true,
             },
             [2] = {
                 name = 'Boss',
-                payment = 250,
+                payment = 800,
                 isboss = true,
             },
         }
