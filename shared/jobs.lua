@@ -82,7 +82,7 @@ return {
             [5] = { name = 'Doctor', payment = 3000 },
             [6] = { name = 'Lieutenant', payment = 3200 },
             [7] = { name = 'Captain', payment = 3400 },
-            [8] = { name = 'Deputy Chief Medical Officer', payment = 3600 },
+            [8] = { name = 'Deputy Chief Medical Officer', isboss = true, payment = 3600 },
             [9] = { name = 'Chief Medical Officer', isboss = true, payment = 3750 },
         },
     },
