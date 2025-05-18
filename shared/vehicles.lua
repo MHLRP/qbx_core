@@ -1079,4 +1079,6 @@ return {
     rebelc3            = { hash = "rebelc3", category = "sports", brand = "Karin ", name = "Rebel C3", type = "automobile", price = 173202, shop = "none", model = "rebelc3", },
     ss95wb             = { hash = "ss95wb", category = "sports", brand = "204s", name = "Widebody S95", type = "automobile", price = 173202, shop = "none", model = "ss95wb", },
     s69marrow          = { hash = "s69marrow", category = "muscle", brand = "204s", name = "69 Marrow", type = "automobile", price = 173202, shop = "none", model = "s69marrow", },
+    ct4v               = { hash = "ct4v", category = "emergency", brand = "Benefactor", name = "Police CT4-V", type = "automobile", price = 80470, shop = "none", model = "ct4v", },
+    hachurac           = { hash = "hachurac", category = "sports", brand = "Vulcar", name = "Hachura", type = "automobile", price = 173202, shop = "none", model = "hachurac", },
 }
