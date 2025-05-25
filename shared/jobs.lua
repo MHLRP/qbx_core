@@ -26,7 +26,7 @@ return {
         grades = {
             [0] = { name = 'Cadet', payment = 2000 },
             [1] = { name = 'Officer', payment = 2200 },
-            [2] = { name = 'Corporal', isboss = true, payment = 2400 },
+            [2] = { name = 'Corporal', payment = 2400 },
             [3] = { name = 'Sergeant', payment = 2600 },
             [4] = { name = 'Investigator', payment = 2600 },
             [5] = { name = 'Staff Sergeant', payment = 2800 },
