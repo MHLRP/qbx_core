@@ -473,9 +473,9 @@ return {
         },
     },
 
-    castones = {
-        label = "Castone's",
-        defaultDuty = true,
+    yellowpunk = {
+        label = "Yellowpunk",
+        defaultDuty = false,
         offDutyPay = false,
         grades = {
             [0] = {
