@@ -479,30 +479,20 @@ return {
         offDutyPay = false,
         grades = {
             [0] = {
-                name = 'Bartender',
+                name = 'Baby Punk',
                 payment = 550
             },
             [1] = {
-                name = 'Made Man',
+                name = 'Punky',
                 payment = 600
             },
             [2] = {
-                name = 'Capo',
+                name = 'Punk',
                 payment = 600
             },
             [3] = {
-                name = 'Underboss',
+                name = 'Top Punk',
                 payment = 750
-            },
-            [4] = {
-                name = 'Consigliere',
-                isboss = true,
-                payment = 800,
-            },
-            [5] = {
-                name = 'Godfather',
-                isboss = true,
-                payment = 800,
             },
         },
     },
