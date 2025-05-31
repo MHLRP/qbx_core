@@ -1094,4 +1094,6 @@ return {
     ems3               = { hash = "ems3", category = "emergency", brand = "Coil", name = "Zenex EM", type = "automobile", price = 79879, shop = "none", model = "ems3", },
     dbtoradivoroadster = { hash = "dbtoradivoroadster", category = "sports", brand = "Adder", name = "Tora Roadster", type = "automobile", price = 79879, shop = "none", model = "dbtoradivoroadster", },
     lynxgpr            = { hash = "lynxgpr", category = "sports", brand = "Ocelot", name = "Lynx GPR", type = "automobile", price = 79879, shop = "none", model = "lynxgpr", },
+    smag               = { hash = "smag", category = "motorcycles", brand = "204", name = "MAG", type = "bike", price = 12263, shop = "none", model = "smag", },
+    slitebike          = { hash = "slitebike", category = "motorcycles", brand = "204", name = "S Lite", type = "bike", price = 12263, shop = "none", model = "slitebike", },
 }
