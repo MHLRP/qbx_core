@@ -1096,4 +1096,5 @@ return {
     lynxgpr            = { hash = "lynxgpr", category = "sports", brand = "Ocelot", name = "Lynx GPR", type = "automobile", price = 79879, shop = "none", model = "lynxgpr", },
     smag               = { hash = "smag", category = "motorcycles", brand = "204", name = "MAG", type = "bike", price = 12263, shop = "none", model = "smag", },
     slitebike          = { hash = "slitebike", category = "motorcycles", brand = "204", name = "S Lite", type = "bike", price = 12263, shop = "none", model = "slitebike", },
+    brm335             = { hash = "brm335", category = "offroad", brand = "Vapid", name = "335 BRM", type = "automobile", price = 61333, shop = "none", model = "brm335", },
 }
