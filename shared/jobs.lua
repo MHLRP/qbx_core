@@ -492,6 +492,7 @@ return {
             },
             [3] = {
                 name = 'Top Punk',
+                isboss = true,
                 payment = 750
             },
         },
