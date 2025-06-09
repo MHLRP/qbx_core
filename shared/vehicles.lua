@@ -1073,6 +1073,7 @@ return {
     esgsxrs            = { hash = "esgsxrs", category = "motorcycles", brand = "Suki", name = "Elite Shifters v2", type = "bike", price = 24649, shop = "none", model = "esgsxrs", },
     sheepicecreamtruck = { hash = "sheepicecreamtruck", category = "vans", brand = "Brute", name = "Ice Cream", type = "automobile", price = 47273, shop = "truck", model = "sheepicecreamtruck", },
     fdtruck            = { hash = "fdtruck", category = "sports", brand = "Voodoo", name = "Exclusive Foodtruck", type = "automobile", price = 122000, shop = "none", model = "fdtruck", },
+    fdtruck2           = { hash = "fdtruck2", category = "sports", brand = "Voodoo", name = "Exclusive Foodtruck 2", type = "automobile", price = 122000, shop = "none", model = "fdtruck2", },
     jubven             = { hash = "jubven", category = "sports", brand = "ENUS", name = "Jubilee Venuum", type = "automobile", price = 173202, shop = "luxury", model = "jubven", },
     rhinea19x          = { hash = "rhinea19x", category = "sports", brand = "Ubermacht", name = "Rhinehart", type = "automobile", price = 173202, shop = "luxury", model = "rhinea19x", },
     ragnar             = { hash = "ragnar", category = "sports", brand = "Emperor ", name = "Ragnar 620", type = "automobile", price = 173202, shop = "luxury", model = "ragnar", },
@@ -1097,4 +1098,5 @@ return {
     smag               = { hash = "smag", category = "motorcycles", brand = "204", name = "MAG", type = "bike", price = 12263, shop = "none", model = "smag", },
     slitebike          = { hash = "slitebike", category = "motorcycles", brand = "204", name = "S Lite", type = "bike", price = 12263, shop = "none", model = "slitebike", },
     brm335             = { hash = "brm335", category = "offroad", brand = "Vapid", name = "335 BRM", type = "automobile", price = 61333, shop = "none", model = "brm335", },
+    educator           = { hash = "educator", category = "offroad", brand = "Brute", name = "Educator", type = "automobile", price = 79879, shop = "none", model = "educator", },
 }
