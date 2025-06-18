@@ -1102,4 +1102,6 @@ return {
     zlay_gtz2077       = { hash = "zlay_gtz2077", category = "sports", brand = "Zlay", name = "Cyber GTZ", type = "automobile", price = 79879, shop = "none", model = "zlay_gtz2077", },
     gstreb1            = { hash = "gstreb1", category = "sports", brand = "Ubermacht", name = "Rebla GTS CTX", type = "automobile", price = 79879, shop = "none", model = "gstreb1", },
     gsttoros1          = { hash = "gsttoros1", category = "sports", brand = "Pegassi", name = "Toros CTX", type = "automobile", price = 79879, shop = "none", model = "gsttoros1", },
+    rrcoquette8p       = { hash = "rrcoquette8p", category = "sports", brand = "Coquette", name = "Sys 8P", type = "automobile", price = 79879, shop = "none", model = "rrcoquette8p", },
+    rrcavalcadelux     = { hash = "rrcavalcadelux", category = "sports", brand = "Cavalcade", name = "Cavalcade Lux", type = "automobile", price = 79879, shop = "none", model = "rrcavalcadelux", },
 }
