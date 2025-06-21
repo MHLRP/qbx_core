@@ -1105,4 +1105,5 @@ return {
     rrcoquette8p       = { hash = "rrcoquette8p", category = "sports", brand = "Coquette", name = "Sys 8P", type = "automobile", price = 79879, shop = "none", model = "rrcoquette8p", },
     rrcavalcadelux     = { hash = "rrcavalcadelux", category = "sports", brand = "Cavalcade", name = "Cavalcade Lux", type = "automobile", price = 79879, shop = "none", model = "rrcavalcadelux", },
     nazare             = { hash = "nazare", category = "sports", brand = "Nazare", name = "Arch Nazare", type = "automobile", price = 79879, shop = "none", model = "nazare", },
+    ringbati           = { hash = "ringbati", category = "sports", brand = "Bati", name = "Ring", type = "automobile", price = 79879, shop = "none", model = "ringbati", },
 }
