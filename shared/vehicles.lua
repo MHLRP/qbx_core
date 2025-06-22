@@ -1106,4 +1106,12 @@ return {
     rrcavalcadelux     = { hash = "rrcavalcadelux", category = "sports", brand = "Cavalcade", name = "Cavalcade Lux", type = "automobile", price = 79879, shop = "none", model = "rrcavalcadelux", },
     nazare             = { hash = "nazare", category = "sports", brand = "Nazare", name = "Arch Nazare", type = "automobile", price = 79879, shop = "none", model = "nazare", },
     ringbati           = { hash = "ringbati", category = "sports", brand = "Bati", name = "Ring", type = "automobile", price = 79879, shop = "none", model = "ringbati", },
+    rrgt33zm           = { hash = "rrgt33zm", category = "emergency", brand = "Bravado", name = "GT33 ZM", type = "automobile", price = 79879, shop = "none", model = "rrgt33zm", },
+    pbbgtsj            = { hash = "pbbgtsj", category = "emergency", brand = "Jakers", name = "GTSJ", type = "automobile", price = 79879, shop = "none", model = "pbbgtsj", },
+    pdvjv              = { hash = "pdvjv", category = "emergency", brand = "Jakers", name = "VJ", type = "automobile", price = 79879, shop = "none", model = "pdvjv", },
+    pksrsjv            = { hash = "pksrsjv", category = "emergency", brand = "Jakers", name = "SRSJ", type = "automobile", price = 79879, shop = "none", model = "pksrsjv", },
+    ppgjv              = { hash = "ppgjv", category = "emergency", brand = "Jakers", name = "PGJ", type = "automobile", price = 79879, shop = "none", model = "ppgjv", },
+    pvdtrt             = { hash = "pvdtrt", category = "emergency", brand = "Jakers", name = "RT", type = "automobile", price = 79879, shop = "none", model = "pvdtrt", },
+    spbgjv             = { hash = "spbgjv", category = "emergency", brand = "Jakers", name = "GJV", type = "automobile", price = 79879, shop = "none", model = "spbgjv", },
+    spvdjv             = { hash = "spvdjv", category = "emergency", brand = "Jakers", name = "VDJ", type = "automobile", price = 79879, shop = "none", model = "spvdjv", },
 }
