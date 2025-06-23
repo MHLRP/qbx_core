@@ -132,7 +132,8 @@ return {
             [1] = { name = 'House Sales', payment = 150 },
             [2] = { name = 'Business Sales', payment = 175 },
             [3] = { name = 'Broker', payment = 225 },
-            [4] = { name = 'Manager', isboss = true, payment = 250 },
+            [4] = { name = 'CEO', isboss = true, payment = 250 },
+            [5] = { name = 'Manager', isboss = true, payment = 300 },
         },
     },
 
