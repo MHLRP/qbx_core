@@ -1114,4 +1114,6 @@ return {
     pvdtrt             = { hash = "pvdtrt", category = "emergency", brand = "Jakers", name = "RT", type = "automobile", price = 79879, shop = "none", model = "pvdtrt", },
     spbgjv             = { hash = "spbgjv", category = "emergency", brand = "Jakers", name = "GJV", type = "automobile", price = 79879, shop = "none", model = "spbgjv", },
     spvdjv             = { hash = "spvdjv", category = "emergency", brand = "Jakers", name = "VDJ", type = "automobile", price = 79879, shop = "none", model = "spvdjv", },
+    gstpmp1            = { hash = "gstpmp1", category = "sports", brand = "Schyster", name = "MP1", type = "automobile", price = 79879, shop = "none", model = "gstpmp1", },
+    gstpmp1b           = { hash = "gstpmp1b", category = "sports", brand = "Schyster", name = "MP1B", type = "automobile", price = 79879, shop = "none", model = "gstpmp1b", },
 }
