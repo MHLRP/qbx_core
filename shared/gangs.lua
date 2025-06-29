@@ -97,7 +97,7 @@ return {
         grades = {
             [0] = { name = 'Recruit' },
             [1] = { name = 'Enforcer' },
-            [2] = { name = 'Shot Caller' },
+            [2] = { name = 'Shot Caller', isboss = true },
             [3] = { name = 'Boss', isboss = true },
         },
     },
