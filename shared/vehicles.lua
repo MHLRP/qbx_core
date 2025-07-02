@@ -1116,4 +1116,5 @@ return {
     gstpmp1            = { hash = "gstpmp1", category = "sports", brand = "Schyster", name = "MP1", type = "automobile", price = 79879, shop = "none", model = "gstpmp1", },
     gstpmp1b           = { hash = "gstpmp1b", category = "sports", brand = "Schyster", name = "MP1B", type = "automobile", price = 79879, shop = "none", model = "gstpmp1b", },
     jubilee2           = { hash = "jubilee2", category = "sports", brand = "Enus", name = "Cyber Jubilee", type = "automobile", price = 79879, shop = "none", model = "jubilee2", },
+    rhinehartjc       = { hash = "rhinehartjc", category = "sports", brand = "Ubermacht", name = "Rhinehart Nimbus", type = "automobile", price = 79879, shop = "none", model = "rhinehartjc", },
 }
