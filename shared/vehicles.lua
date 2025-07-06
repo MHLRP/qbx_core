@@ -1119,4 +1119,5 @@ return {
     rhinehartjc       = { hash = "rhinehartjc", category = "sports", brand = "Ubermacht", name = "Rhinehart Nimbus", type = "automobile", price = 79879, shop = "none", model = "rhinehartjc", },
     gbcomets2r        = { hash = "gbcomets2r", category = "sports", brand = "Pfister", name = "Comet S2R", type = "automobile", price = 79879, shop = "none", model = "gbcomets2r", },
     bulldog            = { hash = "bulldog", category = "emergency", brand = "Bravado", name = "Bulldog", type = "automobile", price = 79879, shop = "none", model = "bulldog", },
+    pumpkinator         = { hash = "pumpkinator", category = "sports", brand = "Dinka", name = "Pumpkinator", type = "automobile", price = 79879, shop = "none", model = "pumpkinator", },
 }
