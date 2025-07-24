@@ -1121,6 +1121,7 @@ return {
     bulldog            = { hash = "bulldog", category = "emergency", brand = "Bravado", name = "Bulldog", type = "automobile", price = 79879, shop = "none", model = "bulldog", },
     pumpkinator        = { hash = "pumpkinator", category = "sports", brand = "Dinka", name = "Pumpkinator", type = "automobile", price = 79879, shop = "none", model = "pumpkinator", },
     cagike             = { hash = "cagike", category = "bike", brand = "Dinka", name = "Cagike", type = "bike", price = 79879, shop = "none", model = "cagike", },
-    s204cavalcade     = { hash = "s204cavalcade", category = "sports", brand = "204", name = "Cavalcade", type = "automobile", price = 79879, shop = "none", model = "s204cavalcade", },
-    s204blast       = { hash = "s204blast", category = "sports", brand = "204", name = "Blast", type = "automobile", price = 79879, shop = "none", model = "s204blast", },
+    s204cavalcade      = { hash = "s204cavalcade", category = "sports", brand = "204", name = "Cavalcade", type = "automobile", price = 79879, shop = "none", model = "s204cavalcade", },
+    s204blast          = { hash = "s204blast", category = "sports", brand = "204", name = "Blast", type = "automobile", price = 79879, shop = "none", model = "s204blast", },
+    segway             = { hash = "segway", category = "bike", brand = "Dinka", name = "Segway", type = "bike", price = 79879, shop = "none", model = "segway", },
 }
