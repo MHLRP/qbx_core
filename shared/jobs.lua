@@ -392,7 +392,7 @@ return {
 
     burgershot = {
         label = "Burgershot",
-        defaultDuty = true,
+        defaultDuty = false,
         offDutyPay = false,
         grades = {
             [0] = { name = "Trainee", payment = 50 },
@@ -402,6 +402,17 @@ return {
             [4] = { name = "Owner", isboss = true, payment = 150 },
         },
     },
+
+    doppler = {
+        label = "Doppler Theater",
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = "Ticketere", payment = 75 },
+            [1] = { name = "Owner", isboss = true, payment = 125 },
+        },
+    },
+    
     taco = {
         label = "Taco Shop",
         defaultDuty = true,
