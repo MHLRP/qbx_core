@@ -1124,4 +1124,5 @@ return {
     s204cavalcade      = { hash = "s204cavalcade", category = "sports", brand = "204", name = "Cavalcade", type = "automobile", price = 79879, shop = "none", model = "s204cavalcade", },
     s204blast          = { hash = "s204blast", category = "sports", brand = "204", name = "Blast", type = "automobile", price = 79879, shop = "none", model = "s204blast", },
     segway             = { hash = "segway", category = "bike", brand = "Dinka", name = "Segway", type = "bike", price = 79879, shop = "none", model = "segway", },
+    cfloader1          = { hash = "cfloader1", category = "offroad", brand = "Bravado", name = "CF Loader", type = "automobile", price = 79879, shop = "none", model = "cfloader1", },
 }
