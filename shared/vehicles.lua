@@ -1125,5 +1125,5 @@ return {
     s204blast          = { hash = "s204blast", category = "sports", brand = "204", name = "Blast", type = "automobile", price = 79879, shop = "none", model = "s204blast", },
     segway             = { hash = "segway", category = "bike", brand = "Dinka", name = "Segway", type = "bike", price = 79879, shop = "none", model = "segway", },
     cfloader1          = { hash = "cfloader1", category = "offroad", brand = "Bravado", name = "CF Loader", type = "automobile", price = 79879, shop = "none", model = "cfloader1", },
-    yftrailer          = { hash = "yftrailer", category = "utility", brand = "", name = "Fire Trailer", type = "automobile", price = 50131, shop = "truck",
+    yftrailer          = { hash = "yftrailer", category = "utility", brand = "", name = "Fire Trailer", type = "automobile", price = 79879, shop = "none", model = "yftrailer", },
 }
