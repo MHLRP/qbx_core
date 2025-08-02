@@ -2,7 +2,7 @@ local config = require 'config.server'
 local defaultSpawn = require 'config.shared'.defaultSpawn
 local logger = require 'modules.logger'
 local storage = require 'server.storage.main'
-local maxJobsPerPlayer = GetConvarInt('qbx:max_jobs_per_player', 3)
+local maxJobsPerPlayer = GetConvarInt('qbx:max_jobs_per_player', 4)
 local triggerEventHooks = require 'modules.hooks'
 local maxGangsPerPlayer = GetConvarInt('qbx:max_gangs_per_player', 1)
 local setJobReplaces = GetConvar('qbx:setjob_replaces', 'true') == 'true'
