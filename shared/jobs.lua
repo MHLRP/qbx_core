@@ -375,6 +375,18 @@ return {
         },
     },
 
+    animalark = {
+        label = "Animal Ark",
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = "Trainee", payment = 100 },
+            [1] = { name = "Employee", payment = 250 },
+            [2] = { name = "Veterinarian", payment = 400 },
+            [3] = { name = "Manager", isboss = true, payment = 650 },
+        },
+    },
+
     unipunk = {
         label = "Vanilla Unipunk",
         defaultDuty = false,
