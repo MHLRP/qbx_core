@@ -1129,4 +1129,5 @@ return {
     marauder2eng       = { hash = "marauder2eng", category = "emergency", brand = "MTL", name = "Marauder", type = "automobile", price = 79879, shop = "none", model = "marauder2eng", },
     seamidmount        = { hash = "seamidmount", category = "emergency", brand = "Aerialscope", name = "Midmount", type = "automobile", price = 79879, shop = "none", model = "seamidmount", },
     gcvan             = { hash = "gcvan", category = "vans", brand = "Bravado", name = "GC Van", type = "automobile", price = 55630, shop = "none", model = "gcvan", },
+    dldrafter          = { hash = "dldrafter", category = "offroad", brand = "Obey", name = "Drafter", type = "automobile", price = 79879, shop = "none", model = "dldrafter", },
 }
