@@ -1130,4 +1130,5 @@ return {
     seamidmount        = { hash = "seamidmount", category = "emergency", brand = "Aerialscope", name = "Midmount", type = "automobile", price = 79879, shop = "none", model = "seamidmount", },
     gcvan             = { hash = "gcvan", category = "vans", brand = "Bravado", name = "GC Van", type = "automobile", price = 55630, shop = "none", model = "gcvan", },
     dldrafter          = { hash = "dldrafter", category = "offroad", brand = "Obey", name = "Drafter", type = "automobile", price = 79879, shop = "none", model = "dldrafter", },
+    dmc12cp            = { hash = "dmc12cp", category = "emergency", brand = "Brute", name = "Fire Destroyer", type = "automobile", price = 79879, shop = "none", model = "dmc12cp", },
 }
