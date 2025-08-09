@@ -1004,6 +1004,7 @@ return {
     sandroamer         = { hash = "sandroamer", category = "vans", brand = "Vapid", name = "Sandroamer", type = "automobile", price = 132000, shop = "none", model = "sandroamer", },
     zlay_gtz35         = { hash = "zlay_gtz35", category = "sports", brand = "Trust", name = "R35 GTZ", type = "automobile", price = 6220000, shop = "none", model = "zlay_gtz35", },
     atlus              = { hash = "atlus", category = "emergency", brand = "Deluxo", name = "TM Atlus", type = "automobile", price = 142000, shop = "none", model = "atlus", },
+    atlus2             = { hash = "atlus2", category = "emergency", brand = "Deluxo", name = "TM Monroe Atlus", type = "automobile", price = 142000, shop = "none", model = "atlus2", },
     excalibur2         = { hash = "excalibur2", category = "sportsclassics", brand = "Delamain", name = "Excalibur", type = "automobile", price = 220000, shop = "none", model = "excalibur2", },
     excalibur3         = { hash = "excalibur3", category = "sportsclassics", brand = "Delamain", name = "Excalibur (Real Estate)", type = "automobile", price = 340000, shop = "none", model = "excalibur3", },
     ellie6str          = { hash = "ellie6str", category = "muscle", brand = "Vapid", name = "Ellie", type = "automobile", price = 82427, shop = "luxury", model = "ellie6str", },
@@ -1128,7 +1129,7 @@ return {
     yftrailer          = { hash = "yftrailer", category = "utility", brand = "", name = "Fire Trailer", price = 79879, shop = "none", model = "yftrailer", },
     marauder2eng       = { hash = "marauder2eng", category = "emergency", brand = "MTL", name = "Marauder", type = "automobile", price = 79879, shop = "none", model = "marauder2eng", },
     seamidmount        = { hash = "seamidmount", category = "emergency", brand = "Aerialscope", name = "Midmount", type = "automobile", price = 79879, shop = "none", model = "seamidmount", },
-    gcvan             = { hash = "gcvan", category = "vans", brand = "Bravado", name = "GC Van", type = "automobile", price = 55630, shop = "none", model = "gcvan", },
+    gcvan              = { hash = "gcvan", category = "vans", brand = "Bravado", name = "GC Van", type = "automobile", price = 55630, shop = "none", model = "gcvan", },
     dldrafter          = { hash = "dldrafter", category = "offroad", brand = "Obey", name = "Drafter", type = "automobile", price = 79879, shop = "none", model = "dldrafter", },
     dmc12cp            = { hash = "dmc12cp", category = "emergency", brand = "Brute", name = "Fire Destroyer", type = "automobile", price = 79879, shop = "none", model = "dmc12cp", },
 }
