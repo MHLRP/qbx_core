@@ -112,7 +112,7 @@ return {
         },
     },
 
-    cosmic = {
+    nocturne = {
         label = 'Cosmic Needle',
         defaultDuty = false,
         offDutyPay = false,
