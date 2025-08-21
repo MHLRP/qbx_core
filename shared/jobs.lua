@@ -308,7 +308,7 @@ return {
             },
         },
     },
-    whitewidow = {
+    highnotes = {
         label = "High Notes",
         defaultDuty = false,
         offDutyPay = false,
