@@ -61,7 +61,7 @@ return {
         },
     },
 
-    statetrooper = {
+    sheriff = {
         label = 'Law Enforcement',
         type = 'leo',
         defaultDuty = false,
