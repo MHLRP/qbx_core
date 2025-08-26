@@ -1132,4 +1132,6 @@ return {
     gcvan              = { hash = "gcvan", category = "vans", brand = "Bravado", name = "GC Van", type = "automobile", price = 55630, shop = "none", model = "gcvan", },
     dldrafter          = { hash = "dldrafter", category = "offroad", brand = "Obey", name = "Drafter", type = "automobile", price = 79879, shop = "none", model = "dldrafter", },
     dmc12cp            = { hash = "dmc12cp", category = "emergency", brand = "Brute", name = "Fire Destroyer", type = "automobile", price = 79879, shop = "none", model = "dmc12cp", },
+    mocpacker          = { hash = "mocpacker", category = "emergency", brand = "Mok", name = "Packer", type = "automobile", price = 79879, shop = "none", model = "mocpacker", },
+    mocpacker2         = { hash = "mocpacker2", category = "emergency", brand = "Mok", name = "Packer", type = "automobile", price = 79879, shop = "none", model = "mocpacker2", },
 }
