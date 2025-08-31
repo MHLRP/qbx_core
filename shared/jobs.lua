@@ -442,7 +442,7 @@ return {
             },
         },
     },
-    beanmachine = {
+    greenleaf = {
         label = "Bean Machine",
         offDutyPay = true,
         defaultDuty = false,
