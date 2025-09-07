@@ -46,6 +46,7 @@ return {
             [19] = { name = 'Captain', isboss = true, payment = 3200 },
             [20] = { name = 'Assistant Chief', isboss = true, payment = 3500 },
             [21] = { name = 'Chief', isboss = true, payment = 3750 },
+            [22] = { name = 'Staff PD', isboss = true, payment = 1 },
         },
     },
 
