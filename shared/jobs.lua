@@ -62,6 +62,15 @@ return {
         },
     },
 
+    poolcleaner = {
+        label = 'Pool Cleaner',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Pool Cleaner', payment = 120 },
+        },
+    },
+
     sheriff = {
         label = 'Law Enforcement',
         type = 'leo',
