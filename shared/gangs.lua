@@ -132,14 +132,4 @@ return {
             [6] = { name = 'Boss', isboss = true },
         },
     },
-    rustborncollective = {
-        label = 'Rustborn Collective',
-        grades = {
-            [0] = { name = 'Seeker', },
-            [1] = { name = 'Rustborn', },
-            [2] = { name = 'Reaver', },
-            [3] = { name = 'Sentinel', },
-            [4] = { name = 'Warden', isboss = true },
-        },
-    },
 }
