@@ -547,6 +547,7 @@ return {
             },
             [2] = {
                 name = 'Punk',
+                isboss = true,
                 payment = 600
             },
             [3] = {
