@@ -7,7 +7,7 @@ return {
     lawyer = { label = 'Law Firm', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Associate', payment = 2000 } } },
     trucker = { label = 'Trucker', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
     pilot = { label = 'Pilot', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Pilot', payment = 50 } } },
-    lifegaurd = { label = 'Lifegaurd', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Lifegaurd', payment = 200 } } },
+    lifeguard = { label = 'Lifeguard', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Lifeguard', payment = 200 } } },
     tow = { label = 'Towing', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
     garbage = { label = 'Garbage', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Collector', payment = 50 } } },
     electrician = { label = 'Electrician', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Worker', payment = 100 } } },
