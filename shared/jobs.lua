@@ -109,6 +109,19 @@ return {
         },
     },
 
+    cyberhex = {
+        label = 'CyberHex',
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Titan Techs', payment = 700 },
+            [1] = { name = 'Info Runners', payment = 800 },
+            [2] = { name = 'Resource Orbiters', payment = 900 },
+            [3] = { name = 'System Acolyte', payment = 1000 },
+            [4] = { name = 'Chairman', isboss = true, payment = 1350 },
+        },
+    },
+
     ripperdoc = {
         label = 'Ripperdoc',
         type = 'ems',
