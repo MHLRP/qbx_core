@@ -6,6 +6,5 @@ return {
     starterItems = {              -- Character starting items
         { name = 'money',             amount = 5000 },
         { name = 'giftbox',           amount = 1 },
-        { name = 'moonlit_guidebook', amount = 1 }
     }
 }
