@@ -1134,6 +1134,7 @@ return {
     dmc12cp            = { hash = "dmc12cp", category = "emergency", brand = "Brute", name = "Fire Destroyer", type = "automobile", price = 79879, shop = "none", model = "dmc12cp", },
     mocpacker          = { hash = "mocpacker", category = "emergency", brand = "Mok", name = "Packer", type = "automobile", price = 79879, shop = "none", model = "mocpacker", },
     mocpacker2         = { hash = "mocpacker2", category = "emergency", brand = "Mok", name = "Packer", type = "automobile", price = 79879, shop = "none", model = "mocpacker2", },
-    cyberwheelchair = { hash = "cyberwheelchair", category = "emergency", brand = "BMX", name = "Packer", type = "automobile", price = 79879, shop = "none", model = "cyberwheelchair", },
+    cyberwheelchair    = { hash = "cyberwheelchair", category = "emergency", brand = "BMX", name = "Packer", type = "automobile", price = 79879, shop = "none", model = "cyberwheelchair", },
     khanambulancewheel = { hash = "khanambulancewheel", category = "emergency", brand = "BMX", name = "Ambulance Wheel", type = "automobile", price = 79879, shop = "none", model = "khanambulancewheel", },
+    cargoneon          = { hash = "cargoneon", category = "helicopters", brand = "Western", name = "Neon Cargobob", type = "automobile", price = 79879, shop = "none", model = "cargoneon", },
 }
