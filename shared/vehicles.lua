@@ -1137,4 +1137,5 @@ return {
     cyberwheelchair    = { hash = "cyberwheelchair", category = "emergency", brand = "BMX", name = "Packer", type = "automobile", price = 79879, shop = "none", model = "cyberwheelchair", },
     khanambulancewheel = { hash = "khanambulancewheel", category = "emergency", brand = "BMX", name = "Ambulance Wheel", type = "automobile", price = 79879, shop = "none", model = "khanambulancewheel", },
     cargoneon          = { hash = "cargoneon", category = "helicopters", brand = "Western", name = "Neon Cargobob", type = "automobile", price = 79879, shop = "none", model = "cargoneon", },
+    nkscout2013        = { hash = "nkscout2013", category = "emergency", brand = "Vapid", name = "Scout", type = "automobile", price = 45000, shop = "none", model = "nkscout2013", },
 }
