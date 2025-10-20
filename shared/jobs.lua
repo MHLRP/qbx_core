@@ -50,6 +50,37 @@ return {
         },
     },
 
+    sheriff = {
+        label = 'Law Enforcement',
+        type = 'leo',
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Deputy Sheriff', payment = 16000 },
+            [1] = { name = 'Deputy 1st Class', payment = 17000 },
+            [2] = { name = 'Deputy 2nd Class', payment = 17000 },
+            [3] = { name = 'Corporal', payment = 17000 },
+            [4] = { name = 'Sergeant', payment = 28000 },
+            [5] = { name = 'Lieutenant', payment = 29000 },
+            [6] = { name = 'Captain', payment = 29000 },
+            [7] = { name = 'Chief Deputy', isboss = true, payment = 30000 },
+            [8] = { name = 'Sheriff', isboss = true, payment = 32000 },
+        },
+    },
+
+    ghost = {
+        label = 'Ghost',
+        type = 'leo',
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Specter', payment = 18000 },
+            [1] = { name = 'Reaper', payment = 24000 },
+            [2] = { name = 'Phantom', payment = 30000 },
+            [3] = { name = 'Revenant', isboss = true, payment = 36000 },
+        },
+    },
+
     reporter = {
         label = 'Reporter',
         defaultDuty = true,
@@ -68,24 +99,6 @@ return {
         offDutyPay = false,
         grades = {
             [0] = { name = 'Pool Cleaner', payment = 120 },
-        },
-    },
-
-    sheriff = {
-        label = 'Law Enforcement',
-        type = 'leo',
-        defaultDuty = false,
-        offDutyPay = false,
-        grades = {
-            [0] = { name = 'Deputy Sheriff', payment = 16000 },
-            [1] = { name = 'Deputy 1st Class', payment = 17000 },
-            [2] = { name = 'Deputy 2nd Class', payment = 17000 },
-            [3] = { name = 'Corporal', payment = 17000 },
-            [4] = { name = 'Sergeant', payment = 28000 },
-            [5] = { name = 'Lieutenant', payment = 29000 },
-            [6] = { name = 'Captain', payment = 29000 },
-            [7] = { name = 'Chief Deputy', isboss = true, payment = 30000 },
-            [8] = { name = 'Sheriff', isboss = true, payment = 32000 },
         },
     },
 
