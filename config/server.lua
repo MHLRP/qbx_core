@@ -71,7 +71,7 @@ return {
         -- {'player_mails', 'citizenid'},
         { 'player_outfits',  'citizenid' },
         { 'player_vehicles', 'citizenid' },
-        {'player_groups', 'citizenid'},
+        { 'player_groups',   'citizenid' },
         { 'players',         'citizenid' },
         -- {'npwd_calls', 'identifier'},
         -- {'npwd_darkchat_channel_members', 'user_identifier'},
@@ -140,8 +140,9 @@ return {
     ---Paycheck function
     ---@param player Player Player object
     ---@param payment number Payment amount
-    sendPaycheck = function (player, payment)
+    sendPaycheck = function(player, payment)
         player.Functions.AddMoney('bank', payment)
-        Notify(player.PlayerData.source, locale('info.received_paycheck', payment))
+        TriggerClientEvent('fl:notify', player.PlayerData.source, 'PAYCHECK', '',
+            locale('info.received_paycheck', payment), 5000, 2, 0)
     end,
 }
