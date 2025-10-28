@@ -132,4 +132,13 @@ return {
             [6] = { name = 'Boss', isboss = true },
         },
     },
+    cyberlotussyndicate = {
+        label = '(サイバー蓮会 Saibā Ren-kai)',
+        grades = {
+            [0] = { name = 'Recruit' },
+            [1] = { name = 'Enforcer' },
+            [2] = { name = 'Shot Caller' },
+            [3] = { name = 'Boss', isboss = true },
+        },
+    },
 }
