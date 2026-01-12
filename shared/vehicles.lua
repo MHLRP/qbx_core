@@ -1141,5 +1141,6 @@ return {
     emperorncpd        = { hash = "emperorncpd", category = "emergency", brand = "Emperor", name = "Police", type = "automobile", price = 79879, shop = "none", model = "emperorncpd", },
     cortesnpcd         = { hash = "cortesnpcd", category = "emergency", brand = "Cortes", name = "Police", type = "automobile", price = 79879, shop = "none", model = "cortesnpcd", },
     pace_cypheranim    = { hash = "pace_cypheranim", category = "sports", brand = "Pace", name = "Cypher Anim", type = "automobile", price = 79879, shop = "none", model = "pace_cypheranim", },
+    pace_sultanrs      = { hash = "pace_sultanrs", category = "sports", brand = "Pace", name = "Sultan RS", type = "automobile", price = 79879, shop = "none", model = "pace_sultanrs", },
     hornethf           = { hash = "hornethf", category = "sports", brand = "Bravado", name = "Hornet HF", type = "automobile", price = 79879, shop = "none", model = "hornethf", },
 }
