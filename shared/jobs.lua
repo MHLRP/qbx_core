@@ -697,4 +697,16 @@ return {
             [3] = { name = 'Shop Manager', isboss = true, payment = 400 },
         },
     },
+
+    ikara = {
+        label = 'Ikara Design',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Sales Person', payment = 200 },
+            [1] = { name = 'Junior Designer', payment = 250 },
+            [2] = { name = 'Senior Designer', isboss = true, payment = 300 },
+            [3] = { name = 'Lead Designer', isboss = true, payment = 400 },
+        },
+    }
 }
