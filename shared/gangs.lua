@@ -86,10 +86,14 @@ return {
     viperidae = {
         label = 'Viperidae',
         grades = {
-            [0] = { name = 'Recruits' },
-            [1] = { name = 'Vipers' },
-            [2] = { name = 'Commands' },
-            [3] = { name = 'Heads', isboss = true },
+            [0] = { name = 'Prospects' },
+            [1] = { name = 'Members' },
+            [2] = { name = 'Enforcer' },
+            [3] = { name = 'Treasurer' },
+            [4] = { name = 'Secretary' },
+            [5] = { name = 'Sgt At Arms' },
+            [6] = { name = 'Vice President' },
+            [7] = { name = 'President', isboss = true },
         },
     },
     vendetta = {
