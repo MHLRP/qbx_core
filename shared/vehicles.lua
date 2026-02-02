@@ -1142,6 +1142,7 @@ return {
     cortesnpcd         = { hash = "cortesnpcd", category = "emergency", brand = "Cortes", name = "Police", type = "automobile", price = 79879, shop = "none", model = "cortesnpcd", },
     pace_cypheranim    = { hash = "pace_cypheranim", category = "sports", brand = "Pace", name = "Cypher Anim", type = "automobile", price = 79879, shop = "none", model = "pace_cypheranim", },
     pace_sultanrs      = { hash = "pace_sultanrs", category = "sports", brand = "Pace", name = "Sultan RS", type = "automobile", price = 79879, shop = "none", model = "pace_sultanrs", },
+    pace_sentinelrr    = { hash = "pace_sentinelrr", category = "sports", brand = "Pace", name = "Sentinel RR", type = "automobile", price = 79879, shop = "none", model = "pace_sentinelrr", },
     hornethf           = { hash = "hornethf", category = "sports", brand = "Bravado", name = "Hornet HF", type = "automobile", price = 79879, shop = "none", model = "hornethf", },
     s204tempesta       = { hash = "s204tempesta", category = "sports", brand = "204", name = "Tempesta", type = "automobile", price = 79879, shop = "none", model = "s204tempesta", },
     serpent            = { hash = "serpent", category = "sports", brand = "Serpent", name = "Vrod", type = "automobile", price = 79879, shop = "none", model = "serpent", },
