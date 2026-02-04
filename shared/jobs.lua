@@ -341,14 +341,19 @@ return {
                 payment = 400,
             },
             [1] = {
-                name = 'Vice Boss',
-                payment = 650,
+                name = 'Mini Boss',
                 isboss = true,
+                payment = 600,
             },
             [2] = {
-                name = 'Boss',
-                payment = 800,
+                name = 'Vice Boss',
                 isboss = true,
+                payment = 650,
+            },
+            [3] = {
+                name = 'Boss',
+                isboss = true,
+                payment = 800,
             },
         }
     },
