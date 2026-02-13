@@ -24,28 +24,28 @@ return {
         defaultDuty = false,
         offDutyPay = false,
         grades = {
-            [0] = { name = 'Cadet', payment = 20000 },
-            [1] = { name = 'K9 Trainee Dog', payment = 20750 },
-            [2] = { name = 'K9 Dog', payment = 21500 },
-            [3] = { name = 'Officer I', payment = 22000 },
-            [4] = { name = 'Officer II', payment = 22750 },
-            [5] = { name = 'Officer III', payment = 23500 },
-            [6] = { name = 'Special Officer', payment = 23750 },
-            [7] = { name = 'Corporal I', payment = 24000 },
-            [8] = { name = 'Corporal II', payment = 24750 },
-            [9] = { name = 'Corporal III', payment = 25500 },
-            [10] = { name = 'Sergeant I', isboss = true, payment = 26000 },
-            [11] = { name = 'Sergeant II', isboss = true, payment = 26750 },
-            [12] = { name = 'Sergeant III', isboss = true, payment = 27500 },
-            [13] = { name = 'Detective I', isboss = true, payment = 28000 },
-            [14] = { name = 'Detective II', isboss = true, payment = 28750 },
-            [15] = { name = 'Detective III', isboss = true, payment = 29500 },
-            [16] = { name = 'Detective Sergeant', isboss = true, payment = 30000 },
-            [17] = { name = '2nd Lieutenant', isboss = true, payment = 30750 },
-            [18] = { name = '1st Lieutenant', isboss = true, payment = 31500 },
-            [19] = { name = 'Captain', isboss = true, payment = 32000 },
-            [20] = { name = 'Assistant Chief', isboss = true, payment = 35000 },
-            [21] = { name = 'Chief', isboss = true, payment = 37500 },
+            [0] = { name = 'Cadet', payment = 2000 },
+            [1] = { name = 'K9 Trainee Dog', payment = 2075 },
+            [2] = { name = 'K9 Dog', payment = 2150 },
+            [3] = { name = 'Officer I', payment = 2200 },
+            [4] = { name = 'Officer II', payment = 2275 },
+            [5] = { name = 'Officer III', payment = 2350 },
+            [6] = { name = 'Special Officer', payment = 2375 },
+            [7] = { name = 'Corporal I', payment = 2400 },
+            [8] = { name = 'Corporal II', payment = 2475 },
+            [9] = { name = 'Corporal III', payment = 2550 },
+            [10] = { name = 'Sergeant I', isboss = true, payment = 2600 },
+            [11] = { name = 'Sergeant II', isboss = true, payment = 2675 },
+            [12] = { name = 'Sergeant III', isboss = true, payment = 2750 },
+            [13] = { name = 'Detective I', isboss = true, payment = 2800 },
+            [14] = { name = 'Detective II', isboss = true, payment = 2875 },
+            [15] = { name = 'Detective III', isboss = true, payment = 2950 },
+            [16] = { name = 'Detective Sergeant', isboss = true, payment = 3000 },
+            [17] = { name = '2nd Lieutenant', isboss = true, payment = 3075 },
+            [18] = { name = '1st Lieutenant', isboss = true, payment = 3150 },
+            [19] = { name = 'Captain', isboss = true, payment = 3200 },
+            [20] = { name = 'Assistant Chief', isboss = true, payment = 3300 },
+            [21] = { name = 'Chief', isboss = true, payment = 3450 },
             [22] = { name = 'Staff PD', isboss = true, payment = 10 },
         },
     },
@@ -56,15 +56,15 @@ return {
         defaultDuty = false,
         offDutyPay = false,
         grades = {
-            [0] = { name = 'Deputy Sheriff', payment = 16000 },
-            [1] = { name = 'Deputy 1st Class', payment = 17000 },
-            [2] = { name = 'Deputy 2nd Class', payment = 17000 },
-            [3] = { name = 'Corporal', payment = 17000 },
-            [4] = { name = 'Sergeant', payment = 28000 },
-            [5] = { name = 'Lieutenant', payment = 29000 },
-            [6] = { name = 'Captain', payment = 29000 },
-            [7] = { name = 'Chief Deputy', isboss = true, payment = 30000 },
-            [8] = { name = 'Sheriff', isboss = true, payment = 32000 },
+            [0] = { name = 'Deputy Sheriff', payment = 1600 },
+            [1] = { name = 'Deputy 1st Class', payment = 1700 },
+            [2] = { name = 'Deputy 2nd Class', payment = 1700 },
+            [3] = { name = 'Corporal', payment = 1700 },
+            [4] = { name = 'Sergeant', payment = 2800 },
+            [5] = { name = 'Lieutenant', payment = 2900 },
+            [6] = { name = 'Captain', payment = 2900 },
+            [7] = { name = 'Chief Deputy', isboss = true, payment = 3200 },
+            [8] = { name = 'Sheriff', isboss = true, payment = 3400 },
         },
     },
 
@@ -108,17 +108,17 @@ return {
         defaultDuty = false,
         offDutyPay = false,
         grades = {
-            [0] = { name = 'Trainee', payment = 15000 },
-            [1] = { name = 'Emergency Medical Technician', payment = 17500 },
-            [2] = { name = 'Firefighter Paramedic', payment = 18000 },
-            [3] = { name = 'Paramedic', payment = 20000 },
-            [4] = { name = 'Senior Paramedic', payment = 23000 },
-            [5] = { name = 'Nurse Practitioner', payment = 25000 },
-            [6] = { name = 'Doctor', payment = 30000 },
-            [7] = { name = 'Lieutenant', payment = 32000 },
-            [8] = { name = 'Captain', payment = 34000 },
-            [9] = { name = 'Deputy Chief Medical Officer', isboss = true, payment = 36000 },
-            [10] = { name = 'Chief Medical Officer', isboss = true, payment = 37500 },
+            [0] = { name = 'Trainee', payment = 1500 },
+            [1] = { name = 'Emergency Medical Technician', payment = 1750 },
+            [2] = { name = 'Firefighter Paramedic', payment = 1800 },
+            [3] = { name = 'Paramedic', payment = 2000 },
+            [4] = { name = 'Senior Paramedic', payment = 2300 },
+            [5] = { name = 'Nurse Practitioner', payment = 2500 },
+            [6] = { name = 'Doctor', payment = 3000 },
+            [7] = { name = 'Lieutenant', payment = 3200 },
+            [8] = { name = 'Captain', payment = 3400 },
+            [9] = { name = 'Deputy Chief Medical Officer', isboss = true, payment = 3600 },
+            [10] = { name = 'Chief Medical Officer', isboss = true, payment = 3750 },
         },
     },
 
@@ -357,6 +357,7 @@ return {
             },
         }
     },
+    
     firefighter = {
         label = 'Firefighter',
         defaultDuty = false,
@@ -364,42 +365,42 @@ return {
         grades = {
             [0] = {
                 name = 'Recruit',
-                payment = 12000
+                payment = 1200
             },
             [1] = {
                 name = 'Fireman',
-                payment = 14000
+                payment = 1400
             },
             [2] = {
                 name = 'Senior Fireman',
-                payment = 16000
+                payment = 1600
             },
             [3] = {
                 name = 'Lieutenant',
-                payment = 18000
+                payment = 1800
             },
             [4] = {
                 name = 'Captain',
-                payment = 22000
+                payment = 2200
             },
             [5] = {
                 name = 'Battalion Chief',
-                payment = 24000
+                payment = 2400
             },
             [6] = {
                 name = 'Assistant Chief',
-                payment = 26000
+                payment = 2600
             },
             [7] = {
                 name = 'Chief',
                 isboss = true,
-                payment = 26000,
+                payment = 2600,
             },
             [8] = {
                 name = 'Commissioner',
                 isboss = true,
                 bankAuth = true,
-                payment = 30000
+                payment = 3000
             },
         },
     },
