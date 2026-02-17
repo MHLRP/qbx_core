@@ -1146,4 +1146,7 @@ return {
     hornethf           = { hash = "hornethf", category = "sports", brand = "Bravado", name = "Hornet HF", type = "automobile", price = 79879, shop = "none", model = "hornethf", },
     s204tempesta       = { hash = "s204tempesta", category = "sports", brand = "204", name = "Tempesta", type = "automobile", price = 79879, shop = "none", model = "s204tempesta", },
     serpent            = { hash = "serpent", category = "sports", brand = "Serpent", name = "Vrod", type = "automobile", price = 79879, shop = "none", model = "serpent", },
+    yos6x6             = { hash = "yos6x6", category = "offroad", brand = "Yosemite", name = "6x6", type = "automobile", price = 79879, shop = "none", model = "yos6x6", },
+    yostrailer         = { hash = "yostrailer", category = "utility", brand = "Yosemite", name = "Trailer", type = "automobile", price = 79879, shop = "none", model = "yostrailer", },
+    fpdbe              = { hash = "fpdbe", category = "sports", brand = "Vapid", name = "Firebolt PDB", type = "automobile", price = 79879, shop = "none", model = "fpdbe", },
 }
