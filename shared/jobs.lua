@@ -6,6 +6,7 @@ return {
     judge = { label = 'Honorary', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Judge', payment = 2500 } } },
     lawyer = { label = 'Law Firm', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Associate', payment = 2000 } } },
     trucker = { label = 'Trucker', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
+    onlytoes = { label = 'OnlyToes', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
     pilot = { label = 'Pilot', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Pilot', payment = 50 } } },
     lifeguard = { label = 'Lifeguard', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Lifeguard', payment = 200 } } },
     tow = { label = 'Towing', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
