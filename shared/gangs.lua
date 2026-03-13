@@ -11,6 +11,15 @@ return {
             [3] = { name = 'Boss', isboss = true },
         },
     },
+    thedarkdevils = {
+        label = 'The Dark Devils',
+        grades = {
+            [0] = { name = 'DarkSoul' },
+            [1] = { name = 'SoulReaper' },
+            [2] = { name = 'RightHand' },
+            [3] = { name = 'Devil', isboss = true },
+        },
+    },
     ballas = {
         label = 'Ballas',
         grades = {
