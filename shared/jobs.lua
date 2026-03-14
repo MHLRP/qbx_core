@@ -715,5 +715,16 @@ return {
             [2] = { name = 'Senior Designer', isboss = true, payment = 300 },
             [3] = { name = 'Lead Designer', isboss = true, payment = 400 },
         },
-    }
+    },
+
+    veterinarian = {
+        label = 'Veterinarian',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Trainee', payment = 250 },
+            [1] = { name = 'Veterinarian', payment = 500 },
+            [2] = { name = 'Manager', isboss = true, payment = 600 },
+        },
+    },
 }
