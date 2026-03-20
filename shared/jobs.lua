@@ -418,8 +418,8 @@ return {
         },
     },
 
-    unipunk = {
-        label = "Vanilla Unipunk",
+    unicorn = {
+        label = "Vanilla Unicorn",
         defaultDuty = false,
         offDutyPay = false,
         grades = {
