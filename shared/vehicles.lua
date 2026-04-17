@@ -1152,4 +1152,6 @@ return {
     dlsentinel5st      = { hash = "dlsentinel5st", category = "sports", brand = "Pace", name = "Sentinel 5ST", type = "automobile", price = 79879, shop = "none", model = "dlsentinel5st", },
     pcs26              = { hash = "pcs26", category = "sports", brand = "Pace", name = "PCS26", type = "automobile", price = 79879, shop = "none", model = "pcs26", },
     m3e30              = { hash = "m3e30", category = "sports", brand = "Pace", name = "M3E30", type = "automobile", price = 79879, shop = "none", model = "m3e30", },
+    emperor1           = { hash = "emperor1", category = "sports", brand = "Emperor", name = "Emperor", type = "automobile", price = 79879, shop = "none", model = "emperor1", },
+    fdrx7              = { hash = "fdrx7", category = "sports", brand = "FDRX7", name = "FDRX7", type = "automobile", price = 79879, shop = "none", model = "fdrx7", },
 }
