@@ -1154,4 +1154,6 @@ return {
     m3e30              = { hash = "m3e30", category = "sports", brand = "Pace", name = "M3E30", type = "automobile", price = 79879, shop = "none", model = "m3e30", },
     emperor1           = { hash = "emperor1", category = "sports", brand = "Emperor", name = "Emperor", type = "automobile", price = 79879, shop = "none", model = "emperor1", },
     fdrx7              = { hash = "fdrx7", category = "sports", brand = "FDRX7", name = "FDRX7", type = "automobile", price = 79879, shop = "none", model = "fdrx7", },
+    aetherius          = { hash = "aetherius", category = "sports", brand = "Buckingham", name = "Aetherius", type = "automobile", price = 79879, shop = "none", model = "aetherius", },
+    cybersentinel      = { hash = "cybersentinel", category = "sports", brand = "Ubermacht", name = "Sentinel", type = "automobile", price = 79879, shop = "none", model = "cybersentinel", },
 }
