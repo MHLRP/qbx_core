@@ -546,6 +546,7 @@ return {
     speedo             = { hash = "speedo", category = "vans", brand = "Vapid", name = "Speedo", type = "automobile", price = 66002, shop = "pdm", model = "speedo", },
     speeder2           = { hash = "speeder2", category = "boats", brand = "Pegassi", name = "Speeder", type = "boat", price = 462680, shop = "boats", model = "speeder2", },
     police5            = { hash = "police5", category = "emergency", brand = "Vapid", name = "Stanier LE Cruiser", type = "automobile", price = 71053, shop = "none", model = "police5", },
+    police6            = { hash = "police6", category = "emergency", brand = "Chevillon", name = "Emperor", type = "automobile", price = 79879, shop = "none", model = "police6", },
     comet4             = { hash = "comet4", category = "sports", brand = "Pfister", name = "Comet Safari", type = "automobile", price = 78289, shop = "luxury", model = "comet4", },
     slamvan6           = { hash = "slamvan6", category = "muscle", brand = "Vapid", name = "Nightmare Slamvan", price = 68476, model = "slamvan6", },
     sanchez2           = { hash = "sanchez2", category = "motorcycles", brand = "Maibatsu", name = "Sanchez", type = "bike", price = 20686, shop = "pdm", model = "sanchez2", },
