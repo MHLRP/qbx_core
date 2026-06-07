@@ -144,6 +144,6 @@ return {
     sendPaycheck = function(player, payment)
         player.Functions.AddMoney('bank', payment)
         TriggerClientEvent('fl:notify', player.PlayerData.source, 'PAYCHECK', '',
-            locale('info.received_paycheck', payment), 5000, 2, 0)
+            locale('info.received_paycheck', payment), 5000, 6, 0)
     end,
 }

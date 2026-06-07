@@ -10,6 +10,7 @@ ox_lib 'locale'
 
 shared_scripts {
     '@ox_lib/init.lua',
+    '@FL-Notify/shared/notify_types.lua',
     'modules/lib.lua',
     'shared/locale.lua',
     'shared/functions.lua',

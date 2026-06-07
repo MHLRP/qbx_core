@@ -409,7 +409,23 @@ function Notify(source, text, notifyType, duration, subTitle, notifyPosition, no
     else
         description = text
     end
-    local position = notifyPosition or positionConfig
+
+    duration = duration or 5000
+    notifyType = notifyType or 'inform'
+
+    if GetResourceState('FL-Notify') == 'started' then
+        TriggerClientEvent(
+            'fl:notify',
+            source,
+            FLNotifyTypes.DefaultTitle(notifyType, title),
+            '',
+            description or '',
+            duration,
+            FLNotifyTypes.ResolveNumeric(notifyType),
+            0
+        )
+        return
+    end
 
     TriggerClientEvent('ox_lib:notify', source, {
         id = title,
@@ -417,7 +433,7 @@ function Notify(source, text, notifyType, duration, subTitle, notifyPosition, no
         description = description,
         duration = duration,
         type = notifyType,
-        position = position,
+        position = notifyPosition or positionConfig,
         style = notifyStyle,
         icon = notifyIcon,
         iconColor = notifyIconColor

@@ -1,5 +1,3 @@
-local positionConfig = require 'config.shared'.notifyPosition
-
 ---Text box popup for player which dissappears after a set time.
 ---@param text table|string text of the notification
 ---@param notifyType? NotificationType informs default styling. Defaults to 'inform'
@@ -20,7 +18,22 @@ function Notify(text, notifyType, duration, subTitle, notifyPosition, notifyStyl
     else
         description = text
     end
-    local position = notifyPosition or positionConfig
+
+    duration = duration or 5000
+    notifyType = notifyType or 'inform'
+
+    if GetResourceState('FL-Notify') == 'started' then
+        TriggerEvent(
+            'fl:notify',
+            FLNotifyTypes.DefaultTitle(notifyType, title),
+            '',
+            description or '',
+            duration,
+            FLNotifyTypes.ResolveNumeric(notifyType),
+            0
+        )
+        return
+    end
 
     lib.notify({
         id = title,
@@ -28,7 +41,7 @@ function Notify(text, notifyType, duration, subTitle, notifyPosition, notifyStyl
         description = description,
         duration = duration,
         type = notifyType,
-        position = position,
+        position = notifyPosition or require('config.shared').notifyPosition,
         style = notifyStyle,
         icon = notifyIcon,
         iconColor = notifyIconColor
