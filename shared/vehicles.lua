@@ -1160,6 +1160,7 @@ return {
     gangveh1             = { model = 'gangveh1', name = 'Dark Devils Gang Burrito', brand = 'Declasse', price = 0, category = 'vans', type = 'automobile', hash = 'gangveh1' },
     gangveh2             = { model = 'gangveh2', name = 'GMF Gang Burrito', brand = 'Declasse', price = 0, category = 'vans', type = 'automobile', hash = 'gangveh2' },
     gangveh3             = { model = 'gangveh3', name = 'Viperidae Gang Burrito', brand = 'Declasse', price = 0, category = 'vans', type = 'automobile', hash = 'gangveh3' },
+    gangveh4             = { model = 'gangveh4', name = 'Ashfallen Gang Burrito', brand = 'Declasse', price = 0, category = 'vans', type = 'automobile', hash = 'gangveh4' },
     gcscoot              = { model = 'gcscoot', name = 'Electric Scooter', brand = 'Nagasaki', price = 0, category = 'motorcycles', type = 'bike', hash = 'gcscoot' },
     serv_electricscooter = { model = 'serv_electricscooter', name = 'Electric Scooter', brand = 'Nagasaki', price = 0, category = 'motorcycles', type = 'bike', hash = 'serv_electricscooter' },
     frodyfilmlook        = { model = 'frodyfilmlook', name = 'Film Rig', brand = 'Vapid', price = 0, category = 'utility', type = 'truck', hash = 'frodyfilmlook' },

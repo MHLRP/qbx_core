@@ -433,6 +433,21 @@ return {
         },
     },
 
+    bahamamamas = {
+        label = "Bahama Mamas",
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = "Trainee", payment = 50 },
+            [1] = { name = "Bartender", payment = 75 },
+            [2] = { name = "Stripper", payment = 400 },
+            [3] = { name = "Security", payment = 400 },
+            [4] = { name = "Supervisor", isboss = true, payment = 650 },
+            [5] = { name = "Manager", payment = 800 },
+            [6] = { name = "Owner", isboss = true, payment = 850 },
+        },
+    },
+
     burgershot = {
         label = "Burgershot",
         defaultDuty = false,
