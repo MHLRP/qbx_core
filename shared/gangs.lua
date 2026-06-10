@@ -148,10 +148,15 @@ return {
     theashfallen = {
         label = 'The Ashfallen',
         grades = {
-            [0] = { name = 'Recruit' },
-            [1] = { name = 'Enforcer' },
-            [2] = { name = 'Shot Caller' },
-            [3] = { name = 'Boss', isboss = true },
+            [0] = { name = 'Prospect' },
+            [1] = { name = 'Members' },
+            [2] = { name = 'Enforcers' },
+            [3] = { name = 'Road Captain' },
+            [4] = { name = 'Treasurer' },
+            [5] = { name = 'Secretary' },
+            [6] = { name = 'Sgt At Arms' },
+            [7] = { name = 'Vice President' },
+            [8] = { name = 'President', isboss = true },
         },
     },
 }
