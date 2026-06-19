@@ -742,4 +742,34 @@ return {
             [2] = { name = 'Manager', isboss = true, payment = 600 },
         },
     },
+
+    secureindustries = {
+        label = "Secure Industries",
+        defaultDuty = false,
+        offDutyPay = false,
+        grades = {
+            [0] = {
+                name = 'Titan Initiate',
+                payment = 60
+            },
+            [1] = {
+                name = 'Tech Titan',
+                payment = 100
+            },
+            [2] = {
+                name = 'Titan Architect',
+                payment = 115
+            },
+            [3] = {
+                name = 'CEO',
+                isboss = true,
+                payment = 120
+            },
+            [4] = {
+                name = 'Chairman',
+                isboss = true,
+                payment = 0
+            },
+        },
+    },
 }
