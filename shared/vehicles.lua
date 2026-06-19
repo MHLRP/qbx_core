@@ -1166,4 +1166,5 @@ return {
     frodyfilmlook        = { model = 'frodyfilmlook', name = 'Film Rig', brand = 'Vapid', price = 0, category = 'utility', type = 'truck', hash = 'frodyfilmlook' },
     bypdbe               = { model = 'bypdbe', name = 'Youga PDB', brand = 'Bravado', price = 0, category = 'utility', type = 'truck', hash = 'bypdbe' },
     pace_hellbringer     = { model = 'pace_hellbringer', name = 'Hellbringer', brand = 'Pace', price = 0, category = 'bike', type = 'bike', hash = 'pace_hellbringer' },
+    nullpulseway         = { model = 'nullpulseway', name = 'Pulseway', brand = 'Light Bee', price = 0, category = 'bike', type = 'bike', hash = 'nullpulseway' },
 }
