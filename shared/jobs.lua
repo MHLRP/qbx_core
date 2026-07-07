@@ -18,6 +18,7 @@ return {
     diver = { label = 'Scuba Diver', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Diver', payment = 50 } } },
     lumberjack = { label = 'Lumber Jack', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Lumberjack', payment = 50 } } },
     oilrig = { label = 'Oil Worker', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Oil Worker', payment = 50 } } },
+    gruppe6 = { label = 'Gruppe 6', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Gruppe 6', payment = 50 } } },
 
     police = {
         label = 'Law Enforcement',
