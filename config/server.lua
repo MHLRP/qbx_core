@@ -6,7 +6,7 @@ return {
         ---@alias Money {cash: number, bank: number, crypto: number, cosmo: number, nx: number}
         ---@type Money
         -- cosmo: legacy type — reset to 0 via SQL; nx is the default Moonlit crypto account
-        moneyTypes = { cash = 500, bank = 5000, crypto = 0, cosmo = 0, nx = 0 }, -- type = startamount - Add or remove money types for your server (for ex. blackmoney = 0), remember once added it will not be removed from the database!
+        moneyTypes = { cash = 500, bank = 1000, crypto = 0, cosmo = 0, nx = 0 }, -- type = startamount - Add or remove money types for your server (for ex. blackmoney = 0), remember once added it will not be removed from the database!
         dontAllowMinus = { 'cash', 'crypto', 'cosmo', 'nx' },                  -- Money that is not allowed going in minus
         paycheckTimeout = 30,                                            -- The time in minutes that it will give the paycheck
         paycheckSociety = false                                          -- If true paycheck will come from the society account that the player is employed at, requires qb-management

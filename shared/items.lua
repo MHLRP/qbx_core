@@ -1386,7 +1386,7 @@ return {
 	['cigbox']                   = { ['name'] = 'cigbox', ['label'] = 'Cigarette Box', ['weight'] = 100, ['type'] = 'item', ['image'] = 'cigbox.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
 	['hamburger']                = { ['name'] = 'hamburger', ['label'] = 'Hamburger', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hamburger.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
 	['soda']                     = { ['name'] = 'soda', ['label'] = 'Soda', ['weight'] = 500, ['type'] = 'item', ['image'] = 'soda.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
-	['egobar']                   = { ['name'] = 'egobar', ['label'] = 'Egobar', ['weight'] = 100, ['type'] = 'item', ['image'] = 'egobar.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
+	['egobar']                   = { ['name'] = 'egobar', ['label'] = 'NeuroByte Bar', ['weight'] = 100, ['type'] = 'item', ['image'] = 'egobar.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = '' },
 
 	-- Rental Document
 
@@ -1394,7 +1394,7 @@ return {
 
 
 
-	------------------ md-drugs
+	------------------ moonlit-drugs
 	coke                             = { name = 'coke', label = 'Raw Cocaine', weight = 1000, type = 'item', image = 'coke.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Processed cocaine' },
 	coca_leaf                        = { name = 'coca_leaf', label = 'Cocaine leaves', weight = 1500, type = 'item', image = 'coca_leaf.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Cocaine leaves that must be processed !' },
 	poppyresin                       = { name = 'poppyresin', label = 'Poppy resin', weight = 2000, type = 'item', image = 'poppyresin.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'It sticks to your fingers when you handle it.' },
