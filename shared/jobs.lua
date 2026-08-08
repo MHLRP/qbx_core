@@ -292,20 +292,20 @@ return {
             },
             [1] = {
                 name = 'Employee',
-                payment = 150
+                payment = 250
             },
             [2] = {
                 name = 'Experienced',
-                payment = 200
+                payment = 400
             },
             [3] = {
                 name = 'Advanced',
-                payment = 225
+                payment = 625
             },
             [4] = {
                 name = 'Boss',
                 isboss = true,
-                payment = 250
+                payment = 850
             },
         },
     },
@@ -509,16 +509,16 @@ return {
         grades = {
             [0] = {
                 name = 'Worker',
-                payment = 45,
+                payment = 250,
             },
             [1] = {
                 name = 'Vice Boss',
-                payment = 80,
+                payment = 550,
             },
             [2] = {
                 name = 'Boss',
                 isboss = true,
-                payment = 150,
+                payment = 850,
             },
         }
     },
@@ -651,20 +651,20 @@ return {
         grades = {
             [0] = {
                 name = 'Kitchen Porter',
-                payment = 60
+                payment = 220
             },
             [1] = {
                 name = 'Team Member',
-                payment = 120
+                payment = 430
             },
             [2] = {
                 name = 'Sales Manager',
-                payment = 160
+                payment = 660
             },
             [3] = {
                 name = 'Restaurant Manager',
                 isboss = true,
-                payment = 200
+                payment = 800
             },
         },
     },
@@ -765,20 +765,20 @@ return {
         grades = {
             [0] = {
                 name = 'Titan Initiate',
-                payment = 60
+                payment = 100
             },
             [1] = {
                 name = 'Tech Titan',
-                payment = 100
+                payment = 160
             },
             [2] = {
                 name = 'Titan Architect',
-                payment = 115
+                payment = 215
             },
             [3] = {
                 name = 'CEO',
                 isboss = true,
-                payment = 120
+                payment = 320
             },
             [4] = {
                 name = 'Chairman',
