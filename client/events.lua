@@ -96,7 +96,7 @@ RegisterNetEvent('QBCore:Command:GoToMarker', function()
 
         NewLoadSceneStart(x, y, z, x, y, z, 50.0, 0)
         local curTime = GetGameTimer()
-        while IsNetworkLoadingScene() do
+        while IsNewLoadSceneActive() and not IsNewLoadSceneLoaded() do
             if GetGameTimer() - curTime > 1000 then
                 break
             end
@@ -122,6 +122,11 @@ RegisterNetEvent('QBCore:Command:GoToMarker', function()
         end
         Wait(0)
     end
+
+    if IsNewLoadSceneActive() then
+        NewLoadSceneStop()
+    end
+    ClearFocus()
 
     -- Remove black screen once the loop has ended.
     DoScreenFadeIn(650)
