@@ -1148,9 +1148,9 @@ return {
     gangveh4             = { model = 'gangveh4', name = 'Ashfallen Gang Burrito', brand = 'Declasse', price = 0, category = 'vans', type = 'automobile', hash = 'gangveh4' },
     gcscoot              = { model = 'gcscoot', name = 'Electric Scooter', brand = 'Nagasaki', price = 0, category = 'motorcycles', type = 'bike', hash = 'gcscoot' },
     serv_electricscooter = { model = 'serv_electricscooter', name = 'Electric Scooter', brand = 'Nagasaki', price = 0, category = 'motorcycles', type = 'bike', hash = 'serv_electricscooter' },
-    frodyfilmlook        = { model = 'frodyfilmlook', name = 'Film Rig', brand = 'Vapid', price = 0, category = 'utility', type = 'truck', hash = 'frodyfilmlook' },
-    bypdbe               = { model = 'bypdbe', name = 'Youga PDB', brand = 'Bravado', price = 0, category = 'utility', type = 'truck', hash = 'bypdbe' },
+    frodyfilmlook        = { model = 'frodyfilmlook', name = 'Film Rig', brand = 'Vapid', price = 0, category = 'utility', type = 'automobile', hash = 'frodyfilmlook' },
+    bypdbe               = { model = 'bypdbe', name = 'Youga PDB', brand = 'Bravado', price = 0, category = 'utility', type = 'automobile', hash = 'bypdbe' },
     pace_hellbringer     = { model = 'pace_hellbringer', name = 'Hellbringer', brand = 'Pace', price = 0, category = 'bike', type = 'bike', hash = 'pace_hellbringer' },
     nullpulseway         = { model = 'nullpulseway', name = 'Pulseway', brand = 'Light Bee', price = 0, category = 'bike', type = 'bike', hash = 'nullpulseway' },
-    dloader2             = { model = 'dloader2', name = 'Dloader 2', brand = 'Bravado', price = 0, category = 'utility', type = 'truck', hash = 'dloader2' },
+    dloader2             = { model = 'dloader2', name = 'Dloader 2', brand = 'Bravado', price = 0, category = 'utility', type = 'automobile', hash = 'dloader2' },
 }
