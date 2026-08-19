@@ -787,4 +787,16 @@ return {
             },
         },
     },
+
+    gasngo = {
+        label = 'Gas N Go',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Attendant', payment = 200 },
+            [1] = { name = 'Senior Attendant', payment = 250 },
+            [2] = { name = 'Manager', payment = 300 },
+            [3] = { name = 'Owner', isboss = true, payment = 350 },
+        },
+    },
 }
