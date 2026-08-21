@@ -903,6 +903,7 @@ return {
     t66cthulhu           = { hash = "t66cthulhu", category = "sports", brand = "Type", name = "Type 66 Destroyer", type = "automobile", price = 140000, shop = "none", model = "t66cthulhu", },
     vigilante            = { hash = "vigilante", category = "sports", brand = "Type", name = "Vigilante", type = "automobile", price = 220000, shop = "none", model = "vigilante", },
     aerondight           = { hash = "aerondight", category = "sports", brand = "Aerondight", name = "Aerondight", type = "automobile", price = 200000, shop = "none", model = "aerondight", },
+    rrbuffclassicwide    = { hash = "rrbuffclassicwide", category = "muscle", brand = "Bravado", name = "Buffalo Classic Widebody", type = "automobile", price = 95000, shop = "none", model = "rrbuffclassicwide", },
     driftzr350           = { hash = "driftzr350", category = "sports", brand = "Annis", name = "ZR350", type = "automobile", price = 25000, shop = "none", model = "driftzr350", },
     ysfbikea             = { hash = "ysfbikea", category = "motorcycles", brand = "Cyber", name = "Hover Bike", type = "bike", price = 300000, shop = "none", model = "ysfbikea", },
     sccjkl               = { hash = "sccjkl", category = "sportsclassics", brand = "Cyber", name = "Cyber Hover", type = "automobile", price = 250000, shop = "none", model = "sccjkl", },
