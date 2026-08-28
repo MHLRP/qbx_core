@@ -1,4 +1,4 @@
-﻿local config = require 'config.server'
+local config = require 'config.server'
 local logger = require 'modules.logger'
 
 GlobalState.PVPEnabled = config.server.pvp
