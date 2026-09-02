@@ -360,46 +360,54 @@ return {
             },
         }
     },
-
+    
     firefighter = {
         label = 'Firefighter',
         defaultDuty = false,
         offDutyPay = false,
         grades = {
             [0] = {
-                name = 'Recruit',
-                payment = 1350,
+                name = 'Probie',
+                payment = 1450,
             },
             [1] = {
-                name = 'Fireman',
-                payment = 1575,
+                name = 'FireFighter',
+                payment = 1624,
             },
             [2] = {
-                name = 'Senior Fireman',
-                payment = 1800,
+                name = 'Senior FireFighter',
+                payment = 1843,
             },
             [3] = {
-                name = 'Lieutenant',
-                payment = 2075,
+                name = 'Fire EMT',
+                payment = 1900,
             },
             [4] = {
+                name = 'Fire Paramedic',
+                payment = 2000,
+            },
+            [5] = {
+                name = 'Lieutenant',
+                payment = 2155,
+            },
+            [6] = {
                 name = 'Captain',
                 payment = 2250,
             },
-            [5] = {
+            [7] = {
                 name = 'Battalion Chief',
                 payment = 2700,
             },
-            [6] = {
+            [8] = {
                 name = 'Assistant Chief',
                 payment = 3050,
             },
-            [7] = {
+            [9] = {
                 name = 'Chief',
                 isboss = true,
                 payment = 3250,
             },
-            [8] = {
+            [10] = {
                 name = 'Commissioner',
                 isboss = true,
                 bankAuth = true,
