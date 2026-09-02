@@ -105,6 +105,15 @@ return {
         },
     },
 
+    scooterrecovery = {
+        label = 'Scooter Recovery',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Collector', payment = 90 },
+        },
+    },
+
     ambulance = {
         label = 'EMS',
         type = 'ems',
