@@ -369,7 +369,7 @@ return {
             },
         }
     },
-    
+
     firefighter = {
         label = 'Firefighter',
         defaultDuty = false,
@@ -667,19 +667,20 @@ return {
         offDutyPay = false,
         grades = {
             [0] = {
-                name = 'Kitchen Porter',
-                payment = 220
+                name = 'Waitstaff',
+                payment = 260
             },
             [1] = {
-                name = 'Team Member',
-                payment = 430
+                name = 'Kitchen Chef',
+                payment = 420
             },
             [2] = {
-                name = 'Sales Manager',
+                name = 'Manager',
+                isboss = true,
                 payment = 660
             },
             [3] = {
-                name = 'Restaurant Manager',
+                name = 'Owner',
                 isboss = true,
                 payment = 800
             },
