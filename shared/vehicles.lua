@@ -1154,6 +1154,6 @@ return {
     pace_hellbringer     = { model = 'pace_hellbringer', name = 'Hellbringer', brand = 'Pace', price = 0, category = 'bike', type = 'bike', hash = 'pace_hellbringer' },
     nullpulseway         = { model = 'nullpulseway', name = 'Pulseway', brand = 'Light Bee', price = 0, category = 'bike', type = 'bike', hash = 'nullpulseway' },
     dloader2             = { model = 'dloader2', name = 'Dloader 2', brand = 'Bravado', price = 0, category = 'utility', type = 'automobile', hash = 'dloader2' },
-    jormungandr          = { hash = "jormungandr", category = "motorcycles", brand = "Jormungandr", name = "Jormungandr", type = "bike", price = 0, shop = "none", model = "jormungandr", },
+    jormungandr          = { model = "jormungandr", name = "Jormungandr", brand = "Jormungandr", price = 0, category = "motorcycles", type = "bike", shop = "none", hash = "jormungandr", },
     gstgangaleutian1     = { model = 'gstgangaleutian1', name = 'GST Aleutian', brand = 'Vapid', price = 0, category = 'utility', type = 'automobile', hash = 'gstgangaleutian1' },
 }
