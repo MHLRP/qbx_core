@@ -1156,4 +1156,5 @@ return {
     dloader2             = { model = 'dloader2', name = 'Dloader 2', brand = 'Bravado', price = 0, category = 'utility', type = 'automobile', hash = 'dloader2' },
     jormungandr          = { model = "jormungandr", name = "Jormungandr", brand = "Jormungandr", price = 0, category = "motorcycles", type = "bike", shop = "none", hash = "jormungandr", },
     gstgangaleutian1     = { model = 'gstgangaleutian1', name = 'GST Aleutian', brand = 'Vapid', price = 0, category = 'utility', type = 'automobile', hash = 'gstgangaleutian1' },
+    mdkitsune            = { model = 'mdkitsune', name = 'Kitsune', brand = 'Null', price = 0, category = 'sports', type = 'automobile', shop = 'none', hash = 'mdkitsune' },
 }
