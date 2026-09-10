@@ -162,10 +162,14 @@ return {
     blooddiamondcartel = {
         label = 'Blood Diamond Cartel',
         grades = {
-            [0] = { name = 'Recruit' },
-            [1] = { name = 'Enforcer' },
-            [2] = { name = 'Shot Caller' },
-            [3] = { name = 'Boss', isboss = true },
+            [0] = { name = 'Hang Around' },
+            [1] = { name = 'Recruit' },
+            [2] = { name = 'Soldier' },
+            [3] = { name = 'Specialist' },
+            [4] = { name = 'Hit Man' },
+            [5] = { name = 'Cocinero' },
+            [6] = { name = 'Executive Officer', isboss = true },
+            [7] = { name = "La' Pratrona", isboss = true },
         },
     },
 }
