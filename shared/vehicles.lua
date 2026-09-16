@@ -1161,4 +1161,5 @@ return {
     gstgangaleutian1     = { hash = "gstgangaleutian1", category = "utility", brand = "Vapid", name = "GST Aleutian", type = "automobile", price = 0, shop = "none", model = "gstgangaleutian1", },
     mdkitsune            = { hash = "mdkitsune", category = "sports", brand = "Null", name = "Kitsune", type = "automobile", price = 0, shop = "none", model = "mdkitsune", },
     hellbender           = { hash = "hellbender", category = "motorcycles", brand = "Dinka", name = "Hellbender", type = "bike", price = 0, shop = "none", model = "hellbender", },
+    varangian2           = { hash = "varangian2", category = "motorcycles", brand = "Western", name = "Varangian", type = "bike", price = 0, shop = "none", model = "varangian2", },
 }
