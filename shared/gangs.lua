@@ -14,10 +14,13 @@ return {
     thedarkdevils = {
         label = 'The Dark Devils',
         grades = {
-            [0] = { name = 'DarkSoul' },
-            [1] = { name = 'SoulReaper' },
-            [2] = { name = 'RightHand' },
-            [3] = { name = 'Devil', isboss = true },
+            [0] = { name = 'Stray' },
+            [1] = { name = 'Hellhound' },
+            [2] = { name = 'Hellchemist' },
+            [3] = { name = 'Watchdog' },
+            [4] = { name = 'Devilsfang' },
+            [5] = { name = 'Hellkeeper' },
+            [6] = { name = 'Devil', isboss = true },
         },
     },
     ballas = {
