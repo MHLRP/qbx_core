@@ -14,9 +14,9 @@ return {
     thedarkdevils = {
         label = 'The Dark Devils',
         grades = {
-            [0] = { name = 'Stray' },
-            [1] = { name = 'Hellhound' },
-            [2] = { name = 'Hellchemist' },
+            [0] = { name = 'Hellhound' },
+            [1] = { name = 'Hellchemist' },
+            [2] = { name = 'Soulkeeper' },
             [3] = { name = 'Watchdog' },
             [4] = { name = 'Devilsfang' },
             [5] = { name = 'Hellkeeper' },
