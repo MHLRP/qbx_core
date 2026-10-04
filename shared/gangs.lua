@@ -95,19 +95,6 @@ return {
             [3] = { name = 'Boss', isboss = true },
         },
     },
-    viperidae = {
-        label = 'Viperidae',
-        grades = {
-            [0] = { name = 'Prospects' },
-            [1] = { name = 'Members' },
-            [2] = { name = 'Enforcer' },
-            [3] = { name = 'Treasurer' },
-            [4] = { name = 'Secretary' },
-            [5] = { name = 'Sgt At Arms' },
-            [6] = { name = 'Vice President' },
-            [7] = { name = 'President', isboss = true },
-        },
-    },
     midnightreapers = {
         label = 'Midnight Reapers',
         grades = {
