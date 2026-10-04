@@ -68,52 +68,6 @@ return {
             [3] = { name = 'Boss', isboss = true },
         },
     },
-    maelstrom = {
-        label = 'Maelstrom',
-        grades = {
-            [0] = { name = 'Recruit' },
-            [1] = { name = 'Enforcer' },
-            [2] = { name = 'Shot Caller' },
-            [3] = { name = 'Boss', isboss = true },
-        },
-    },
-    fleetwoods = {
-        label = 'Fleetwoods',
-        grades = {
-            [0] = { name = 'Recruit' },
-            [1] = { name = 'Enforcer' },
-            [2] = { name = 'Shot Caller' },
-            [3] = { name = 'Boss', isboss = true },
-        },
-    },
-    syndicate = {
-        label = 'Syndicate',
-        grades = {
-            [0] = { name = 'Recruit' },
-            [1] = { name = 'Enforcer' },
-            [2] = { name = 'Shot Caller' },
-            [3] = { name = 'Boss', isboss = true },
-        },
-    },
-    midnightreapers = {
-        label = 'Midnight Reapers',
-        grades = {
-            [0] = { name = 'Recruit' },
-            [1] = { name = 'Enforcer' },
-            [2] = { name = 'Shot Caller' },
-            [3] = { name = 'Boss', isboss = true },
-        },
-    },
-    lafamilia = {
-        label = 'The Castone Crime Family',
-        grades = {
-            [0] = { name = 'Made Man' },
-            [1] = { name = 'Capo' },
-            [2] = { name = 'Underboss', isboss = true },
-            [3] = { name = 'Consigliere', isboss = true },
-            [4] = { name = 'Godfather', isboss = true },
-        },
-    },
     greekmafiafamily = {
         label = 'The Greek Mafia Family',
         grades = {
@@ -124,15 +78,6 @@ return {
             [4] = { name = 'Operational Manager', isboss = true },
             [5] = { name = 'Under Boss', isboss = true },
             [6] = { name = 'Boss', isboss = true },
-        },
-    },
-    cyberlotussyndicate = {
-        label = '(サイバー蓮会 Saibā Ren-kai)',
-        grades = {
-            [0] = { name = 'Recruit' },
-            [1] = { name = 'Enforcer' },
-            [2] = { name = 'Shot Caller' },
-            [3] = { name = 'Boss', isboss = true },
         },
     },
     theashfallen = {
