@@ -360,7 +360,7 @@ return {
             [2] = {
                 name = 'Vice Boss',
                 isboss = true,
-                payment = 650,
+                payment = 700,
             },
             [3] = {
                 name = 'Boss',
