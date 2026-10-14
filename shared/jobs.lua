@@ -520,7 +520,7 @@ return {
         },
     },
     greenleaf = {
-        label = "Bean Machine",
+        label = "Greenleaf Machine",
         offDutyPay = true,
         defaultDuty = false,
         grades = {
