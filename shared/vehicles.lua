@@ -1162,4 +1162,5 @@ return {
     mdkitsune            = { hash = "mdkitsune", category = "sports", brand = "Null", name = "Kitsune", type = "automobile", price = 0, shop = "none", model = "mdkitsune", },
     hellbender           = { hash = "hellbender", category = "motorcycles", brand = "Dinka", name = "Hellbender", type = "bike", price = 0, shop = "none", model = "hellbender", },
     varangian2           = { hash = "varangian2", category = "motorcycles", brand = "Western", name = "Varangian", type = "bike", price = 0, shop = "none", model = "varangian2", },
+    nu450                = { hash = "nu450", category = "sedans", brand = "Null", name = "Iridescent", type = "automobile", price = 0, shop = "none", model = "nu450", },
 }
