@@ -1163,4 +1163,6 @@ return {
     hellbender           = { hash = "hellbender", category = "motorcycles", brand = "Dinka", name = "Hellbender", type = "bike", price = 0, shop = "none", model = "hellbender", },
     varangian2           = { hash = "varangian2", category = "motorcycles", brand = "Western", name = "Varangian", type = "bike", price = 0, shop = "none", model = "varangian2", },
     nu450                = { hash = "nu450", category = "sedans", brand = "Null", name = "Iridescent", type = "automobile", price = 0, shop = "none", model = "nu450", },
+    senrace              = { hash = "senrace", category = "sports", brand = "Ubermacht", name = "Sentinel Race", type = "automobile", price = 79879, shop = "none", model = "senrace", },
+    suldrkwb             = { hash = "suldrkwb", category = "sports", brand = "Karin", name = "Sultan Dark WB", type = "automobile", price = 79879, shop = "none", model = "suldrkwb", },
 }
