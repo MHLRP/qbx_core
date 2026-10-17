@@ -1165,4 +1165,5 @@ return {
     nu450                = { hash = "nu450", category = "sedans", brand = "Null", name = "Iridescent", type = "automobile", price = 0, shop = "none", model = "nu450", },
     senrace              = { hash = "senrace", category = "sports", brand = "Ubermacht", name = "Sentinel Race", type = "automobile", price = 79879, shop = "none", model = "senrace", },
     suldrkwb             = { hash = "suldrkwb", category = "sports", brand = "Karin", name = "Sultan Dark WB", type = "automobile", price = 79879, shop = "none", model = "suldrkwb", },
+    gstviv1              = { hash = "gstviv1", category = "suvs", brand = "Karin", name = "Vivanite Mandem", type = "automobile", price = 79879, shop = "none", model = "gstviv1", },
 }
