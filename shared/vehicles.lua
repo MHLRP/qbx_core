@@ -1166,4 +1166,6 @@ return {
     senrace              = { hash = "senrace", category = "sports", brand = "Ubermacht", name = "Sentinel Race", type = "automobile", price = 79879, shop = "none", model = "senrace", },
     suldrkwb             = { hash = "suldrkwb", category = "sports", brand = "Karin", name = "Sultan Dark WB", type = "automobile", price = 79879, shop = "none", model = "suldrkwb", },
     gstviv1              = { hash = "gstviv1", category = "suvs", brand = "Karin", name = "Vivanite Mandem", type = "automobile", price = 79879, shop = "none", model = "gstviv1", },
+    gstcentenfero1       = { hash = "gstcentenfero1", category = "super", brand = "Pegassi", name = "Centenfero", type = "automobile", price = 79879, shop = "none", model = "gstcentenfero1", },
+    gstheliconada1       = { hash = "gstheliconada1", category = "helicopters", brand = "Buckingham", name = "Conada CTX Airvo", type = "heli", price = 79879, shop = "none", model = "gstheliconada1", },
 }
