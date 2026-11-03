@@ -1168,4 +1168,5 @@ return {
     gstviv1              = { hash = "gstviv1", category = "suvs", brand = "Karin", name = "Vivanite Mandem", type = "automobile", price = 79879, shop = "none", model = "gstviv1", },
     gstcentenfero1       = { hash = "gstcentenfero1", category = "super", brand = "Pegassi", name = "Centenfero", type = "automobile", price = 79879, shop = "none", model = "gstcentenfero1", },
     gstheliconada1       = { hash = "gstheliconada1", category = "helicopters", brand = "Buckingham", name = "Conada CTX Airvo", type = "heli", price = 79879, shop = "none", model = "gstheliconada1", },
+    banshee3             = { hash = "banshee3", category = "super", brand = "Bravado", name = "Banshee GTS", type = "automobile", price = 82754, shop = "luxury", model = "banshee3", },
 }
