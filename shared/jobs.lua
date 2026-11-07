@@ -439,16 +439,17 @@ return {
 
     unicorn = {
         label = "Vanilla Unicorn",
-        defaultDuty = false,
+        defaultDuty = true,
         offDutyPay = false,
         grades = {
-            [0] = { name = "Trainee", payment = 200 },
-            [1] = { name = "Bartender", payment = 300 },
-            [2] = { name = "Dancer", payment = 400 },
-            [3] = { name = "Security", payment = 400 },
-            [4] = { name = "Head Dancer", payment = 650 },
-            [5] = { name = "Manager", isboss = true, payment = 800 },
-            [6] = { name = "Owner", isboss = true, payment = 850 },
+            [0] = { name = "Trainee", payment = 300 },
+            [1] = { name = "DJ", payment = 500 },
+            [2] = { name = "Bartender", payment = 500 },
+            [3] = { name = "Dancer", payment = 500 },
+            [4] = { name = "Security", payment = 550 },
+            [5] = { name = "Head Dancer", payment = 650 },
+            [6] = { name = "Manager", isboss = true, payment = 800 },
+            [7] = { name = "Owner", isboss = true, payment = 850 },
         },
     },
 
@@ -807,7 +808,7 @@ return {
     },
 
     gasngo = {
-        label = 'Gas N Go',
+        label = "Raven's Landing",
         defaultDuty = true,
         offDutyPay = false,
         grades = {
