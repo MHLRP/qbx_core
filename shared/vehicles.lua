@@ -1256,6 +1256,8 @@ return {
     vorschlaghammer      = { hash = "vorschlaghammer", category = "sedans", brand = "", name = "Vorschlaghammer", type = "automobile", price = 79879, shop = "none", model = "vorschlaghammer", },
     yosemite1500         = { hash = "yosemite1500", category = "offroad", brand = "Declasse", name = "Yosemite 1500", type = "automobile", price = 79879, shop = "none", model = "yosemite1500", },
     youga5               = { hash = "youga5", category = "vans", brand = "Vapid", name = "Youga Custom", type = "automobile", price = 79879, shop = "none", model = "youga5", },
+    yun113               = { hash = "yun113", category = "military", brand = "", name = "BTR-80", type = "automobile", price = 79879, shop = "none", model = "yun113", },
+    yun114               = { hash = "yun114", category = "military", brand = "", name = "GAZ-53", type = "automobile", price = 79879, shop = "none", model = "yun114", },
     zodiacc              = { hash = "zodiacc", category = "sportsclassics", brand = "Vulcar", name = "Zodiac Custom", type = "automobile", price = 79879, shop = "none", model = "zodiacc", },
     foodcar3             = { hash = "foodcar3", category = "vans", brand = "", name = "Food Car 3", type = "automobile", price = 79879, shop = "none", model = "foodcar3", },
 }
