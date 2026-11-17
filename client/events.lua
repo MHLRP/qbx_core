@@ -169,36 +169,8 @@ RegisterNetEvent('QBCore:Notify', function(text, notifyType, duration, subTitle,
     Notify(text, notifyType, duration, subTitle, notifyPosition, notifyStyle, notifyIcon, notifyIconColor)
 end)
 
--- Me command
-
----@param bagName string
----@param value string
----@diagnostic disable-next-line: param-type-mismatch
-AddStateBagChangeHandler('me', nil, function(bagName, _, value)
-    if not value then return end
-
-    local playerId = GetPlayerFromStateBagName(bagName)
-
-    if not playerId or not NetworkIsPlayerActive(playerId) then return end
-
-    local isLocalPlayer = playerId == cache.playerId
-    local playerPed = isLocalPlayer and cache.ped or GetPlayerPed(playerId)
-
-    -- Here we do a entity check to see if the player exsist within each clients scope --
-    if not DoesEntityExist(playerPed) then return end
-
-    -- Distance check to make sure that players do not see others me from 100s of meters away --
-    if not isLocalPlayer and #(GetEntityCoords(playerPed) - GetEntityCoords(cache.ped)) > config.meCommand.distance then return end
-
-    CreateThread(function()
-        local displayTime = config.meCommand.displayTime + GetGameTimer()
-        while displayTime > GetGameTimer() do
-            playerPed = isLocalPlayer and cache.ped or GetPlayerPed(playerId)
-            qbx.drawText3d({text = value, coords = GetEntityCoords(playerPed)})
-            Wait(0)
-        end
-    end)
-end)
+-- /me overhead text is handled by the chat resource (2na_chat:registerRPText).
+-- qbx_core me statebag handler disabled intentionally.
 
 -- Listen to Shared being updated
 ---@param tableName string

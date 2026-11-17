@@ -99,9 +99,11 @@ return {
         defaultRadius = 5, -- Default search radius when retrieving nearby vehicles
     },
 
+    -- /me is handled by the chat resource; these values are unused.
     meCommand = {
-        distance = 25, -- Maximum distance at which players can see each other's /me text
-        displayTime = 5000, -- Duration in milliseconds the /me text remains visible
+        distance = 25,
+        displayTime = 5000,
+        heightOffset = 1.0,
     },
 
     setVehicleProperties = {
