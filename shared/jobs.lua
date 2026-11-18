@@ -20,6 +20,14 @@ return {
     oilrig = { label = 'Oil Worker', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Oil Worker', payment = 50 } } },
     gruppe6 = { label = 'Gruppe 6', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Gruppe 6', payment = 50 } } },
     cargo = { label = 'Cargo Delivery', defaultDuty = true, offDutyPay = false, grades = { [0] = { name = 'Driver', payment = 50 } } },
+    tobacco = {
+        label = 'Tobacco Worker',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            [0] = { name = 'Worker', payment = 75 },
+        },
+    },
 
     police = {
         label = 'Law Enforcement',
