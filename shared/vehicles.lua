@@ -1260,4 +1260,5 @@ return {
     yun114               = { hash = "yun114", category = "military", brand = "", name = "GAZ-53", type = "automobile", price = 79879, shop = "none", model = "yun114", },
     zodiacc              = { hash = "zodiacc", category = "sportsclassics", brand = "Vulcar", name = "Zodiac Custom", type = "automobile", price = 79879, shop = "none", model = "zodiacc", },
     foodcar3             = { hash = "foodcar3", category = "vans", brand = "", name = "Food Car 3", type = "automobile", price = 79879, shop = "none", model = "foodcar3", },
+    gstoverboard1        = { hash = "gstoverboard1", category = "cycles", brand = "Coil", name = "Overboard", type = "bike", price = 79879, shop = "none", model = "gstoverboard1", },
 }
