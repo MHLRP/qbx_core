@@ -5,7 +5,8 @@ local storage = require 'server.storage.main'
 local maxJobsPerPlayer = GetConvarInt('qbx:max_jobs_per_player', 4)
 local triggerEventHooks = require 'modules.hooks'
 local maxGangsPerPlayer = GetConvarInt('qbx:max_gangs_per_player', 1)
-local setJobReplaces = GetConvar('qbx:setjob_replaces', 'true') == 'true'
+-- Default false so /setjob and script SetJob stack with multijob (was QBX default true = replace).
+local setJobReplaces = GetConvar('qbx:setjob_replaces', 'false') == 'true'
 local setGangReplaces = GetConvar('qbx:setgang_replaces', 'true') == 'true'
 local accounts = json.decode(GetConvar('inventory:accounts', '["money"]'))
 local accountsAsItems = table.create(0, #accounts)
