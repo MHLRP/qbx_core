@@ -5,9 +5,33 @@ local storage = require 'server.storage.main'
 local maxJobsPerPlayer = GetConvarInt('qbx:max_jobs_per_player', 4)
 local triggerEventHooks = require 'modules.hooks'
 local maxGangsPerPlayer = GetConvarInt('qbx:max_gangs_per_player', 1)
--- Default false so /setjob and script SetJob stack with multijob (was QBX default true = replace).
-local setJobReplaces = GetConvar('qbx:setjob_replaces', 'false') == 'true'
+-- Stock QBX default: /setjob replaces primary. Multijob O-switch uses AddPlayerToJob (not SetJob).
+local setJobReplaces = GetConvar('qbx:setjob_replaces', 'true') == 'true'
 local setGangReplaces = GetConvar('qbx:setgang_replaces', 'true') == 'true'
+
+--- Global convar cap, with optional per-license raise from moonlit-multijob.
+---@param player Player
+---@return integer
+local function getMaxJobsForPlayer(player)
+    local max = maxJobsPerPlayer
+    if GetResourceState('moonlit-multijob') ~= 'started' then
+        return max
+    end
+
+    local ok, result = pcall(function()
+        local src = player.PlayerData.source
+        if src and not player.Offline then
+            return exports['moonlit-multijob']:GetMaxJobs(src)
+        end
+        return exports['moonlit-multijob']:GetMaxJobs(player.PlayerData.license)
+    end)
+
+    if ok and type(result) == 'number' and result > 0 then
+        return result
+    end
+    return max
+end
+
 local accounts = json.decode(GetConvar('inventory:accounts', '["money"]'))
 local accountsAsItems = table.create(0, #accounts)
 
@@ -312,10 +336,20 @@ function AddPlayerToJob(citizenid, jobName, grade)
         return true
     end
 
-    if qbx.table.size(player.PlayerData.jobs) >= maxJobsPerPlayer and not player.PlayerData.jobs[jobName] then
+    local playerMaxJobs = getMaxJobsForPlayer(player)
+    local jobCount = qbx.table.size(player.PlayerData.jobs)
+    if jobCount >= playerMaxJobs and not player.PlayerData.jobs[jobName] then
+        local held = {}
+        for name, grade in pairs(player.PlayerData.jobs) do
+            held[#held + 1] = ('%s(%s)'):format(name, grade)
+        end
         return false, {
             code = 'max_jobs',
-            message = 'player already has maximum amount of jobs allowed'
+            message = ('player already has maximum amount of jobs allowed (%s/%s): %s'):format(
+                jobCount,
+                playerMaxJobs,
+                table.concat(held, ', ')
+            )
         }
     end
 
