@@ -331,7 +331,7 @@ function AddPlayerToJob(citizenid, jobName, grade)
     local jobCount = qbx.table.size(player.PlayerData.jobs)
     if jobCount >= playerMaxJobs and not player.PlayerData.jobs[jobName] then
         if not player.Offline and player.PlayerData.source then
-            TriggerClientEvent('fl:notify', player.PlayerData.source, 'Jobs', '',
+            TriggerClientEvent('fl:notify', player.PlayerData.source, 'JOBS', '',
                 'You have too many jobs, remove one from your multijob and then try again!', 5000, 1, 0)
         end
         local held = {}
