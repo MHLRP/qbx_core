@@ -5,8 +5,6 @@ local storage = require 'server.storage.main'
 local maxJobsPerPlayer = GetConvarInt('qbx:max_jobs_per_player', 4)
 local triggerEventHooks = require 'modules.hooks'
 local maxGangsPerPlayer = GetConvarInt('qbx:max_gangs_per_player', 1)
--- Stock QBX default: /setjob replaces primary. Multijob O-switch uses AddPlayerToJob (not SetJob).
-local setJobReplaces = GetConvar('qbx:setjob_replaces', 'true') == 'true'
 local setGangReplaces = GetConvar('qbx:setgang_replaces', 'true') == 'true'
 
 --- Global convar cap, with optional per-license raise from moonlit-multijob.
@@ -195,14 +193,7 @@ function SetJob(identifier, jobName, grade)
         return false
     end
 
-    if setJobReplaces and player.PlayerData.job.name ~= 'unemployed' then
-        local success, errorResult = RemovePlayerFromJob(player.PlayerData.citizenid, player.PlayerData.job.name)
-
-        if not success then
-            return false, errorResult
-        end
-    end
-
+    -- Always stack: the new job is added to multijob and becomes the primary job.
     if jobName ~= 'unemployed' then
         local success, errorResult = AddPlayerToJob(player.PlayerData.citizenid, jobName, grade)
 
@@ -339,6 +330,10 @@ function AddPlayerToJob(citizenid, jobName, grade)
     local playerMaxJobs = getMaxJobsForPlayer(player)
     local jobCount = qbx.table.size(player.PlayerData.jobs)
     if jobCount >= playerMaxJobs and not player.PlayerData.jobs[jobName] then
+        if not player.Offline and player.PlayerData.source then
+            TriggerClientEvent('fl:notify', player.PlayerData.source, 'Jobs', '',
+                'You have too many jobs, remove one from your multijob and then try again!', 5000, 1, 0)
+        end
         local held = {}
         for name, grade in pairs(player.PlayerData.jobs) do
             held[#held + 1] = ('%s(%s)'):format(name, grade)
